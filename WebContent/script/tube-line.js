@@ -143,13 +143,14 @@ $(document).ready(function() {
     context.translate(lineCentre, y);
     context.rotate(direction.radians);
 
-    context.moveTo(0, z);
-    context.lineTo(s, z - s);
-    context.lineTo(s, -s);
-    context.lineTo(0, 0);
-    context.lineTo(-s, -s);
-    context.lineTo(-s, z - s);
-    context.lineTo(0, z);
+                                    // The arrow is drawn pointing down, as in the diagram.
+    context.moveTo(0, z);           // The tip of the arrow.
+    context.lineTo(s, z - s);       // Diagonally up and right.
+    context.lineTo(s, -s);          // Straight up.
+    context.lineTo(0, 0);           // Diagonally down and left, to point 'q' in the diagram.
+    context.lineTo(-s, -s);         // Diagonally up and left.
+    context.lineTo(-s, z - s);      // Straight down.
+    context.lineTo(0, z);           // Diagonally down and right, back to the tip of the arrow.
     
     context.fillStyle = lineColour;
     context.fill();
