@@ -109,25 +109,31 @@ $(document).ready(function() {
   }
 
   /**
-   * 
+   * Draw a continuation arrow on a tube line. 
    * See 'TFL Line Diagram Standard', section 6.
    * 
+   * <pre>
    *                     |--s---|
    *     |   |         |   |
    *     | w |         | w |  u
    *     |---|         |---|----|
    *     |   |    .    |   |    . ------
    *     |   |    |\   |   |   /|  |  |
-   *     |   |    | \  |   |  / |  |  z
+   *     |   |    | \  |   |  / |  |  z        q = the point specified by the function's y argument.
    *     |   |    |  \ |   |t/  |  s  |        s = line width * 2  [ = (w / 2) + u ]
    *     |   |    \   \|   |/   /  | ---       t = 45 degrees
    *     |   |     \ w/\   /   /   |           u = line width * 1.5
    *     |___|      \/  \ /   /   _|____       w = line width
-   *                 \       /        |        z = sqrt(2 * (w * w))
+   *                 \   q   /        |        z = sqrt(2 * (w * w))
    *                  \     /         z
    *                   \   /          |
    *                    \ / t         |
-   *                 -------------------   
+   *                 -------------------
+   * </pre>
+   * 
+   * @param direction   the direction of the arrow. One of the DIRECTION constants.
+   * @param lineCentre  the (x) centre of the line to which the arrow is to be added.
+   * @param y           The (y) position where the point at 'q' in the diagram above will be.
    */
   function drawArrow(direction, lineCentre, y) {
     var z = Math.sqrt(2 * (lineWidth * lineWidth));
