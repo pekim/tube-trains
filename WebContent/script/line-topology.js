@@ -1,6 +1,7 @@
 function LineTopology(text) {
   var gridWidth;
   var gridHeight;
+  var grid;
   
   init();
   
@@ -10,6 +11,7 @@ function LineTopology(text) {
     
     gridWidth = ((lines[0].length / 4) + 1) | 0;
     gridHeight = ((lines.length / 2) + 1) | 0;
+    grid = createGrid(lines);
   }
   
   this.gridWidth = function () {
@@ -18,6 +20,10 @@ function LineTopology(text) {
   
   this.gridHeight = function () {
     return gridHeight;
+  };
+  
+  this.grid = function () {
+    return grid;
   };
 
   function linesFromText() {
@@ -74,5 +80,27 @@ function LineTopology(text) {
         }
       }
     }
+  }
+  
+  function createGrid(lines) {
+    var grid = [];
+
+    // Stations.
+    // We've already performed validation on the lines, so we can make
+    // all the assumptions we need here.
+    for (var l = 0; l < lines.length; l += 2) {
+      for (var c = 0; c < gridWidth; c++) {
+        var code = lines[l].substr(c * 4, 3);
+        console.log(l, c, code);
+        if (code !== '   ') {
+          var station = new Station(code);
+          grid.push(station);
+        } else {
+          grid.push(null);
+        }
+      }
+    }
+    
+    return grid;
   }
 }

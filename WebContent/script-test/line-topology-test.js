@@ -107,14 +107,28 @@ tests.push(function () {
   });
   
   test('grid size - 1 x 1', function() {
-    var topology = new LineTopology('EBY');
+    var topology = new LineTopology('ABC');
     same(topology.gridWidth(), 1, 'width');
     same(topology.gridHeight(), 1, 'height');
   });
   
-  test('grid size - 2 x 2', function() {
-    var topology = new LineTopology('EBY TGR' + NL + ' |   | ' + NL + 'RMD ECM');
-    same(topology.gridWidth(), 2, 'width');
+  test('grid size - 3 x 2', function() {
+    var topology = new LineTopology('ABC DEF GHI' + NL + ' |   |   | ' + NL + 'NOP QRS TUV');
+    same(topology.gridWidth(), 3, 'width');
     same(topology.gridHeight(), 2, 'height');
+  });
+  
+  test('grid size - 2 x 3', function() {
+    var topology = new LineTopology('ABC DEF' + NL + ' |   | ' + NL + 'GHI JKL' + NL + ' |   | ' + NL + 'MNO PQR');
+    same(topology.gridWidth(), 2, 'width');
+    same(topology.gridHeight(), 3, 'height');
+  });
+  
+  test('grid - stations', function() {
+    var topology = new LineTopology('ABC DEF' + NL + ' |   | ' + NL + '    JKL');
+    same(topology.grid()[0].code(), 'ABC', 'element 0');
+    same(topology.grid()[1].code(), 'DEF', 'element 1');
+    ok(!topology.grid()[2], 'element 2');
+    same(topology.grid()[3].code(), 'JKL', 'element 3');
   });
 });
