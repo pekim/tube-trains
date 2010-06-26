@@ -27,7 +27,6 @@ function LineRenderer(line) {
   var flagTextColour = 'rgb(255, 255, 255)';
   
   var topology = new LineTopology(line.topologyText, line.stations);
-  var stationGrid = 
 
   this.render = function () {
     drawFlagBox(line.name, 10, 10);
@@ -36,15 +35,34 @@ function LineRenderer(line) {
 
   function drawTubeLine(lineCentre, yStart) {
     var y = yStart;
-    for (var s in line.stations) {
-      var station = line.stations[s];
-      drawStation(station, lineCentre, y);
-      drawLineVertical(lineCentre, y, stationSpacing);
+    var grid = topology.grid();
+    var rows = topology.gridHeight();
+    var columns = topology.gridWidth();
+    
+    for (var row = 0; row < rows; row++) {
+      var x = lineCentre;
+      for (var column = 0; column < columns; column++) {
+        var station = grid[(row * columns) + column];
+        console.log(station ? station.code() : '-');
+        if (station) {
+          drawStation(station, x, y);
+        }
+        drawLineVertical(x, y, stationSpacing);
+        
+        x += 200;
+      }
 
       y += stationSpacing;
     }
-    
-    drawArrow(DIRECTION.DOWN, lineCentre, y);
+//    for (var s in line.stations) {
+//      var station = line.stations[s];
+//      drawStation(station, lineCentre, y);
+//      drawLineVertical(lineCentre, y, stationSpacing);
+//
+//      y += stationSpacing;
+//    }
+//    
+//    drawArrow(DIRECTION.DOWN, lineCentre, y);
   }
 
   function drawLineVertical(lineCentre, y, height) {
@@ -87,12 +105,13 @@ function LineRenderer(line) {
   }
   
   function drawStation(station, lineCentre, y) {
-    drawTick(station.tick, lineCentre, y);
+//    drawTick(station.tick, lineCentre, y);
+    drawTick(TICKSTYLE.RIGHT, lineCentre, y);
 
     context.fillStyle = stationColour;  
     context.font = stationFont;
     context.textBaseline = 'middle';
-    context.fillText(' ' + station.name, lineCentre + (lineWidth / 2) + tickSize, y + (tickSize / 2));
+    context.fillText(' ' + station.name(), lineCentre + (lineWidth / 2) + tickSize, y + (tickSize / 2));
   }
 
   /**
