@@ -27,47 +27,109 @@
  */
 
 tests.push(function () {
-  module("LineTopology");
+  module('LineTopology');
   
   var NL = '\n';
   
-  test("mismatched line length", function() {
+  test('mismatched line length', function() {
     var text = 
-                "    EBY" + NL +
-                "RMD ECM ";
+      '    EBY' + NL +
+      'RMD ECM ';
     
     try {
-      var topology = new LineTopology(text);
+      new LineTopology(text);
       ok(false, 'Expected exception');
     } catch (exception) {
-      // Expected exception.
+      ok(exception.indexOf('length') != -1, 'expect exception - line length');
     }
   });
   
-//  test("grid size", function() {
+  test('number of lines', function() {
+    var topology = new LineTopology('   ');
+    ok(topology, '1 line');
+
+    try {
+      new LineTopology('   ' + NL + '   ');
+      ok(false, 'Expected exception');
+    } catch (exception) {
+      ok(exception.indexOf('number of lines') != -1, '2 lines');
+    }
+
+    topology = new LineTopology('   ' + NL + '   ' + NL + '   ');
+    ok(topology, '3 lines');
+  });
+  
+  test('even lines have station codes', function() {
+    goodLine('EBY', 'one station');
+    goodLine('EBY CHP', 'two stations');
+    goodLine('    CHP', 'absent station');
+
+    badLine('EBY-CHP', 'invalid character between codes');
+    badLine('A?C', 'invalid character in code');
+    badLine('EBY CHP ', 'trailing space');
+
+    function goodLine(line, description) {
+      new LineTopology(line);
+      ok(true, description);
+    }
+
+    function badLine(line, description) {
+      try {
+        new LineTopology(line);
+        ok(false, description);
+      } catch (exception) {
+        ok(exception.indexOf('station names line') != -1, 'expect exception - ' + description);
+      }
+    }
+  });
+  
+  test('odd lines have track joining symbols', function() {
+    var stationLine = 'EBY CHP';
+    
+    goodLine(' |  \\|/', 'all valid characters');
+    goodLine('     | ', 'absent info');
+
+    badLine(' ?     ', 'invalid character');
+
+    function goodLine(line, description) {
+      new LineTopology(stationLine + NL + line + NL + stationLine);
+      ok(true, description);
+    }
+
+    function badLine(line, description) {
+      try {
+        new LineTopology(stationLine + NL + line + NL + stationLine);
+        ok(false, description);
+      } catch (exception) {
+        ok(exception.indexOf('track') != -1, 'expect exception - ' + description);
+      }
+    }
+  });
+  
+//  test('grid size', function() {
 //    var text = 
-//                "    EBY" + NL +
-//                "     | " + NL +
-//                "RMD ECM";
+//                '    EBY' + NL +
+//                '     | ' + NL +
+//                'RMD ECM';
 //    var topology = new LineTopology(text);
 //
-//    same(topology.width(), 2, "width");
-//    same(topology.height(), 2, "height");
+//    same(topology.width(), 2, 'width');
+//    same(topology.height(), 2, 'height');
 //  });
   
-//  test("test", function() {
-//                "    EBY" +
-//                "     | " +
-//                "RMD ECM" +
-//                " |   | " +
-//                "KEW ACT" +
-//                " |   | " +
-//                "GUN CHP" +
-//                "  \  | " +
-//                "    \| " +
-//                "    TGR";
+//  test('test', function() {
+//                '    EBY' +
+//                '     | ' +
+//                'RMD ECM' +
+//                ' |   | ' +
+//                'KEW ACT' +
+//                ' |   | ' +
+//                'GUN CHP' +
+//                '  \  | ' +
+//                '    \| ' +
+//                '    TGR';
 //    var topology = new LineTopology(text);
 //
-//    ok(true, "test");
+//    ok(true, 'test');
 //  });
 });
