@@ -21,8 +21,8 @@ function LineRenderer(line) {
   var lineWidth = xHeight;                // Equivalent to 'x' in tfl-line-diagram-standard.
   var tickSize = 0.66 * lineWidth;
   var stationSpacing = 8 * xHeight;
+  var maximumStationNameWidth = getMaximumStationNameWidth();
   
-  var lineColour = 'rgb(0, 121, 52)';
   var stationColour = 'rgb(0, 24, 168)';
   var flagTextColour = 'rgb(255, 255, 255)';
 
@@ -45,12 +45,12 @@ function LineRenderer(line) {
   }
 
   function drawLineVertical(lineCentre, y, height) {
-    context.fillStyle = lineColour;  
+    context.fillStyle = line.colour;  
     context.fillRect(lineCentre - (lineWidth / 2), y, lineWidth, height);
   }
 
   function drawTick(style, lineCentre, y) {
-    context.fillStyle = lineColour;  
+    context.fillStyle = line.colour;  
 
     switch (style) {
     case TICKSTYLE.LEFT:
@@ -136,7 +136,7 @@ function LineRenderer(line) {
     context.lineTo(-s, z - s);      // Straight down.
     context.lineTo(0, z);           // Diagonally down and right, back to the tip of the arrow.
     
-    context.fillStyle = lineColour;
+    context.fillStyle = line.colour;
     context.fill();
     
     context.restore();
@@ -146,7 +146,7 @@ function LineRenderer(line) {
     var boxWidth = 12 * lineWidth;
     var boxHeight = 3 * lineWidth;
     
-    context.fillStyle = lineColour;
+    context.fillStyle = line.colour;
     context.fillRect(x, y, boxWidth, boxHeight);  
 
     context.fillStyle = flagTextColour;  
@@ -184,5 +184,19 @@ function LineRenderer(line) {
     }
     
     return yEnd - yStart + 1;
+  }
+  
+  function getMaximumStationNameWidth() {
+    var maximumTextWidth = 0;
+    
+    for (var s in line.stations) {
+      var station = line.stations[s];
+      var textWidth = context.measureText(station.name).width;
+      if (textWidth > maximumTextWidth) {
+        maximumTextWidth = textWidth;
+      }
+    }
+    
+    return maximumTextWidth;
   }
 }

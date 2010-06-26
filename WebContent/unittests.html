@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Tube Trains - Unit Tests</title>
+    
+    <script type="text/javascript" src="script/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="script-test/qunit.js"></script>
+
+    <script>
+      var tests = [];
+    </script>
+    
+    <script type="text/javascript" src="script/line-topology.js"></script>
+    <script type="text/javascript" src="script-test/line-topology-test.js"></script>
+
+    <link rel="stylesheet" href="style/qunit.css" type="text/css" media="screen" />
+
+    <script>
+      $(document).ready(function(){
+        for (t in tests) {
+          tests[t]();
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1 id="qunit-header">Tube Trains - Unit Tests</h1>
+    <h2 id="qunit-banner"></h2>
+    <h2 id="qunit-userAgent"></h2>
+    <ol id="qunit-tests"></ol>
+  </body>
+</html>
