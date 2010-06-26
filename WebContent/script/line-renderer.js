@@ -43,7 +43,6 @@ function LineRenderer(line) {
       var x = lineCentre;
       for (var column = 0; column < columns; column++) {
         var station = grid[(row * columns) + column];
-        console.log(station ? station.code() : '-');
         if (station) {
           drawStation(station, x, y);
         }
@@ -54,15 +53,6 @@ function LineRenderer(line) {
 
       y += stationSpacing;
     }
-//    for (var s in line.stations) {
-//      var station = line.stations[s];
-//      drawStation(station, lineCentre, y);
-//      drawLineVertical(lineCentre, y, stationSpacing);
-//
-//      y += stationSpacing;
-//    }
-//    
-//    drawArrow(DIRECTION.DOWN, lineCentre, y);
   }
 
   function drawLineVertical(lineCentre, y, height) {
