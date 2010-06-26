@@ -106,30 +106,15 @@ tests.push(function () {
     }
   });
   
-//  test('grid size', function() {
-//    var text = 
-//                '    EBY' + NL +
-//                '     | ' + NL +
-//                'RMD ECM';
-//    var topology = new LineTopology(text);
-//
-//    same(topology.width(), 2, 'width');
-//    same(topology.height(), 2, 'height');
-//  });
+  test('grid size - 1 x 1', function() {
+    var topology = new LineTopology('EBY');
+    same(topology.gridWidth(), 1, 'width');
+    same(topology.gridHeight(), 1, 'height');
+  });
   
-//  test('test', function() {
-//                '    EBY' +
-//                '     | ' +
-//                'RMD ECM' +
-//                ' |   | ' +
-//                'KEW ACT' +
-//                ' |   | ' +
-//                'GUN CHP' +
-//                '  \  | ' +
-//                '    \| ' +
-//                '    TGR';
-//    var topology = new LineTopology(text);
-//
-//    ok(true, 'test');
-//  });
+  test('grid size - 2 x 2', function() {
+    var topology = new LineTopology('EBY TGR' + NL + ' |   | ' + NL + 'RMD ECM');
+    same(topology.gridWidth(), 2, 'width');
+    same(topology.gridHeight(), 2, 'height');
+  });
 });

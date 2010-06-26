@@ -1,15 +1,25 @@
 function LineTopology(text) {
-  var width;
-  var height;
+  var gridWidth;
+  var gridHeight;
   
   init();
   
   function init() {
     var lines = linesFromText();
     validateLines(lines);
-    height = lines.length;
+    
+    gridWidth = ((lines[0].length / 4) + 1) | 0;
+    gridHeight = ((lines.length / 2) + 1) | 0;
   }
   
+  this.gridWidth = function () {
+    return gridWidth;
+  };
+  
+  this.gridHeight = function () {
+    return gridHeight;
+  };
+
   function linesFromText() {
     var lines = text.split('\n');
     if (lines[lines.length - 1].length === 0) {
@@ -65,12 +75,4 @@ function LineTopology(text) {
       }
     }
   }
-  
-  this.width = function () {
-    return width;
-  };
-  
-  this.height = function () {
-    return height;
-  };
 }
