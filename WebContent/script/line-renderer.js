@@ -25,6 +25,9 @@ function LineRenderer(line) {
   
   var stationColour = 'rgb(0, 24, 168)';
   var flagTextColour = 'rgb(255, 255, 255)';
+  
+  var topology = new LineTopology(line.topologyText, line.stations);
+  var stationGrid = 
 
   this.render = function () {
     drawFlagBox(line.name, 10, 10);
