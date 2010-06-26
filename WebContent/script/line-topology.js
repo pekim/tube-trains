@@ -1,4 +1,4 @@
-function LineTopology(text) {
+function LineTopology(text, stations) {
   var gridWidth;
   var gridHeight;
   var grid;
@@ -91,9 +91,10 @@ function LineTopology(text) {
     for (var l = 0; l < lines.length; l += 2) {
       for (var c = 0; c < gridWidth; c++) {
         var code = lines[l].substr(c * 4, 3);
-        console.log(l, c, code);
         if (code !== '   ') {
-          var station = new Station(code);
+          var stationInfo = stations[code];
+          var name = stationInfo ? stationInfo.name : 'unknown';
+          var station = new Station(code, name);
           grid.push(station);
         } else {
           grid.push(null);

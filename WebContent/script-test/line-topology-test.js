@@ -30,6 +30,11 @@ tests.push(function () {
   module('LineTopology');
   
   var NL = '\n';
+  var stations = {
+      ABC: {name: 'abc'},
+      DEF: {name: 'def'},
+      JKL: {name: 'jkl'}
+  };
   
   test('mismatched line length', function() {
     var text = 
@@ -37,7 +42,7 @@ tests.push(function () {
       'RMD ECM ';
     
     try {
-      new LineTopology(text);
+      new LineTopology(text, stations);
       ok(false, 'Expected exception');
     } catch (exception) {
       ok(exception.indexOf('length') != -1, 'expect exception - line length');
@@ -45,17 +50,17 @@ tests.push(function () {
   });
   
   test('number of lines', function() {
-    var topology = new LineTopology('   ');
+    var topology = new LineTopology('   ', stations);
     ok(topology, '1 line');
 
     try {
-      new LineTopology('   ' + NL + '   ');
+      new LineTopology('   ' + NL + '   ', stations);
       ok(false, 'Expected exception');
     } catch (exception) {
       ok(exception.indexOf('number of lines') != -1, '2 lines');
     }
 
-    topology = new LineTopology('   ' + NL + '   ' + NL + '   ');
+    topology = new LineTopology('   ' + NL + '   ' + NL + '   ', stations);
     ok(topology, '3 lines');
   });
   
@@ -69,13 +74,13 @@ tests.push(function () {
     badLine('EBY CHP ', 'trailing space');
 
     function goodLine(line, description) {
-      new LineTopology(line);
+      new LineTopology(line, stations);
       ok(true, description);
     }
 
     function badLine(line, description) {
       try {
-        new LineTopology(line);
+        new LineTopology(line, stations);
         ok(false, description);
       } catch (exception) {
         ok(exception.indexOf('station names line') != -1, 'expect exception - ' + description);
@@ -92,13 +97,13 @@ tests.push(function () {
     badLine(' ?     ', 'invalid character');
 
     function goodLine(line, description) {
-      new LineTopology(stationLine + NL + line + NL + stationLine);
+      new LineTopology(stationLine + NL + line + NL + stationLine, stations);
       ok(true, description);
     }
 
     function badLine(line, description) {
       try {
-        new LineTopology(stationLine + NL + line + NL + stationLine);
+        new LineTopology(stationLine + NL + line + NL + stationLine, stations);
         ok(false, description);
       } catch (exception) {
         ok(exception.indexOf('track') != -1, 'expect exception - ' + description);
@@ -107,28 +112,31 @@ tests.push(function () {
   });
   
   test('grid size - 1 x 1', function() {
-    var topology = new LineTopology('ABC');
+    var topology = new LineTopology('ABC', stations);
     same(topology.gridWidth(), 1, 'width');
     same(topology.gridHeight(), 1, 'height');
   });
   
   test('grid size - 3 x 2', function() {
-    var topology = new LineTopology('ABC DEF GHI' + NL + ' |   |   | ' + NL + 'NOP QRS TUV');
+    var topology = new LineTopology('ABC DEF GHI' + NL + ' |   |   | ' + NL + 'NOP QRS TUV', stations);
     same(topology.gridWidth(), 3, 'width');
     same(topology.gridHeight(), 2, 'height');
   });
   
   test('grid size - 2 x 3', function() {
-    var topology = new LineTopology('ABC DEF' + NL + ' |   | ' + NL + 'GHI JKL' + NL + ' |   | ' + NL + 'MNO PQR');
+    var topology = new LineTopology('ABC DEF' + NL + ' |   | ' + NL + 'GHI JKL' + NL + ' |   | ' + NL + 'MNO PQR', stations);
     same(topology.gridWidth(), 2, 'width');
     same(topology.gridHeight(), 3, 'height');
   });
   
   test('grid - stations', function() {
-    var topology = new LineTopology('ABC DEF' + NL + ' |   | ' + NL + '    JKL');
-    same(topology.grid()[0].code(), 'ABC', 'element 0');
-    same(topology.grid()[1].code(), 'DEF', 'element 1');
+    var topology = new LineTopology('ABC DEF' + NL + ' |   | ' + NL + '    JKL', stations);
+    same(topology.grid()[0].code(), 'ABC', 'element 0 - code');
+    same(topology.grid()[0].name(), 'abc', 'element 0 - name');
+    same(topology.grid()[1].code(), 'DEF', 'element 1 - code');
+    same(topology.grid()[1].name(), 'def', 'element 1 - name');
     ok(!topology.grid()[2], 'element 2');
-    same(topology.grid()[3].code(), 'JKL', 'element 3');
+    same(topology.grid()[3].code(), 'JKL', 'element 3 - code');
+    same(topology.grid()[3].name(), 'jkl', 'element 3 - name');
   });
 });
