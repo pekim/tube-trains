@@ -21,7 +21,9 @@ function LineRenderer(line) {
   var lineWidth = xHeight;                // Equivalent to 'x' in tfl-line-diagram-standard.
   var tickSize = 0.66 * lineWidth;
   var stationSpacing = 8 * xHeight;
+  var interstation = stationSpacing + tickSize;
   var maximumStationNameWidth = getMaximumStationNameWidth();
+  var trackSeparation = (6 * lineWidth) + maximumStationNameWidth;
   
   var stationColour = 'rgb(0, 24, 168)';
   var flagTextColour = 'rgb(255, 255, 255)';
@@ -30,11 +32,12 @@ function LineRenderer(line) {
 
   this.render = function () {
     drawFlagBox(line.name, 10, 10);
-    drawTubeLine(100, 8 * lineWidth);
+    drawTubeLine(4 * lineWidth, 8 * lineWidth);
   };
 
   function drawTubeLine(lineCentre, yStart) {
     var y = yStart;
+    
     var grid = topology.grid();
     var rows = topology.gridHeight();
     var columns = topology.gridWidth();
@@ -45,10 +48,15 @@ function LineRenderer(line) {
         var station = grid[(row * columns) + column];
         if (station) {
           drawStation(station, x, y);
+          if (station.downTo()) {
+            drawLineVertical(x, y, interstation);
+          }
+          if (station.downRightTo()) {
+            drawLineDownRight(x, y);
+          }
         }
-        drawLineVertical(x, y, stationSpacing);
         
-        x += 200;
+        x += trackSeparation;
       }
 
       y += stationSpacing;
@@ -58,6 +66,17 @@ function LineRenderer(line) {
   function drawLineVertical(lineCentre, y, height) {
     context.fillStyle = line.colour;  
     context.fillRect(lineCentre - (lineWidth / 2), y, lineWidth, height);
+  }
+
+  function drawLineDownRight(x, y) {
+    context.strokeStyle = line.colour;
+//    context.strokeStyle = 'red';
+    context.lineWidth = lineWidth;
+    context.beginPath();
+    context.moveTo(x, y);
+    context.arcTo(x, y + (interstation / 2), x + 200, y + (interstation / 2), 3 * lineWidth);
+    context.lineTo(x + trackSeparation, y + (interstation / 2));
+    context.stroke();
   }
 
   function drawTick(style, lineCentre, y) {
@@ -95,8 +114,11 @@ function LineRenderer(line) {
   }
   
   function drawStation(station, lineCentre, y) {
-//    drawTick(station.tick, lineCentre, y);
-    drawTick(TICKSTYLE.RIGHT, lineCentre, y);
+    if (station.upTo() && station.downTo()) {
+      drawTick(TICKSTYLE.RIGHT, lineCentre, y);
+    } else {
+      drawTick(TICKSTYLE.BOTH, lineCentre, y);
+    }
 
     context.fillStyle = stationColour;  
     context.font = stationFont;

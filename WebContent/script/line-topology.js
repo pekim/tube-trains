@@ -72,7 +72,7 @@ function LineTopology(text, stations) {
     }
     
     function evenLines() {
-      var regexp = /^[ |\\|\||\/]{3}( [ |\\|\||\/]{3})*$/;
+      var regexp = /^ [ |\|] ([ |ʅ|ʃ|u|n] [ |\|] )*$/;
 
       for (var l = 1; l < lines.length; l += 2) {
         if (!regexp.test(lines[l])) {
@@ -98,6 +98,39 @@ function LineTopology(text, stations) {
           grid.push(station);
         } else {
           grid.push(null);
+        }
+      }
+    }
+    
+    var join;
+    // Vertical track joins.
+    for (var l = 1; l < lines.length; l += 2) {
+      for (var c = 0; c < gridWidth; c++) {
+        join = lines[l].substr(c * 4 + 1, 1);
+        if (join === '|') {
+          var stationAbove = grid[((l - 1) / 2 * gridWidth) + c];
+          var stationBelow = grid[((l + 1) / 2 * gridWidth) + c];
+          if (!stationAbove || !stationBelow) {
+            throw 'Cannot link ' + stationAbove + ' to ' + stationBelow;
+          }
+          stationAbove.downTo(stationBelow);
+        }
+      }
+    }
+    
+    // Cross-verticals track joins.
+    for (var l = 1; l < lines.length; l += 2) {
+      for (var c = 0; c < gridWidth - 1; c++) {
+        join = lines[l].substr(c * 4 + 3, 1);
+        switch (join) {
+        case 'ʅ':
+          var stationLeftAbove = grid[((l - 1) / 2 * gridWidth) + c];
+          var stationRightBelow = grid[((l + 1) / 2 * gridWidth) + c + 1];
+          if (!stationLeftAbove || !stationRightBelow) {
+            throw 'Cannot link ' + stationLeftAbove + ' to ' + stationRightBelow;
+          }
+          stationLeftAbove.downRightTo(stationRightBelow);
+          break;
         }
       }
     }

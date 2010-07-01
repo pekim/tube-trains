@@ -36,15 +36,30 @@ var tubeLines = {
           tick: TICKSTYLE.RIGHT
         }
     },
-    topologyText: // The letters below correspond to the station codes.
-              '    EBY' + '\n' +
-              '     | ' + '\n' +
-              'RMD ECM' + '\n' +
-              ' |   | ' + '\n' +
-              'KEW ACT' + '\n' +
-              ' |   | ' + '\n' +
-              'GUN CHP' + '\n' +
-              '  \\ \\| ' + '\n' +
-              '    TGR'
+    topologyText2: // The letters below correspond to the station codes.
+      '    EBY'   + '\n' +
+      '     | '   + '\n' +
+      'RMD ECM'   + '\n' +
+      ' |   | '   + '\n' +
+      'KEW ACT'   + '\n' +
+      ' |   | '   + '\n' +
+      'GUN CHP'   + '\n' +
+      '  \\ \\| ' + '\n' +
+      '    TGR',
+    topologyText:  // The letter groupings below correspond to the station codes.
+                   // Valid track join characters:
+                   //   ʅ
+                   //   ʃ
+                   //   u
+                   //   n
+        '    EBY' + '\n' +
+        '     | ' + '\n' +
+        'RMD ECM' + '\n' +
+        ' |   | ' + '\n' +
+        'KEW ACT' + '\n' +
+        ' |   | ' + '\n' +
+        'GUN CHP' + '\n' +
+        '   ʅ | ' + '\n' +
+        '    TGR'
   }
 };

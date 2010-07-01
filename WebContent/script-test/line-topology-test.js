@@ -91,9 +91,11 @@ tests.push(function () {
   test('odd lines have track joining symbols', function() {
     var stationLine = 'EBY CHP';
     
-    goodLine(' |  \\|/', 'all valid characters');
-    goodLine('     | ', 'absent info');
-
+    goodLine(' | u | ', 'down, down');
+    goodLine(' | n | ', 'up, up');
+    goodLine(' | ʅ | ', 'down, up');
+    goodLine(' | ʃ | ', 'up, down');
+    goodLine('     | ', 'absent track');
     badLine(' ?     ', 'invalid character');
 
     function goodLine(line, description) {
@@ -130,7 +132,7 @@ tests.push(function () {
   });
   
   test('grid - stations', function() {
-    var topology = new LineTopology('ABC DEF' + NL + ' |   | ' + NL + '    JKL', stations);
+    var topology = new LineTopology('ABC DEF' + NL + '     | ' + NL + '    JKL', stations);
     same(topology.grid()[0].code(), 'ABC', 'element 0 - code');
     same(topology.grid()[0].name(), 'abc', 'element 0 - name');
     same(topology.grid()[1].code(), 'DEF', 'element 1 - code');
