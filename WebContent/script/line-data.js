@@ -3,119 +3,98 @@ var tubeLines = {
     name: 'District',
     colour: 'rgb(0, 121, 52)',
     stations: {
-        EBY: {
-          name: 'Ealing Broadway',
-          tick: TICKSTYLE.BOTH
-        },
-        ECM: {
-          name: 'Ealing Common',
-          tick: TICKSTYLE.RIGHT
-        },
-        ACT: {
-          name: 'Acton Town',
-          tick: TICKSTYLE.RIGHT
-        },
-        CHP: {
-          name: 'Chiswick Park',
-          tick: TICKSTYLE.RIGHT
-        },
-        TGR: {
-          name: 'Turnham Green',
-          tick: TICKSTYLE.RIGHT
-        },
-        RMD: {
-          name: 'Richmond',
-          tick: TICKSTYLE.RIGHT
-        },
-        KEW: {
-          name: 'Kew Gardens',
-          tick: TICKSTYLE.RIGHT
-        },
-        GUN: {
-          name: 'Gunnersbury',
-          tick: TICKSTYLE.RIGHT
-        },
-        STB: {
-          name: 'Stamford Brook',
-          tick: TICKSTYLE.RIGHT
-        },
-        RCP: {
-          name: 'Ravenscourt Park',
-          tick: TICKSTYLE.RIGHT
-        },
-        HMD: {
-          name: 'Hammersmith',
-          tick: TICKSTYLE.RIGHT
-        },
-        BCT: {
-          name: 'Barron\'s Court',
-          tick: TICKSTYLE.RIGHT
-        },
-        WKN: {
-          name: 'West Kensington',
-          tick: TICKSTYLE.RIGHT
-        },
-        ECT: {
-          name: 'Earl\'s Court',
-          tick: TICKSTYLE.RIGHT
-        },
-        WBT: {
-          name: 'West Brompton',
-          tick: TICKSTYLE.RIGHT
-        },
-        FBY: {
-          name: 'Fulham Broadway',
-          tick: TICKSTYLE.RIGHT
-        },
-        PGR: {
-          name: 'Parson\'s Green',
-          tick: TICKSTYLE.RIGHT
-        },
-        PUT: {
-          name: 'Putney Bridge',
-          tick: TICKSTYLE.RIGHT
-        },
-        EPY: {
-          name: 'East Putney',
-          tick: TICKSTYLE.RIGHT
-        },
-        SFS: {
-          name: 'Southfields',
-          tick: TICKSTYLE.RIGHT
-        },
-        WMP: {
-          name: 'Wimbledon Park',
-          tick: TICKSTYLE.RIGHT
-        },
-        WDN: {
-          name: 'Wimbledon',
-          tick: TICKSTYLE.RIGHT
-        }
+//        EBY: {name: 'Ealing Broadway'},
+//        ECM: {name: 'Ealing Common'},
+//        ACT: {name: 'Acton Town'},
+//        CHP: {name: 'Chiswick Park'},
+//        TGR: {name: 'Turnham Green'},
+//        RMD: {name: 'Richmond'},
+//        KEW: {name: 'Kew Gardens'},
+//        GUN: {name: 'Gunnersbury'},
+//        STB: {name: 'Stamford Brook'},
+//        RCP: {name: 'Ravenscourt Park'},
+//        HMD: {name: 'Hammersmith'},
+//        BCT: {name: 'Barron\'s Court'},
+//        WKN: {name: 'West Kensington'},
+//        ECT: {name: 'Earl\'s Court'},
+//        WBT: {name: 'West Brompton'},
+//        FBY: {name: 'Fulham Broadway'},
+//        PGR: {name: 'Parson\'s Green'},
+//        PUT: {name: 'Putney Bridge'},
+//        EPY: {name: 'East Putney'},
+//        SFS: {name: 'Southfields'},
+//        WMP: {name: 'Wimbledon Park'},
+//        WDN: {name: 'Wimbledon'},
+//        OLY: {name: 'Kensington Olympia'},
+//        
+        ACT: {name: 'Acton Town'},
+        ALE: {name: 'Aldgate East'},
+        BKG: {name: 'Barking'},
+        BAY: {name: 'Bayswater'},         // Guessed at code, because not in documentation.
+        BCT: {name: 'Barons Court'},
+        BEC: {name: 'Becontree'},
+        BLF: {name: 'Blackfriars'},
+        BWR: {name: 'Bow Road'},
+        BBB: {name: 'Bromley-by-Bow'},
+        CST: {name: 'Cannon Street'},
+        CHP: {name: 'Chiswick Park'},
+        DGE: {name: 'Dagenham East'},
+        DGH: {name: 'Dagenham Heathway'},
+        EBY: {name: 'Ealing Broadway'},
+        ECM: {name: 'Ealing Common'},
+        ECT: {name: 'Earl’s Court'},
+        EHM: {name: 'East Ham'},
+        EPY: {name: 'East Putney'},
+        ERD: {name: 'Edgware Road'},
+        EPK: {name: 'Elm Park'},
+        EMB: {name: 'Embankment'},
+        FBY: {name: 'Fulham Broadway'},
+        GRD: {name: 'Gloucester Road'},
+        GUN: {name: 'Gunnersbury'},
+        HMD: {name: 'Hammersmith'},
+        HST: {name: 'High Street Kensington'},
+        HCH: {name: 'Hornchurch'},
+        OLY: {name: 'Kensington (Olympia)'},
+        KEW: {name: 'Kew Gardens'},
+        MAN: {name: 'Mansion House'},
+        MLE: {name: 'Mile End'},
+        MON: {name: 'Monument'},
+        NHG: {name: 'Notting Hill Gate'},
+        PAD: {name: 'Paddington'},
+        PGR: {name: 'Parsons Green'},
+        PLW: {name: 'Plaistow'},
+        PUT: {name: 'Putney Bridge'},
+        RCP: {name: 'Ravenscourt Park'},
+        RMD: {name: 'Richmond'},
+        SSQ: {name: 'Sloane Square'},
+        SKN: {name: 'South Kensington'},
+        SFS: {name: 'Southfields'},
+        SJP: {name: 'St. James’s Park'},
+        STB: {name: 'Stamford Brook'},
+        STG: {name: 'Stepney Green'},
+        TEM: {name: 'Temple'},
+        THL: {name: 'Tower Hill'},
+        TGR: {name: 'Turnham Green'},
+        UPM: {name: 'Upminster'},
+        UPB: {name: 'Upminster Bridge'},
+        UPY: {name: 'Upney'},
+        UPK: {name: 'Upton Park'},
+        VIC: {name: 'Victoria'},
+        WBT: {name: 'West Brompton'},
+        WHM: {name: 'West Ham'},
+        WKN: {name: 'West Kensington'},
+        WMS: {name: 'Westminster'},
+        WCL: {name: 'Whitechapel'},
+        WDN: {name: 'Wimbledon'},
+        WMP: {name: 'Wimbledon Park'},
     },
-
-//    topologyText: // The letters below correspond to the station codes.
-//      '    EBY'   + '\n' +
-//      '     | '   + '\n' +
-//      'RMD ECM'   + '\n' +
-//      ' |   | '   + '\n' +
-//      'KEW ACT'   + '\n' +
-//      ' |   | '   + '\n' +
-//      'GUN CHP'   + '\n' +
-//      '  \\ \\| ' + '\n' +
-//      '    TGR'   + '\n' +
-//      '     | '   + '\n' +
-//      '    STB'   + '\n' +
-//      '     | '   + '\n' +
-//      '    RCP'   + '\n' +
-//      '     | '   + '\n' +
-//      '    HMD',
 
     topologyText:  // The letter groupings below correspond to the station codes.
                    // Valid track join characters:
-                   //   ʅ
-                   //   ʃ
-                   //   u
-                   //   n
+                   //   ʅ == \
+                   //   ʃ == /
+                   //   u == \/
+                   //   n == /\
         '        EBY' + '\n' +
         '         | ' + '\n' +
         '    RMD ECM' + '\n' +
@@ -134,8 +113,18 @@ var tubeLines = {
         ' |   |     ' + '\n' +
         'FBY BCT    ' + '\n' +
         ' |   |     ' + '\n' +
-        'WBT WKN    ' + '\n' +
-        '   ʅ |     ' + '\n' +
-        '    ECT    '
+        'WBT WKN OLY' + '\n' +
+        '   ʅ | ʃ   ' + '\n' +
+        '    ECT    ' + '\n' +
+        '     | ʅ   ' + '\n' +
+        '    GRD HST' + '\n' +
+        '     |   | ' + '\n' +
+        '    SKN NHG' + '\n' +
+        '     |   | ' + '\n' +
+        '    SSQ BAY' + '\n' +
+        '     |   | ' + '\n' +
+        '    VIC PAD' + '\n' +
+        '     |   | ' + '\n' +
+        '    SJP ERD',
   }
 };

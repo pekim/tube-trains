@@ -15,7 +15,7 @@ function LineRenderer(line) {
   var canvas = $('#tube-line')[0];
   var context = canvas.getContext('2d');
   
-  var stationFont = '14px sans-serif';
+  var stationFont = '12px sans-serif';
   var flagBoxFont = 'bold ' + stationFont;
   var xHeight = getXHeight(stationFont);
   var lineWidth = xHeight;                // Equivalent to 'x' in tfl-line-diagram-standard.
@@ -23,7 +23,7 @@ function LineRenderer(line) {
   var stationSpacing = 8 * xHeight;
   var interstation = stationSpacing + tickSize;
   var maximumStationNameWidth = getMaximumStationNameWidth();
-  var trackSeparation = (8 * lineWidth) + maximumStationNameWidth;
+  var trackSeparation = (4 * lineWidth) + maximumStationNameWidth;
   
   var stationColour = 'rgb(0, 24, 168)';
   var flagTextColour = 'rgb(255, 255, 255)';
@@ -119,8 +119,8 @@ function LineRenderer(line) {
     var leftLineBottom = horizontalLineY - radius + 1;
     var rightLineTop = horizontalLineY + radius - 1;
     var rightLineBottom = y + interstation;
-    var horizontalLineLeft = leftLineX + radius;
-    var horizontalLineRight = rightLineX - radius;
+    var horizontalLineLeft = leftLineX + radius - 1;
+    var horizontalLineRight = rightLineX - radius + 1;
     var leftArcX = leftLineX + radius;
     var leftArcY = horizontalLineY - radius; 
     var rightArcX = rightLineX - radius;
@@ -183,8 +183,8 @@ function LineRenderer(line) {
     var rightLineBottom = horizontalLineY - radius + 1;
     var leftLineTop = horizontalLineY + radius - 1;
     var leftLineBottom = y + interstation;
-    var horizontalLineLeft = leftLineX + radius;
-    var horizontalLineRight = rightLineX - radius;
+    var horizontalLineLeft = leftLineX + radius - 1;
+    var horizontalLineRight = rightLineX - radius + 1;
     var leftArcX = leftLineX + radius;
     var leftArcY = horizontalLineY + radius; 
     var rightArcX = rightLineX - radius;
