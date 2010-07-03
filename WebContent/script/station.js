@@ -4,6 +4,7 @@ function Station(code, name) {
   var stationBelow;
   var stationAbove;
   var stationDownRight;
+  var stationDownLeft;
   
   this.code = function () {
     return code;
@@ -37,6 +38,15 @@ function Station(code, name) {
       //station.upTo(that);
     } else {
       return stationDownRight;
+    }
+  };
+  
+  this.downLeftTo = function (station) {
+    if (station) {
+      stationDownLeft = station;
+      //station.upTo(that);
+    } else {
+      return stationDownLeft;
     }
   };
   

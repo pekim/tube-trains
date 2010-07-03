@@ -131,6 +131,14 @@ function LineTopology(text, stations) {
           }
           stationLeftAbove.downRightTo(stationRightBelow);
           break;
+        case 'ʃ':
+          var stationRightAbove = grid[((l - 1) / 2 * gridWidth) + c + 1];
+          var stationLeftBelow = grid[((l + 1) / 2 * gridWidth) + c];
+          if (!stationRightAbove || !stationLeftBelow) {
+            throw 'Cannot link ' + stationRightAbove + ' to ' + stationLeftBelow;
+          }
+          stationRightAbove.downLeftTo(stationLeftBelow);
+          break;
         }
       }
     }

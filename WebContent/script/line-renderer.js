@@ -23,7 +23,7 @@ function LineRenderer(line) {
   var stationSpacing = 8 * xHeight;
   var interstation = stationSpacing + tickSize;
   var maximumStationNameWidth = getMaximumStationNameWidth();
-  var trackSeparation = (6 * lineWidth) + maximumStationNameWidth;
+  var trackSeparation = (8 * lineWidth) + maximumStationNameWidth;
   
   var stationColour = 'rgb(0, 24, 168)';
   var flagTextColour = 'rgb(255, 255, 255)';
@@ -54,6 +54,9 @@ function LineRenderer(line) {
           if (station.downRightTo()) {
             drawLineDownRight(x, y);
           }
+          if (station.downLeftTo()) {
+            drawLineDownLeft(x, y);
+          }
         }
         
         x += trackSeparation;
@@ -79,6 +82,10 @@ function LineRenderer(line) {
   }
 
   /**
+   * Draw the line from below a station, down and to the right to
+   * join to another station.
+   * 
+   * <pre>
    *   leftLineX
    *   .
    *   .
@@ -98,6 +105,10 @@ function LineRenderer(line) {
    *     .       horizontalLineRight
    *     .
    *     horizontalLineLeft
+   * </pre>
+   * 
+   * @param x the x position of the upper (to the left station).
+   * @param y the y position of the upper (to the left station).
    */
   function drawLineDownRight(x, y) {
     var leftLineX = x;
@@ -134,6 +145,70 @@ function LineRenderer(line) {
     strokeLine();
   }
 
+  /**
+   * Draw the line from below a station, down and to the left to
+   * join to another station.
+   * 
+   * <pre>
+   *   leftLineX
+   *   .
+   *   .
+   *                |     ---- rightLineTop
+   *                |
+   *                |     ---- rightLineBottom
+   *              a /     ---- rightArcX/Y (a)
+   *     /---------/      ---- horizontalLineY
+   *    /b                ---- leftArcX/Y (b)
+   *   |                  ---- leftLineTop
+   *   |
+   *   |                  ---- leftLineBottom
+   *      .       . .
+   *      .       . .
+   *      .       . rightLineX
+   *      .       .
+   *      .       horizontalLineRight
+   *      .
+   *      horizontalLineLeft
+   * </pre>
+   * 
+   * @param x the x position of the upper (to the right station).
+   * @param y the y position of the upper (to the right station).
+   */
+  function drawLineDownLeft(x, y) {
+    var rightLineX = x;
+    var leftLineX = rightLineX - trackSeparation;
+    var horizontalLineY = y + (interstation / 2);
+    var radius = 3.5 * lineWidth;
+    var rightLineTop = y;
+    var rightLineBottom = horizontalLineY - radius + 1;
+    var leftLineTop = horizontalLineY + radius - 1;
+    var leftLineBottom = y + interstation;
+    var horizontalLineLeft = leftLineX + radius;
+    var horizontalLineRight = rightLineX - radius;
+    var leftArcX = leftLineX + radius;
+    var leftArcY = horizontalLineY + radius; 
+    var rightArcX = rightLineX - radius;
+    var rightArcY = horizontalLineY - radius; 
+
+    context.moveTo(rightLineX, rightLineTop);
+    context.lineTo(rightLineX, rightLineBottom);
+    strokeLine();
+
+    context.arc(rightArcX, rightArcY, radius, 0.0 * Math.PI, 0.5 * Math.PI, false);
+    strokeLine();
+    
+    context.moveTo(horizontalLineRight, horizontalLineY);
+    context.lineTo(horizontalLineLeft, horizontalLineY);
+    strokeLine();
+
+    context.arc(leftArcX, leftArcY, radius, 1.0 * Math.PI, 1.5 * Math.PI, false);
+    strokeLine();
+
+    context.moveTo(leftLineX, leftLineTop);
+    context.lineTo(leftLineX, leftLineBottom);
+    strokeLine();
+  }
+
   function drawTick(style, lineCentre, y) {
     context.fillStyle = line.colour;  
 
@@ -165,7 +240,7 @@ function LineRenderer(line) {
   }
   
   function clear() {
-    //canvas.width = canvas.width;
+    canvas.width = canvas.width;
   }
   
   function drawStation(station, lineCentre, y) {
@@ -174,6 +249,11 @@ function LineRenderer(line) {
     } else {
       drawTick(TICKSTYLE.BOTH, lineCentre, y);
     }
+//    if (station.upTo() || station.downTo() || station.downRightTo() || station.downLeftTo()) {
+//      drawTick(TICKSTYLE.RIGHT, lineCentre, y);
+//    } else {
+//      drawTick(TICKSTYLE.BOTH, lineCentre, y);
+//    }
 
     context.fillStyle = stationColour;  
     context.font = stationFont;
