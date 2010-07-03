@@ -3,30 +3,6 @@ var tubeLines = {
     name: 'District',
     colour: 'rgb(0, 121, 52)',
     stations: {
-//        EBY: {name: 'Ealing Broadway'},
-//        ECM: {name: 'Ealing Common'},
-//        ACT: {name: 'Acton Town'},
-//        CHP: {name: 'Chiswick Park'},
-//        TGR: {name: 'Turnham Green'},
-//        RMD: {name: 'Richmond'},
-//        KEW: {name: 'Kew Gardens'},
-//        GUN: {name: 'Gunnersbury'},
-//        STB: {name: 'Stamford Brook'},
-//        RCP: {name: 'Ravenscourt Park'},
-//        HMD: {name: 'Hammersmith'},
-//        BCT: {name: 'Barron\'s Court'},
-//        WKN: {name: 'West Kensington'},
-//        ECT: {name: 'Earl\'s Court'},
-//        WBT: {name: 'West Brompton'},
-//        FBY: {name: 'Fulham Broadway'},
-//        PGR: {name: 'Parson\'s Green'},
-//        PUT: {name: 'Putney Bridge'},
-//        EPY: {name: 'East Putney'},
-//        SFS: {name: 'Southfields'},
-//        WMP: {name: 'Wimbledon Park'},
-//        WDN: {name: 'Wimbledon'},
-//        OLY: {name: 'Kensington Olympia'},
-//        
         ACT: {name: 'Acton Town'},
         ALE: {name: 'Aldgate East'},
         BKG: {name: 'Barking'},
@@ -125,6 +101,60 @@ var tubeLines = {
         '     |   | ' + '\n' +
         '    VIC PAD' + '\n' +
         '     |   | ' + '\n' +
-        '    SJP ERD',
+        '    SJP ERD' + '\n' +
+        '     |     ' + '\n' +
+        '    WMS    ' + '\n' +
+        '     |     ' + '\n' +
+        '    EMB    ' + '\n' +
+        '     |     ' + '\n' +
+        '    TEM    ' + '\n' +
+        '     |     ' + '\n' +
+        '    BLF    ' + '\n' +
+        '     |     ' + '\n' +
+        '    MAN    ' + '\n' +
+        '     |     ' + '\n' +
+        '    CST    ' + '\n' +
+        '     |     ' + '\n' +
+        '    MON    ' + '\n' +
+        '     |     ' + '\n' +
+        '    THL    ' + '\n' +
+        '     |     ' + '\n' +
+        '    ALE    ' + '\n' +
+        '     |     ' + '\n' +
+        '    WCL    ' + '\n' +
+        '     |     ' + '\n' +
+        '    STG    ' + '\n' +
+        '     |     ' + '\n' +
+        '    MLE    ' + '\n' +
+        '     |     ' + '\n' +
+        '    BWR    ' + '\n' +
+        '     |     ' + '\n' +
+        '    BBB    ' + '\n' +
+        '     |     ' + '\n' +
+        '    WHM    ' + '\n' +
+        '     |     ' + '\n' +
+        '    PLW    ' + '\n' +
+        '     |     ' + '\n' +
+        '    UPK    ' + '\n' +
+        '     |     ' + '\n' +
+        '    EHM    ' + '\n' +
+        '     |     ' + '\n' +
+        '    BKG    ' + '\n' +
+        '     |     ' + '\n' +
+        '    UPY    ' + '\n' +
+        '     |     ' + '\n' +
+        '    BEC    ' + '\n' +
+        '     |     ' + '\n' +
+        '    DGH    ' + '\n' +
+        '     |     ' + '\n' +
+        '    DGE    ' + '\n' +
+        '     |     ' + '\n' +
+        '    EPK    ' + '\n' +
+        '     |     ' + '\n' +
+        '    HCH    ' + '\n' +
+        '     |     ' + '\n' +
+        '    UPB    ' + '\n' +
+        '     |     ' + '\n' +
+        '    UPM    ',
   }
 };
