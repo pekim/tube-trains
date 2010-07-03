@@ -32,7 +32,7 @@ function LineRenderer(line) {
 
   this.render = function () {
     drawFlagBox(line.name, 10, 10);
-    drawTubeLine(4 * lineWidth, 8 * lineWidth);
+    drawTubeLine(8 * lineWidth, 8 * lineWidth);
   };
 
   function drawTubeLine(lineCentre, yStart) {
@@ -63,20 +63,75 @@ function LineRenderer(line) {
     }
   }
 
-  function drawLineVertical(lineCentre, y, height) {
-    context.fillStyle = line.colour;  
-    context.fillRect(lineCentre - (lineWidth / 2), y, lineWidth, height);
+  function strokeLine() {
+    context.lineWidth = lineWidth;
+    context.strokeStyle = line.colour;
+    context.stroke();
+    
+    context.beginPath();
   }
 
+  function drawLineVertical(lineCentre, y, height) {
+    context.moveTo(lineCentre, y);
+    context.lineTo(lineCentre, y + height);
+
+    strokeLine();
+  }
+
+  /**
+   *   leftLineX
+   *   .
+   *   .
+   *   |                  ---- leftLineTop
+   *   |
+   *   |                  ---- leftLineBottom
+   *   \ a                ---- leftArcX/Y (a)
+   *    \---------\       ---- horizontalLineY
+   *              b\      ---- rightArcX/Y (b)
+   *                |     ---- rightLineTop
+   *                |
+   *                |     ---- rightLineBottom
+   *     .       .  .
+   *     .       .  .
+   *     .       .  rightLineX
+   *     .       .
+   *     .       horizontalLineRight
+   *     .
+   *     horizontalLineLeft
+   */
   function drawLineDownRight(x, y) {
-    context.strokeStyle = line.colour;
-//    context.strokeStyle = 'red';
-    context.lineWidth = lineWidth;
-    context.beginPath();
-    context.moveTo(x, y);
-    context.arcTo(x, y + (interstation / 2), x + 200, y + (interstation / 2), 3 * lineWidth);
-    context.lineTo(x + trackSeparation, y + (interstation / 2));
-    context.stroke();
+    var leftLineX = x;
+    var rightLineX = leftLineX + trackSeparation;
+    var horizontalLineY = y + (interstation / 2);
+    var radius = 3.5 * lineWidth;
+    var leftLineTop = y;
+    var leftLineBottom = horizontalLineY - radius + 1;
+    var rightLineTop = horizontalLineY + radius - 1;
+    var rightLineBottom = y + interstation;
+    var horizontalLineLeft = leftLineX + radius;
+    var horizontalLineRight = rightLineX - radius;
+    var leftArcX = leftLineX + radius;
+    var leftArcY = horizontalLineY - radius; 
+    var rightArcX = rightLineX - radius;
+    var rightArcY = horizontalLineY + radius; 
+
+    context.moveTo(leftLineX, leftLineTop);
+    context.lineTo(leftLineX, leftLineBottom);
+    strokeLine();
+
+    context.arc(leftArcX, leftArcY, radius, 0.5 * Math.PI, 1.0 * Math.PI, false);
+    strokeLine();
+    
+    context.moveTo(horizontalLineLeft, horizontalLineY);
+    context.lineTo(horizontalLineRight, horizontalLineY);
+    strokeLine();
+
+    context.arc(rightArcX, rightArcY, radius, 1.5 * Math.PI, 2.0 * Math.PI, false);
+    strokeLine();
+
+    context.moveTo(rightLineX, rightLineTop);
+    context.lineTo(rightLineX, rightLineBottom);
+    strokeLine();
   }
 
   function drawTick(style, lineCentre, y) {
@@ -110,7 +165,7 @@ function LineRenderer(line) {
   }
   
   function clear() {
-    canvas.width = canvas.width;
+    //canvas.width = canvas.width;
   }
   
   function drawStation(station, lineCentre, y) {
