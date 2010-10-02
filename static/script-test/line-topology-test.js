@@ -93,8 +93,8 @@ tests.push(function () {
     
     goodLine(' | u | ', 'down, down');
     goodLine(' | n | ', 'up, up');
-    goodLine(' | ʅ | ', 'down, up');
-    goodLine(' | ʃ | ', 'up, down');
+    goodLine(' | \\ | ', 'down, up');
+    goodLine(' | / | ', 'up, down');
     goodLine('     | ', 'absent track');
     badLine(' ?     ', 'invalid character');
 
