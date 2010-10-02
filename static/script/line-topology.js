@@ -72,7 +72,7 @@ function LineTopology(text, stations) {
     }
     
     function evenLines() {
-      var regexp = /^ [ |\|] ([ |ʅ|ʃ|u|n] [ |\|] )*$/;
+      var regexp = /^ [ |\|] ([ |\\|\/|u|n] [ |\|] )*$/;
 
       for (var l = 1; l < lines.length; l += 2) {
         if (!regexp.test(lines[l])) {
@@ -123,7 +123,7 @@ function LineTopology(text, stations) {
       for (var c = 0; c < gridWidth - 1; c++) {
         join = lines[l].substr(c * 4 + 3, 1);
         switch (join) {
-        case 'ʅ':
+        case '\\':
           var stationLeftAbove = grid[((l - 1) / 2 * gridWidth) + c];
           var stationRightBelow = grid[((l + 1) / 2 * gridWidth) + c + 1];
           if (!stationLeftAbove || !stationRightBelow) {
@@ -131,7 +131,7 @@ function LineTopology(text, stations) {
           }
           stationLeftAbove.downRightTo(stationRightBelow);
           break;
-        case 'ʃ':
+        case '/':
           var stationRightAbove = grid[((l - 1) / 2 * gridWidth) + c + 1];
           var stationLeftBelow = grid[((l + 1) / 2 * gridWidth) + c];
           if (!stationRightAbove || !stationLeftBelow) {
