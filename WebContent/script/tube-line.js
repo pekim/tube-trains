@@ -1,4 +1,6 @@
 $(document).ready(function() {
-  var lineRenderer = new LineRenderer(tubeLines.district);
-  lineRenderer.render();
+  loadLine('district', function(line) {
+    var lineRenderer = new LineRenderer(line);
+    lineRenderer.render();
+  });
 });
