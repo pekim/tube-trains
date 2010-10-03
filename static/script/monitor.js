@@ -4,5 +4,6 @@ $(document).ready(function () {
     var statistics = JSON.parse(message);
     
     $('.websocket-connections').text(statistics.clients);
+    $('.memory-usage').text(JSON.stringify(statistics.memoryUsage));
   });
 });
