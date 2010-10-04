@@ -244,7 +244,7 @@ function LineRenderer(line) {
   }
   
   function drawStation(station, lineCentre, y) {
-    if (station.upTo() && station.downTo()) {
+    if (station.numberOfAdjacentStations() > 1) {
       drawTick(TICKSTYLE.RIGHT, lineCentre, y);
     } else {
       drawTick(TICKSTYLE.BOTH, lineCentre, y);
