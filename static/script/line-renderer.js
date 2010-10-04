@@ -18,8 +18,10 @@ function LineRenderer(line) {
   var stationFont = '12px sans-serif';
   var flagBoxFont = 'bold ' + stationFont;
   var xHeight = getXHeight(stationFont);
+  xHeight = ((xHeight + 1) / 2) * 2;      // Ensure even (rounding up if necessary), to avoid
+                                          // fuzziness when rendering centred lines.
   var lineWidth = xHeight;                // Equivalent to 'x' in tfl-line-diagram-standard.
-  var tickSize = 0.66 * lineWidth;
+  var tickSize = Math.round(0.66 * lineWidth);  // Ensure integer, to avoid fuzziness when rendering.
   var stationSpacing = 8 * xHeight;
   var interstation = stationSpacing + tickSize;
   var maximumStationNameWidth = getMaximumStationNameWidth();
