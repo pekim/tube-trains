@@ -9,20 +9,64 @@
     <script type="text/javascript" src="/socket.io/socket.io.js"></script>
     <script type="text/javascript" src="script/socket-subscription.js"></script>
     <script type="text/javascript" src="script/monitor.js"></script>
+
+		<style type="text/css">
+      body {
+        font-family: sans-serif;
+      }
+    
+      .name {
+        font-weight: bold;
+      }
+
+      .value {
+        text-align: right;
+      }
+
+			table {
+				border-collapse: collapse;
+			}
+
+			td {
+				border: solid 1px black;
+				padding: 0.2em;
+			}
+		</style>
   </head>
 
   <body>
-    <p>
-      <span style="font-weight: bold;">Websocket connections : </span>
-      <span class="websocket-connections">?</span>
-    </p>
+		<table>
+			<tr>
+				<td class="name" colspan="2">Socket connections</td>
+				<td class="value websocket-connections"></td>
+			</tr>
 
-    <p>
-      <span style="font-weight: bold;">Memory usage : </span>
-      <span class="memory-usage">?</span>
-    </p>
+			<tr>
+				<td class="name">Memory</td>
+				<td class="name">rss</td>
+				<td class="value memory-rss"></td>
+			</tr>
 
-    <div class="refresh-timer" style="width: 5em; height: 1px; background-color: gray;">
+			<tr>
+				<td class="name"></td>
+				<td class="name">vsize</td>
+				<td class="value memory-vsize"></td>
+			</tr>
+
+			<tr>
+				<td class="name"></td>
+				<td class="name">heap total</td>
+				<td class="value memory-heapTotal"></td>
+			</tr>
+
+			<tr>
+				<td class="name"></td>
+				<td class="name">heap used</td>
+				<td class="value memory-heapUsed"></td>
+			</tr>
+		</table>
+
+    <div class="refresh-timer" style="margin-top: 1em; width: 5em; height: 1px; background-color: gray;">
     </div>
   </body>
 </html>

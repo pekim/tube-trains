@@ -8,7 +8,10 @@ $(document).ready(function () {
     var statistics = JSON.parse(message);
     
     $('.websocket-connections').text(statistics.clients);
-    $('.memory-usage').text(JSON.stringify(statistics.memoryUsage));
+    
+    for (var m in statistics.memoryUsage) {
+      $('.memory-' + m).text(statistics.memoryUsage[m]);
+    }
     
     refreshPeriod = statistics.refreshPeriod;
     expectedRefreshTime = new Date().getTime() + statistics.refreshPeriod;
