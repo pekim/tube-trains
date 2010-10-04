@@ -249,11 +249,6 @@ function LineRenderer(line) {
     } else {
       drawTick(TICKSTYLE.BOTH, lineCentre, y);
     }
-//    if (station.upTo() || station.downTo() || station.downRightTo() || station.downLeftTo()) {
-//      drawTick(TICKSTYLE.RIGHT, lineCentre, y);
-//    } else {
-//      drawTick(TICKSTYLE.BOTH, lineCentre, y);
-//    }
 
     context.fillStyle = stationColour;  
     context.font = stationFont;
