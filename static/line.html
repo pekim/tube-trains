@@ -14,11 +14,32 @@
     <script type="text/javascript" src="/socket.io/socket.io.js"></script>
     <script type="text/javascript" src="script/socket-subscription.js"></script>
     <script type="text/javascript" src="script/train-updates.js"></script>
+    
+    <style>
+      .zoom {
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
+      }
+    </style>
   </head>
 
   <body>
-    <canvas id="tube-line" width="600" height="2800" style="border: solid 1px black;">
-      Your browser does not support &lt;canvas&gt;.
-    </canvas>
+    <span class="zoom zoom-out">smaller</span>
+    <span class="zoom zoom-in">larger</span>
+    <span class="zoom zoom-reset">reset</span>
+  
+    <div style="position: relative;">
+      <canvas id="tube-line" width="1200" height="4000"
+              style="position: absolute; left: 0; top: 0; border: solid 1px black;">
+        Your browser does not support &lt;canvas&gt;.
+      </canvas>
+  
+  <!--
+      <canvas id="tube-trains" width="600" height="2800"
+              style="position: absolute; left: 0; top: 0; background-color: rgba(0,0,0,0); border: solid 1px black;">
+      </canvas>
+      -->
+    </div>
   </body>
 </html>

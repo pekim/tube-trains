@@ -4,6 +4,8 @@ const TICKSTYLE = {
     BOTH: 2
 };
 
+const DEFAULT_FONTSIZE = 12;
+
 function LineRenderer(line) {
   const DIRECTION = {
       DOWN:  {radians: 0.0 * Math.PI},      // Base direction.
@@ -11,31 +13,77 @@ function LineRenderer(line) {
       UP:    {radians: 1.0 * Math.PI},
       RIGHT: {radians: 1.5 * Math.PI}
   };
+  
+  var that = this;
+  
+  var fontSize;
 
+  const zoomDelta = 1;
+  
   var canvas = $('#tube-line')[0];
   var context = canvas.getContext('2d');
   
-  var stationFont = '12px sans-serif';
-  var flagBoxFont = 'bold ' + stationFont;
-  var xHeight = getXHeight(stationFont);
-  xHeight = ((xHeight + 1) / 2) * 2;      // Ensure even (rounding up if necessary), to avoid
-                                          // fuzziness when rendering centred lines.
-  var lineWidth = xHeight;                // Equivalent to 'x' in tfl-line-diagram-standard.
-  var tickSize = Math.round(0.66 * lineWidth);  // Ensure integer, to avoid fuzziness when rendering.
-  var stationSpacing = 8 * xHeight;
-  var interstation = stationSpacing + tickSize;
-  var maximumStationNameWidth = getMaximumStationNameWidth();
-  var trackSeparation = (4 * lineWidth) + maximumStationNameWidth;
+  var stationFont;
+  var flagBoxFont;
+  
+  var xHeight;
+  var lineWidth;
+  var tickSize;
+  var stationSpacing;
+  var interstation;
+  var maximumStationNameWidth;
+  var trackSeparation;
   
   var stationColour = 'rgb(0, 24, 168)';
   var flagTextColour = 'rgb(255, 255, 255)';
   
+  setFontSize(DEFAULT_FONTSIZE);
+  
   var topology = new LineTopology(line.topologyText, line.stations);
 
   this.render = function () {
+    // Clear canvas.
+    //canvas.width = canvas.width;
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
     drawFlagBox(line.name, 10, 10);
     drawTubeLine(8 * lineWidth, 8 * lineWidth);
   };
+
+  this.zoomIn = function() {
+    setFontSize(fontSize + zoomDelta);
+    that.render();
+  }
+
+  this.zoomOut = function() {
+    setFontSize(fontSize - zoomDelta);
+    that.render();
+  }
+
+  this.zoomReset = function() {
+    setFontSize(DEFAULT_FONTSIZE);
+    that.render();
+  }
+  
+  function setFontSize(pixels) {
+    fontSize = pixels;
+    stationFont = fontSize + 'px sans-serif';
+    flagBoxFont = 'bold ' + stationFont;
+    
+    calculateMetrics()
+  }
+  
+  function calculateMetrics() {
+    xHeight = getXHeight(stationFont);
+    xHeight = Math.ceil(xHeight / 2) * 2;   // Ensure even (rounding up if necessary), to avoid
+                                            // fuzziness when rendering centred lines.
+    lineWidth = xHeight;                // Equivalent to 'x' in tfl-line-diagram-standard.
+    tickSize = Math.round(0.66 * lineWidth);  // Ensure integer, to avoid fuzziness when rendering.
+    stationSpacing = 8 * xHeight;
+    interstation = stationSpacing + tickSize;
+    maximumStationNameWidth = getMaximumStationNameWidth(stationFont);
+    trackSeparation = (4 * lineWidth) + maximumStationNameWidth;
+  }
 
   function drawTubeLine(lineCentre, yStart) {
     var y = yStart;
@@ -352,7 +400,8 @@ function LineRenderer(line) {
     return yEnd - yStart + 1;
   }
   
-  function getMaximumStationNameWidth() {
+  function getMaximumStationNameWidth(font) {
+    context.font = font;
     var maximumTextWidth = 0;
     
     for (var s in line.stations) {

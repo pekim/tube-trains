@@ -15,5 +15,20 @@ $(document).ready(function() {
   loadLine(line, function(line) {
     var lineRenderer = new LineRenderer(line);
     lineRenderer.render();
+
+    $('.zoom-out').click(function() {
+      lineRenderer.zoomOut();
+      return false;
+    });
+
+    $('.zoom-in').click(function() {
+      lineRenderer.zoomIn();
+      return false;
+    });
+
+    $('.zoom-reset').click(function() {
+      lineRenderer.zoomReset();
+      return false;
+    });
   });
 });
