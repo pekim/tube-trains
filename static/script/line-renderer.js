@@ -6,7 +6,7 @@ const TICKSTYLE = {
 
 const DEFAULT_FONTSIZE = 12;
 
-function LineRenderer(line) {
+function LineRenderer(line, resizedCallback) {
   const DIRECTION = {
       DOWN:  {radians: 0.0 * Math.PI},      // Base direction.
       LEFT:  {radians: 0.5 * Math.PI},
@@ -37,17 +37,18 @@ function LineRenderer(line) {
   var stationColour = 'rgb(0, 24, 168)';
   var flagTextColour = 'rgb(255, 255, 255)';
   
-  setFontSize(DEFAULT_FONTSIZE);
-  
   var topology = new LineTopology(line.topologyText, line.stations);
 
+  setFontSize(DEFAULT_FONTSIZE);
+  
   this.render = function () {
     // Clear canvas.
-    //canvas.width = canvas.width;
     context.clearRect(0, 0, canvas.width, canvas.height);
 
     drawFlagBox(line.name, 10, 10);
     drawTubeLine(8 * lineWidth, 8 * lineWidth);
+    
+    resizedCallback(canvas.width, canvas.height);
   };
 
   this.zoomIn = function() {
@@ -83,6 +84,9 @@ function LineRenderer(line) {
     interstation = stationSpacing + tickSize;
     maximumStationNameWidth = getMaximumStationNameWidth(stationFont);
     trackSeparation = (4 * lineWidth) + maximumStationNameWidth;
+
+    canvas.width = (2 * (8 * lineWidth)) + (topology.gridWidth() * trackSeparation);
+    canvas.height = (8 * lineWidth) + ((topology.gridHeight() - 1) * stationSpacing) + ((4 * lineWidth));
   }
 
   function drawTubeLine(lineCentre, yStart) {

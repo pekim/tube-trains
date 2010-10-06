@@ -13,7 +13,7 @@ $(document).ready(function() {
   var line = getQueryVariable('line');
 
   loadLine(line, function(line) {
-    var lineRenderer = new LineRenderer(line);
+    var lineRenderer = new LineRenderer(line, resized);
     lineRenderer.render();
 
     $('.zoom-out').click(function() {
@@ -31,4 +31,9 @@ $(document).ready(function() {
       return false;
     });
   });
+  
+  function resized(width, height) {
+    $('.resized').width(width);
+    $('.resized').height(height);
+  }
 });

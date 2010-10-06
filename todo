@@ -1,2 +1,3 @@
-size canvas to the size of the rendering
+reconnect socket if disconnects
 
+overlay canvas for rendering tube trains
