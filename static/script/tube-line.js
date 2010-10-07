@@ -33,7 +33,9 @@ $(document).ready(function() {
   });
   
   function resized(width, height) {
-    $('.resized').width(width);
-    $('.resized').height(height);
+    $('#tube-trains')[0].width = width;
+    $('#tube-trains')[0].height = height;
+//    $('.resized')[1].width = width;
+//    $('.resized')[1].height = height;
   }
 });
