@@ -71,7 +71,7 @@ function LineRenderer(line, resizedCallback) {
     stationFont = fontSize + 'px sans-serif';
     flagBoxFont = 'bold ' + stationFont;
     
-    calculateMetrics()
+    calculateMetrics();
   }
   
   function calculateMetrics() {

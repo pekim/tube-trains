@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Tube line</title>
+
+    <script type="text/javascript"
+      src="script/requireplugins-jquery-1.4.2.js" data-main="tube-line2">
+    </script>
+    
+    <link href="style/line.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div class="loading">
+      Loading...
+    </div>
+
+    <div class="loaded" style="display: none;">
+      <span class="zoom zoom-out">smaller</span>
+      <span class="zoom zoom-in">larger</span>
+      <span class="zoom zoom-reset">reset</span>
+    
+    
+      <div class="resized" style="position: relative;">
+        <canvas id="tube-line"
+                style="position: absolute; left: 0; top: 0; border: solid 1px black;">
+          <p>Your browser does not support the &lt;canvas&gt; element.</p>
+          <p>This site requires the use of a more recent browser.</p>
+        </canvas>
+    
+        <canvas class="resized" id="tube-trains"
+                style="position: absolute; left: 0; top: 0; opacity: 1.0; border: solid 1px black;">
+        </canvas>
+      </div>
+    </div>
+  </body>
+</html>
