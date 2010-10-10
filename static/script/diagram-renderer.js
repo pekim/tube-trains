@@ -11,14 +11,16 @@ require.def([],
     return function(line, metrics, canvas) {
       const context = canvas.getContext("2d");
 
-      const stationColour = 'rgb(0, 24, 168)';
-      const flagTextColour = 'rgb(255, 255, 255)';
+      // The blue for stations colours defined by the TFL line diagram standard.
+      const stationColour = 'rgb(0, 14, 115)';
+
+      // The text in the flag box is white (except for the lines when it isn't).
+      const flagTextColour = 'white';
 
       this.render = function() {
         clear();
         drawFlagBox();
         drawTubeLine();
-//      drawTubeLine(8 * lineWidth, 8 * lineWidth);
       };
 
       /*
