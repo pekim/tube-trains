@@ -24,7 +24,7 @@ require.def(['line-topology2'],
        * When the font size is altered, all of the metrics are recalculated.
        *
        * @param pixels the new font size, in pixels.
-       * @returns nothing.
+       * @returns nothing, undefined.
        */
       this.setFontSize = function(pixels) {
         stationFont = pixels + 'px ' + fontFamily;
@@ -51,6 +51,17 @@ require.def(['line-topology2'],
           y: lineWidth,
           width: 12 * lineWidth,
           height: 3 * xHeight
+        };
+      }
+
+      this.getLineDiagramBox = function() {
+        const flagBox = this.getFlagBox();
+        
+        return {
+          x: lineWidth,
+          y: flagBox.x + flagBox.height + 2 * lineWidth,
+          width: 0,
+          height: 0
         };
       }
 
