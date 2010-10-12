@@ -14,6 +14,7 @@ require.def(['diagram-metrics', 'diagram-renderer', 'trains-renderer2'],
 
       const metrics = new DiagramMetrics(fontFamily, line);
       metrics.setFontSize(defaultFontSize);
+      //console.log(metrics.getLineDiagramBox());
 
       const diagramRenderer = new DiagramRenderer(line, metrics, diagramCanvas);
       const trainsRenderer = new TrainsRenderer(line, metrics, trainsCanvas);

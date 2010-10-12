@@ -8,14 +8,19 @@ require.def(['line-topology2'],
      * @returns a metrics object.
      */
     return function(fontFamily, line) {
+      // Create a canvas that can be used as a scratch area when calculating metrics.
       const canvas = $('<canvas style="display: none;">Used for calculating metrics.</canvas>')[0];
       const context = canvas.getContext("2d");
       $('body').append(canvas);
 
       const topology = new LineTopology(line.topologyText, line.stations);
 
+      var n;
       var lineWidth;
-      var xHeight;
+      var tickSize;
+      var maximumStationNameWidth;
+      var stationNamePadding;
+      var stationSpacing;
       
       var stationFont;
       var flagBoxFont;
@@ -38,19 +43,19 @@ require.def(['line-topology2'],
       }
 
       this.getLineWidth = function() {
-        return lineWidth;
+        return n;
       }
 
       this.getFlagBoxOffset = function() {
-        return lineWidth;
+        return n;
       }
 
       this.getFlagBox = function() {
         return {
-          x: lineWidth,
-          y: lineWidth,
-          width: 12 * lineWidth,
-          height: 3 * xHeight
+          x: n,
+          y: n,
+          width: 12 * n,
+          height: 3 * n
         };
       }
 
@@ -58,36 +63,39 @@ require.def(['line-topology2'],
         const flagBox = this.getFlagBox();
         
         return {
-          x: lineWidth,
-          y: flagBox.x + flagBox.height + 2 * lineWidth,
-          width: 0,
-          height: 0
+          x: n,
+          y: n + (flagBox.x + flagBox.height) + n,
+          width: n + (topology.gridWidth() * this.getCellWidth()) + n,
+          height: n + ((topology.gridHeight() - 1) * stationSpacing) + n
         };
       }
-
+      
+      this.getCellWidth = function() {
+        return tickSize + lineWidth + tickSize +
+            stationNamePadding + maximumStationNameWidth + stationNamePadding; 
+      }
+      
       /**
        * Calculate all of the metrics required by the renderers.
        *
-       * @returns nothing.
+       * Most values are made to be integers, to avoid fuziness when rendered.
+       *
+       * @returns nothing, undefined.
        */
       function calculateMetrics() {
-        // Ensure even (rounding up if necessary), to avoid
-        // fuzziness when rendering centred lines.
-        xHeight = Math.ceil(getXHeight(stationFont) / 2 ) * 2;
+        const xHeight = Math.round(getXHeight(stationFont));
+        // Equivalent to 'x' or 'n' in tfl-line-diagram-standard.
+        n = xHeight;
+        
+        lineWidth = n;
+        tickSize = Math.round(0.66 * n);
+        stationNamePadding = Math.round(2 * n);
+        maximumStationNameWidth = getMaximumStationNameWidth(stationFont);
+        stationSpacing = 8 * n;
 
-        // Equivalent to 'x' in tfl-line-diagram-standard.
-        lineWidth = xHeight;
-
-        // Ensure integer, to avoid fuzziness when rendering.
-        const tickSize = Math.round(0.66 * lineWidth);
-
-        const stationSpacing = 8 * xHeight;
-        const interstation = stationSpacing + tickSize;
-        const maximumStationNameWidth = getMaximumStationNameWidth(stationFont);
-        const trackSeparation = (4 * lineWidth) + maximumStationNameWidth;
-
-        const diagramWidth = (2 * (8 * lineWidth)) + (topology.gridWidth() * trackSeparation);
-        const diagramHeight = (8 * lineWidth) + ((topology.gridHeight() - 1) * stationSpacing) + ((4 * lineWidth));
+//        const stationSpacing = 8 * xHeight;
+//        const interstation = stationSpacing + tickSize;
+//        const trackSeparation = (4 * lineWidth) + maximumStationNameWidth;
       }
 
       function clear() {

@@ -14,7 +14,7 @@ require.def({
     for (var v = 0; v < vars.length; v++) { 
       var pair = vars[v].split("="); 
       if (pair[0] === name) { 
-        return pair[1]; 
+        return undefined || pair[1]; 
       } 
     }
   }

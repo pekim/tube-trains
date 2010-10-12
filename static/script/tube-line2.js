@@ -18,6 +18,7 @@ require(['require', 'url'],
           lineRenderer.render();
 
           document.title = line.name + ' line';
+          
           $('.loading, .loaded').toggle();
         });
       }

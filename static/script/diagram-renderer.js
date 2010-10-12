@@ -11,8 +11,9 @@ require.def([],
     return function(line, metrics, canvas) {
       const context = canvas.getContext("2d");
 
-      // The blue for stations colours defined by the TFL line diagram standard.
+      // The Pantone 072 blue, for stations colours defined by the TFL line diagram standard.
       const stationColour = 'rgb(0, 14, 115)';
+      //const stationColour = 'rgb(15, 35, 140)';  // Better values for Pantone 072 Blue? 
 
       // The text in the flag box is white (except for the lines when it isn't).
       const flagTextColour = 'white';
