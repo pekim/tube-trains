@@ -1,0 +1,17 @@
+{
+  "author": "Mike D Pilsbury <mike.pilsbury@gmail.com>",
+  "name": "tube-trains",
+  "description": "Tube train locations and times.",
+  "version": "0.0.0",
+  "homepage": "https://github.com/pekim/tube-trains",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pekim/tube-trains.git"
+  },
+  "main": "tube-trains.js",
+  "engines": {
+    "node": "~v0.5.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
