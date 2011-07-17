@@ -1,0 +1,8 @@
+- title = 'Tube Trains'
+
+h1= title
+
+ul.lines
+  - for (var l in lines)
+    - var line = lines[l]
+    li.tube.flag-box(class="#{line.class}")= line.name

@@ -10,8 +10,12 @@
   },
   "main": "tube-trains.js",
   "engines": {
-    "node": "~v0.5.0"
+    "node": ">= 0.4.1 < 0.5.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "2.x",
+    "jade": "*",
+    "stylus": "*"
+  },
   "devDependencies": {}
 }
