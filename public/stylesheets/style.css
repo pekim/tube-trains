@@ -2,45 +2,122 @@
   color: #fff;
   background-color: #894e24;
 }
+.bakerloo a {
+  text-decoration: none;
+}
+.bakerloo a:link,
+.bakerloo a:visited {
+  color: #fff;
+}
 .central {
   color: #fff;
   background-color: #dc241f;
+}
+.central a {
+  text-decoration: none;
+}
+.central a:link,
+.central a:visited {
+  color: #fff;
 }
 .circle {
   color: #0019a8;
   background-color: #ffce00;
 }
+.circle a {
+  text-decoration: none;
+}
+.circle a:link,
+.circle a:visited {
+  color: #0019a8;
+}
 .district {
   color: #fff;
-  background-color: #007229;
+  background-color: #007129;
+}
+.district a {
+  text-decoration: none;
+}
+.district a:link,
+.district a:visited {
+  color: #fff;
 }
 .hammersmith-city {
   color: #0019a8;
   background-color: #d799af;
 }
+.hammersmith-city a {
+  text-decoration: none;
+}
+.hammersmith-city a:link,
+.hammersmith-city a:visited {
+  color: #0019a8;
+}
 .jubilee {
   color: #fff;
   background-color: #868f98;
+}
+.jubilee a {
+  text-decoration: none;
+}
+.jubilee a:link,
+.jubilee a:visited {
+  color: #fff;
 }
 .metropolitan {
   color: #fff;
   background-color: #751056;
 }
+.metropolitan a {
+  text-decoration: none;
+}
+.metropolitan a:link,
+.metropolitan a:visited {
+  color: #fff;
+}
 .northern {
   color: #fff;
   background-color: #000;
+}
+.northern a {
+  text-decoration: none;
+}
+.northern a:link,
+.northern a:visited {
+  color: #fff;
 }
 .piccadilly {
   color: #fff;
   background-color: #0019a8;
 }
+.piccadilly a {
+  text-decoration: none;
+}
+.piccadilly a:link,
+.piccadilly a:visited {
+  color: #fff;
+}
 .victoria {
   color: #fff;
   background-color: #00a0e2;
 }
+.victoria a {
+  text-decoration: none;
+}
+.victoria a:link,
+.victoria a:visited {
+  color: #fff;
+}
 .waterloo-city {
   color: #0019a8;
   background-color: #76d0bd;
+}
+.waterloo-city a {
+  text-decoration: none;
+}
+.waterloo-city a:link,
+.waterloo-city a:visited {
+  color: #0019a8;
 }
 @font-face {
   font-family: London-Tube;
@@ -49,18 +126,22 @@
 }
 .tube {
   font-family: London-Tube;
-  font-size: 1.3em;
 }
 .flag-box {
   text-align: center;
+  font-size: 1.3em;
 }
-ul.lines {
-  float: left;
+.flag-box a {
+  display: block;
+}
+div.lines {
+  display: inline-block;
   padding: 0;
 }
-ul.lines li {
-  list-style-type: none;
+div.lines .flag-box {
   margin: 0 0 0.3em 0;
+}
+div.lines .flag-box a {
   padding: 0.1em 1em 0.2em 1em;
 }
 body {
