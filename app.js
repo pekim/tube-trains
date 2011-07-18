@@ -27,17 +27,17 @@ app.configure('production', function(){
 app.get('/', function(req, res){
   res.render('index', {
     lines: [
-      {name: 'Bakerloo', class: "bakerloo", code: 'DIS'},
-      {name: 'Central', class: "central", code: 'DIS'},
-      {name: 'Circle', class: "circle", code: 'DIS'},
-      {name: 'District', class: "district", code: 'DIS'},
-      {name: 'Hammersmith & City', class: "hammersmith-city", code: 'DIS'},
-      {name: 'Jubilee', class: "jubilee", code: 'DIS'},
-      {name: 'Metropolitan', class: "metropolitan", code: 'DIS'},
-      {name: 'Northern', class: "northern", code: 'DIS'},
-      {name: 'Piccadilly', class: "piccadilly", code: 'DIS'},
-      {name: 'Victoria', class: "victoria", code: 'VIC'},
-      {name: 'Waterloo & City', class: "waterloo-city", code: 'DIS'}
+      {name: 'Bakerloo', class: "bakerloo", code: 'B'},
+      {name: 'Central', class: "central", code: 'C'},
+      {name: 'Circle', class: "circle", code: '?'},
+      {name: 'District', class: "district", code: 'D'},
+      {name: 'Hammersmith & City', class: "hammersmith-city", code: 'H'},
+      {name: 'Jubilee', class: "jubilee", code: 'J'},
+      {name: 'Metropolitan', class: "metropolitan", code: 'M'},
+      {name: 'Northern', class: "northern", code: 'N'},
+      {name: 'Piccadilly', class: "piccadilly", code: 'P'},
+      {name: 'Victoria', class: "victoria", code: 'V'},
+      {name: 'Waterloo & City', class: "waterloo-city", code: 'W'}
     ]
   });
 });
