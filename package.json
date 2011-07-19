@@ -15,7 +15,8 @@
   "dependencies": {
     "express": "2.x",
     "jade": "*",
-    "stylus": "*"
+    "stylus": "*",
+    "coffee-script": "*"
   },
   "devDependencies": {}
 }
