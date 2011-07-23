@@ -1,4 +1,5 @@
 lines = require('./lines').lines
+linesByName = require('./lines').linesByName
 
 exports.add = (app) ->
   app.get('/', (req, res) ->
@@ -8,5 +9,7 @@ exports.add = (app) ->
   )
 
   app.get('/line/:line', (req, res) ->
-    res.send "line : #{req.params.line}"
+    res.render('line', {
+      line: linesByName[req.params.line]
+    })
   )

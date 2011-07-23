@@ -11,3 +11,8 @@ exports.lines = [
   {displayName: 'Victoria', name: "victoria", code: 'V'}
   {displayName: 'Waterloo & City', name: "waterloo-city", code: 'W'}
 ]
+
+linesByName = {}
+for line in exports.lines
+  linesByName[line.name] = line
+exports.linesByName = linesByName

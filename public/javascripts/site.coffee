@@ -1,4 +1,4 @@
 $ = require 'jquery'
 
 $(document).ready ->
-  console.log $('.flag-box')
+  console.log $('h1')
