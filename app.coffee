@@ -9,6 +9,12 @@ app.configure(->
   app.use(express.bodyParser())
   app.use(express.methodOverride())
   app.use(require('stylus').middleware({ src: __dirname + '/public' }))
+  app.use(require('browserify')({
+    require : [
+      { jquery : 'jquery-browserify' },
+      __dirname + '/public/javascripts/site.coffee'
+    ]
+  }));
   app.use(app.router)
   app.use(express.static(__dirname + '/public'))
 )

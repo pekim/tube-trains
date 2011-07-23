@@ -2,6 +2,11 @@
 html
   head
     title= title
+
     link(rel='stylesheet', href='/stylesheets/reset.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+
+    script(type='text/javascript', src='/browserify.js')
+    script(type='text/javascript')
+      require('./site');
   body!= body
