@@ -18,7 +18,8 @@
     "stylus": "*",
     "coffee-script": "*",
     "browserify": ">= 1.3.0",
-    "jquery-browserify": ">= 1.6.1"
+    "jquery-browserify": ">= 1.6.1",
+    "uglify-js": "*"
   },
   "devDependencies": {}
 }
