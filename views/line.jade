@@ -1,5 +1,8 @@
 - title = line.displayName + ' line'
 
-h1= title
+h1.flag-box(class="#{line.name}")= line.displayName
 
 #line-diagram
+
+script(type='text/javascript')
+  require('./line-page').init('#{line.name}');

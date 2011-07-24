@@ -21,7 +21,7 @@ app.configure 'development', ->
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true }))
   app.use(browserify({
     require : [
-      { jquery : 'jquery-browserify' },
+      #{ jquery : 'jquery-browserify' },
       __dirname + '/public/javascripts/site.coffee'
     ]
   }));
@@ -30,7 +30,7 @@ app.configure 'production', ->
   app.use(express.errorHandler())
   app.use(browserify({
     require : [
-      { jquery : 'jquery-browserify' },
+      #{ jquery : 'jquery-browserify' },
       __dirname + '/public/javascripts/site.coffee'
     ]
     filter : uglify

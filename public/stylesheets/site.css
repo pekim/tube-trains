@@ -1,6 +1,7 @@
 .bakerloo {
   color: #fff;
   background-color: #894e24;
+  stroke: #894e24;
 }
 .bakerloo a {
   text-decoration: none;
@@ -12,6 +13,7 @@
 .central {
   color: #fff;
   background-color: #dc241f;
+  stroke: #dc241f;
 }
 .central a {
   text-decoration: none;
@@ -23,6 +25,7 @@
 .circle {
   color: #0019a8;
   background-color: #ffce00;
+  stroke: #ffce00;
 }
 .circle a {
   text-decoration: none;
@@ -34,6 +37,7 @@
 .district {
   color: #fff;
   background-color: #007129;
+  stroke: #007129;
 }
 .district a {
   text-decoration: none;
@@ -45,6 +49,7 @@
 .hammersmith-city {
   color: #0019a8;
   background-color: #d799af;
+  stroke: #d799af;
 }
 .hammersmith-city a {
   text-decoration: none;
@@ -56,6 +61,7 @@
 .jubilee {
   color: #fff;
   background-color: #868f98;
+  stroke: #868f98;
 }
 .jubilee a {
   text-decoration: none;
@@ -67,6 +73,7 @@
 .metropolitan {
   color: #fff;
   background-color: #751056;
+  stroke: #751056;
 }
 .metropolitan a {
   text-decoration: none;
@@ -78,6 +85,7 @@
 .northern {
   color: #fff;
   background-color: #000;
+  stroke: #000;
 }
 .northern a {
   text-decoration: none;
@@ -89,6 +97,7 @@
 .piccadilly {
   color: #fff;
   background-color: #0019a8;
+  stroke: #0019a8;
 }
 .piccadilly a {
   text-decoration: none;
@@ -100,6 +109,7 @@
 .victoria {
   color: #fff;
   background-color: #00a0e2;
+  stroke: #00a0e2;
 }
 .victoria a {
   text-decoration: none;
@@ -111,6 +121,7 @@
 .waterloo-city {
   color: #0019a8;
   background-color: #76d0bd;
+  stroke: #76d0bd;
 }
 .waterloo-city a {
   text-decoration: none;
@@ -145,12 +156,15 @@ body {
   text-decoration: underline;
 }
 #content {
-  margin-top: 2em;
+  margin-top: 2.5em;
 }
 h1 {
   font-size: 2em;
   font-weight: bold;
   margin: 0.3em 0 0.5em 0;
+}
+h1.flag-box {
+  padding: 0.2em;
 }
 a {
   color: #00b7ff;
@@ -174,4 +188,7 @@ div.lines .flag-box {
 }
 div.lines .flag-box a {
   padding: 0.1em 1em 0.2em 1em;
+}
+svg .corporate {
+  fill: #0019a8;
 }
