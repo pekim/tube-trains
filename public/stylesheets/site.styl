@@ -6,18 +6,25 @@
   src url(/fonts/London-Tube.ttf)
 
 body
-  font             16px London-Tube, "Lucida Grande", Helvetica, Arial, sans-serif
-  padding          1em
+  font-family      "Lucida Grande", Helvetica, Arial, sans-serif
+  padding          0 1em 0 1em
 
 #header
+  position         fixed
+  top              0
+  left             0
+  right            0
   background-color corporate-blue
   color            white
-  padding          0.5em
+  padding          0.5em 1em
   a
     color          white
     text-decoration none
     &:hover
       text-decoration underline
+
+#content
+  margin-top       2em
 
 h1
   font-size        2em
