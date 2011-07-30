@@ -21,5 +21,7 @@
     "jquery-browserify": ">= 1.6.1",
     "uglify-js": "*"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodeunit": "*"
+  }
 }
