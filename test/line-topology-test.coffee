@@ -11,7 +11,7 @@ exports.small = (test) ->
             EBY
              | 
         RMD ECM
-         |   | 
+       / | \\ | 
     WDN KEW ACT
   """
   test.strictEqual(topology.gridWidth, 3)
@@ -23,6 +23,8 @@ exports.small = (test) ->
   test.strictEqual(grid[2][0].code, 'WDN')
 
   test.strictEqual(grid[1][1].below().code, 'KEW')
+  test.strictEqual(grid[1][1].belowRight().code, 'ACT')
+  test.strictEqual(grid[1][1].belowLeft().code, 'WDN')
 
   test.done()
 
@@ -34,5 +36,7 @@ exports.district = (test) ->
 
   grid = topology.grid
   test.strictEqual(grid[0][2].code, 'EBY')
+
+  test.strictEqual(grid[3][2].belowLeft().code, 'TGR')
   
   test.done()

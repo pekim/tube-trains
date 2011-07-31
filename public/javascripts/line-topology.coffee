@@ -101,58 +101,34 @@ class LineTopology
 
         @grid.push row
 
-      # Vertical track joins.
+      # Track joins.
       for l in [1..@lines.length - 1] by 2
         for c in [0..@gridWidth - 1]
           join = @lines[l].substr(c * 4 + 1, 1)
-          if (join == '|')
+          if join == '|'
             stationAbove = @grid[(l - 1) / 2][c]
             stationBelow = @grid[(l + 1) / 2][c]
             if (!stationAbove || !stationBelow)
               throw 'Cannot link ' + stationAbove.code + ' to ' + stationBelow.code
-
             stationAbove.below stationBelow
 
-      ###
-      for (var l = 1; l < lines.length; l += 2) {
-        for (var c = 0; c < gridWidth; c++) {
-          join = lines[l].substr(c * 4 + 1, 1);
-          if (join === '|') {
-            var stationAbove = grid[((l - 1) / 2 * gridWidth) + c];
-            var stationBelow = grid[((l + 1) / 2 * gridWidth) + c];
-            if (!stationAbove || !stationBelow) {
-              throw 'Cannot link ' + stationAbove + ' to ' + stationBelow;
-            }
-            stationAbove.downTo(stationBelow);
-          }
-        }
-      }
-      
-      // Cross-verticals track joins.
-      for (var l = 1; l < lines.length; l += 2) {
-        for (var c = 0; c < gridWidth - 1; c++) {
-          join = lines[l].substr(c * 4 + 3, 1);
-          switch (join) {
-          case '\\':
-            var stationLeftAbove = grid[((l - 1) / 2 * gridWidth) + c];
-            var stationRightBelow = grid[((l + 1) / 2 * gridWidth) + c + 1];
-            if (!stationLeftAbove || !stationRightBelow) {
-              throw 'Cannot link ' + stationLeftAbove + ' to ' + stationRightBelow;
-            }
-            stationLeftAbove.downRightTo(stationRightBelow);
-            break;
-          case '/':
-            var stationRightAbove = grid[((l - 1) / 2 * gridWidth) + c + 1];
-            var stationLeftBelow = grid[((l + 1) / 2 * gridWidth) + c];
-            if (!stationRightAbove || !stationLeftBelow) {
-              throw 'Cannot link ' + stationRightAbove + ' to ' + stationLeftBelow;
-            }
-            stationRightAbove.downLeftTo(stationLeftBelow);
-            break;
-          }
-        }
-      }
-      ###
+      # Cross-verticals track joins.
+      for l in [1..@lines.length - 1] by 2
+        for c in [0..@gridWidth - 2]
+          join = @lines[l].substr(c * 4 + 3, 1)
+          switch  join
+            when '\\'
+              stationAbove = @grid[(l - 1) / 2][c]
+              stationBelow = @grid[(l + 1) / 2][c + 1]
+              if (!stationAbove || !stationBelow)
+                throw 'Cannot link ' + stationAbove.code + ' to ' + stationBelow.code
+              stationAbove.belowRight stationBelow
+            when '/'
+              stationAbove = @grid[(l - 1) / 2][c + 1]
+              stationBelow = @grid[(l + 1) / 2][c]
+              if (!stationAbove || !stationBelow)
+                throw 'Cannot link ' + stationAbove.code + ' to ' + stationBelow.code
+              stationAbove.belowLeft stationBelow
 
     grid: ->
       @grid
