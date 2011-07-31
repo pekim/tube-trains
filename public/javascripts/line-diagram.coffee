@@ -42,10 +42,8 @@ class LineDiagram
             if station.belowRight()
               @addLineSegment station.column, station.row, station.column + 1, station.row + 1
 
-      lastStationName = $('text:last-child')
-      bottom = parseInt(lastStationName.attr('y')) + lastStationName.height() + (2 * @gridOffsetY)
-      $('#line-diagram svg').attr 'height', bottom
-      console.log bottom, lastStationName.attr('y'), lastStationName.height(), @gridOffsetY
+      height = (@stationSeparationY * (topology.gridHeight - 1)) + (2 * @gridOffsetY)
+      $('#line-diagram svg').attr 'height', height
 
   addStation: (station) ->
     if station.lineEnd
