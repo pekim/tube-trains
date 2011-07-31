@@ -54,22 +54,28 @@ class LineDiagram
       #height = (@stationSeparationY * (topology.gridHeight - 1)) + (2 * @gridOffsetY)
       #$('#line-diagram svg').attr 'height', height
 
-      console.log @interStationPaths
+      animate = (train, path, seconds) ->
+        train.animateAlong path, seconds * 1000, true, ->
+          animateBack train, path, seconds
+
+      animateBack = (train, path, seconds) ->
+        train.animateAlongBack path, seconds * 1000, true, ->
+          animate train, path, seconds
+
       train = @diagram.rect 416 - 5, 224 - 5, 10, 10
       train.attr 'stroke', 'none'
       train.attr 'fill', '#f00'
       train.node.className.baseVal = 'train'
       path = @interStationPaths['CHP-TGR']
 
-      animate = ->
-        train.animateAlong path, 90 * 1000, true, ->
-          animateBack()
+      train2 = @diagram.rect 224 - 5, 288 - 5, 10, 10
+      train2.attr 'stroke', 'none'
+      train2.attr 'fill', '#f00'
+      train2.node.className.baseVal = 'train'
+      path2 = @interStationPaths['TGR-STB']
 
-      animateBack = ->
-        train.animateAlongBack path, 90 * 1000, true, ->
-          animate()
-
-      animate()
+      animate(train, path, 9)
+      animate(train2, path2, 1.25)
       #train.animateAlong path, 5000, false, ->
       #  train.animateAlongBack path, 5000, false
       #train.animateAlong @interStationPaths['RMD-KEW'], 5000, false
