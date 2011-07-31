@@ -118,7 +118,7 @@ function LineTopology(text, stations) {
       }
     }
     
-    // Cross-verticals track joins.
+    // Diagonal track joins.
     for (var l = 1; l < lines.length; l += 2) {
       for (var c = 0; c < gridWidth - 1; c++) {
         join = lines[l].substr(c * 4 + 3, 1);

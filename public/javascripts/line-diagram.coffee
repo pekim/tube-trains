@@ -1,8 +1,9 @@
 #Raphael = require './raphael'
+LineTopology = require './line-topology'
 
 class LineDiagram
   constructor: (@parentElement, @lineName) ->
-    @diagram = Raphael @parentElement, 800, 400
+    @diagram = Raphael @parentElement, 800, 3000
 
     @lineWidth = 8
     @lineHalfWidth = @lineWidth / 2
@@ -16,35 +17,35 @@ class LineDiagram
     @gridOffsetX = 4 * @lineWidth
     @gridOffsetY = @gridOffsetX
 
-    @addStation {
-      name: 'Temple',
-      gridX: 0,
-      gridY: 0,
-      lineEnd: true
-    }
+    $.when($.getJSON("/line-data/#{@lineName}.json"), $.get("/line-data/#{@lineName}.topology")).done (jsonResonse, topologyresponse) =>
+      line = jsonResonse[0]
+      topologyText = topologyresponse[0]
 
-    @addStation {
-      name: 'Embankment',
-      gridX: 0,
-      gridY: 1
-    }
+      topology =  new LineTopology line.stations, topologyText 
 
-    @addStation {
-      name: 'Ealing Broadway',
-      gridX: 0,
-      gridY: 2
-    }
+      for row in topology.grid
+        for station in row
+          if station
+            @addStation {
+              name: station.name,
+              gridX: station.column,
+              gridY: station.row,
+              lineEnd: station.endOfLine()
+            }
 
-    @addStation {
-      name: 'Acton Town',
-      gridX: 1,
-      gridY: 3,
-      lineEnd: true
-    }
+            if station.below()
+              @addLineSegment station.column, station.row, station.column, station.row + 1
 
-    @addLineSegment 0,0, 0,1
-    @addLineSegment 0,1, 0,2
-    @addLineSegment 0,2, 1,3
+            if station.belowLeft()
+              @addLineSegment station.column, station.row, station.column - 1, station.row + 1
+
+            if station.belowRight()
+              @addLineSegment station.column, station.row, station.column + 1, station.row + 1
+
+      lastStationName = $('text:last-child')
+      bottom = parseInt(lastStationName.attr('y')) + lastStationName.height() + (2 * @gridOffsetY)
+      $('#line-diagram svg').attr 'height', bottom
+      console.log bottom, lastStationName.attr('y'), lastStationName.height(), @gridOffsetY
 
   addStation: (station) ->
     if station.lineEnd
@@ -87,14 +88,19 @@ class LineDiagram
     verticalSegmentLength -= (2 * @lineRadius)
     verticalSegmentLength /= 2
 
-    middleLineLength = @stationSeparationX * (toGridX - fromGridX)
+    middleLineLength = @stationSeparationX * Math.abs(toGridX - fromGridX)
     middleLineLength -= (2 * @lineRadius)
 
     path = "M 0,0 "
     path += "v #{verticalSegmentLength} "
-    path += "a #{@lineRadius},#{@lineRadius} 0 0 0 #{@lineRadius},#{@lineRadius} "
-    path += "h #{middleLineLength} "
-    path += "a #{@lineRadius},#{@lineRadius} 0 0 1 #{@lineRadius},#{@lineRadius} "
+    if fromGridX < toGridX
+      path += "a #{@lineRadius},#{@lineRadius} 0 0 0 #{@lineRadius},#{@lineRadius} "
+      path += "h #{middleLineLength} "
+      path += "a #{@lineRadius},#{@lineRadius} 0 0 1 #{@lineRadius},#{@lineRadius} "
+    else
+      path += "a #{@lineRadius},#{@lineRadius} 0 0 1 -#{@lineRadius},#{@lineRadius} "
+      path += "h -#{middleLineLength} "
+      path += "a #{@lineRadius},#{@lineRadius} 0 0 0 -#{@lineRadius},#{@lineRadius} "
     path += "v #{verticalSegmentLength} "
 
     line = @diagram.path path

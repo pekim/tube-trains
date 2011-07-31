@@ -86,6 +86,7 @@ class LineTopology
       # Stations.
       # We've already performed validation on the lines, so we can make
       # all the assumptions we need here.
+      r = 0
       for line in @lines by 2
         row = []
 
@@ -94,12 +95,13 @@ class LineTopology
           if code != '   '
             stationInfo = @stations[code]
             name = if stationInfo then stationInfo.name else 'unknown'
-            station = new Station(code, name);
+            station = new Station(code, name, r, c);
             row.push station
           else
             row.push null
 
         @grid.push row
+        r++
 
       # Track joins.
       for l in [1..@lines.length - 1] by 2
@@ -112,7 +114,7 @@ class LineTopology
               throw 'Cannot link ' + stationAbove.code + ' to ' + stationBelow.code
             stationAbove.below stationBelow
 
-      # Cross-verticals track joins.
+      # Diagonal track joins.
       for l in [1..@lines.length - 1] by 2
         for c in [0..@gridWidth - 2]
           join = @lines[l].substr(c * 4 + 3, 1)
