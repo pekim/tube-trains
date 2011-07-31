@@ -19,6 +19,10 @@ exports.small = (test) ->
 
   grid = topology.grid
   test.strictEqual(grid[0][2].code, 'EBY')
+  test.strictEqual(grid[1][1].code, 'RMD')
+  test.strictEqual(grid[2][0].code, 'WDN')
+
+  test.strictEqual(grid[1][1].below().code, 'KEW')
 
   test.done()
 

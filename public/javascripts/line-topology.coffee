@@ -33,23 +33,22 @@ module.exports = LineTopology
 
 class LineTopology
   constructor: (@stations, @topologyText) ->
-      lines = @linesFromText()
-      @validateLines(lines)
+      @linesFromText()
+      @validateLines()
         
-      @gridWidth = ((lines[0].length / 4) + 1) | 0
-      @gridHeight = ((lines.length / 2) + 1) | 0
-      @createGrid lines
-      #console.log @grid
+      @gridWidth = ((@lines[0].length / 4) + 1) | 0
+      @gridHeight = ((@lines.length / 2) + 1) | 0
+      @createGrid()
 
     linesFromText: ->
-      lines = @topologyText.split '\n'
-      if lines[lines.length - 1].length == 0
+      @lines = @topologyText.split '\n'
+      if @lines[@lines.length - 1].length == 0
         # Discard empty last line.
-        lines.pop()
-      
-      return lines
+        @lines.pop()
 
-    validateLines: (lines) ->
+    validateLines: () ->
+      lines = @lines
+
       checkLineLength = ->
         for line in lines
           if lineLength
@@ -81,13 +80,13 @@ class LineTopology
       oddLines()
       evenLines()
 
-    createGrid: (lines) ->
+    createGrid: ->
       @grid = []
-  
+
       # Stations.
       # We've already performed validation on the lines, so we can make
       # all the assumptions we need here.
-      for line in lines by 2
+      for line in @lines by 2
         row = []
 
         for c in [0..@gridWidth - 1]
@@ -102,18 +101,19 @@ class LineTopology
 
         @grid.push row
 
-    grid: ->
-      @grid
+      # Vertical track joins.
+      for l in [1..@lines.length - 1] by 2
+        for c in [0..@gridWidth - 1]
+          join = @lines[l].substr(c * 4 + 1, 1)
+          if (join == '|')
+            stationAbove = @grid[(l - 1) / 2][c]
+            stationBelow = @grid[(l + 1) / 2][c]
+            if (!stationAbove || !stationBelow)
+              throw 'Cannot link ' + stationAbove.code + ' to ' + stationBelow.code
 
-    gridWidth: ->
-      @gridWidth
-        
-    gridHeight: ->
-      @gridHeight
-        
+            stationAbove.below stationBelow
+
       ###
-      var join;
-      // Vertical track joins.
       for (var l = 1; l < lines.length; l += 2) {
         for (var c = 0; c < gridWidth; c++) {
           join = lines[l].substr(c * 4 + 1, 1);
@@ -153,7 +153,14 @@ class LineTopology
         }
       }
       ###
+
+    grid: ->
+      @grid
+
+    gridWidth: ->
+      @gridWidth
         
-      return grid
+    gridHeight: ->
+      @gridHeight
         
 module.exports = LineTopology
