@@ -1,4 +1,5 @@
 {
+  "name": "District",
   "stations": {
     "ACT": {"name": "Acton Town"},
     "ALE": {"name": "Aldgate East"},

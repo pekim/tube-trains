@@ -1,3 +1,5 @@
+Station = require './station'
+
 class LineTopologyOld
   constructor: (text) ->
     lines = text.split '\n'
@@ -30,7 +32,7 @@ module.exports = LineTopology
 #------------------------------------------------------
 
 class LineTopology
-  constructor: (@text) ->
+  constructor: (@stations, @topologyText) ->
       lines = @linesFromText()
       @validateLines(lines)
         
@@ -40,7 +42,7 @@ class LineTopology
       #console.log @grid
 
     linesFromText: ->
-      lines = @text.split '\n'
+      lines = @topologyText.split '\n'
       if lines[lines.length - 1].length == 0
         # Discard empty last line.
         lines.pop()
@@ -91,11 +93,10 @@ class LineTopology
         for c in [0..@gridWidth - 1]
           code = line.substr(c * 4, 3)
           if code != '   '
-            #stationInfo = stations[code]
-            #name = stationInfo ? stationInfo.name : 'unknown'
-            #var station = new Station(code, name);
-            #grid.push(station);
-            row.push code
+            stationInfo = @stations[code]
+            name = if stationInfo then stationInfo.name else 'unknown'
+            station = new Station(code, name);
+            row.push station
           else
             row.push null
 
