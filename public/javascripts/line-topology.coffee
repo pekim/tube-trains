@@ -36,8 +36,8 @@ class LineTopology
         
       @gridWidth = ((lines[0].length / 4) + 1) | 0
       @gridHeight = ((lines.length / 2) + 1) | 0
-      @grid = @createGrid lines
-      console.log @grid
+      @createGrid lines
+      #console.log @grid
 
     linesFromText: ->
       lines = @text.split '\n'
@@ -80,22 +80,35 @@ class LineTopology
       evenLines()
 
     createGrid: (lines) ->
-      grid = []
+      @grid = []
   
       # Stations.
       # We've already performed validation on the lines, so we can make
       # all the assumptions we need here.
       for line in lines by 2
-        for c in [0..@gridWidth]
+        row = []
+
+        for c in [0..@gridWidth - 1]
           code = line.substr(c * 4, 3)
           if code != '   '
             #stationInfo = stations[code]
             #name = stationInfo ? stationInfo.name : 'unknown'
             #var station = new Station(code, name);
             #grid.push(station);
-            grid.push code
+            row.push code
           else
-            grid.push null
+            row.push null
+
+        @grid.push row
+
+    grid: ->
+      @grid
+
+    gridWidth: ->
+      @gridWidth
+        
+    gridHeight: ->
+      @gridHeight
         
       ###
       var join;
