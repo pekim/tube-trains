@@ -3,7 +3,7 @@ LineTopology = require './line-topology'
 
 class LineDiagram
   constructor: (@parentElement, @lineName) ->
-    @diagram = Raphael @parentElement, 800, 3000
+    @interStationPaths = {}
 
     @lineWidth = 8
     @lineHalfWidth = @lineWidth / 2
@@ -23,6 +23,9 @@ class LineDiagram
 
       topology =  new LineTopology line.stations, topologyText 
 
+      height = (@stationSeparationY * (topology.gridHeight - 1)) + (2 * @gridOffsetY)
+      @diagram = Raphael @parentElement, 800, height
+
       for row in topology.grid
         for station in row
           if station
@@ -34,16 +37,42 @@ class LineDiagram
             }
 
             if station.below()
-              @addLineSegment station.column, station.row, station.column, station.row + 1
+              stationBelow = topology.grid[station.row + 1][station.column]
+              pathId = "#{station.code}-#{stationBelow.code}"
+              @addLineSegment pathId, station.column, station.row, station.column, station.row + 1
 
             if station.belowLeft()
-              @addLineSegment station.column, station.row, station.column - 1, station.row + 1
+              stationBelow = topology.grid[station.row + 1][station.column - 1]
+              pathId = "#{station.code}-#{stationBelow.code}"
+              @addLineSegment pathId, station.column, station.row, station.column - 1, station.row + 1
 
             if station.belowRight()
-              @addLineSegment station.column, station.row, station.column + 1, station.row + 1
+              stationBelow = topology.grid[station.row + 1][station.column + 1]
+              pathId = "#{station.code}-#{stationBelow.code}"
+              @addLineSegment pathId, station.column, station.row, station.column + 1, station.row + 1
 
-      height = (@stationSeparationY * (topology.gridHeight - 1)) + (2 * @gridOffsetY)
-      $('#line-diagram svg').attr 'height', height
+      #height = (@stationSeparationY * (topology.gridHeight - 1)) + (2 * @gridOffsetY)
+      #$('#line-diagram svg').attr 'height', height
+
+      console.log @interStationPaths
+      train = @diagram.rect 416 - 5, 224 - 5, 10, 10
+      train.attr 'stroke', 'none'
+      train.attr 'fill', '#f00'
+      train.node.className.baseVal = 'train'
+      path = @interStationPaths['CHP-TGR']
+
+      animate = ->
+        train.animateAlong path, 90 * 1000, true, ->
+          animateBack()
+
+      animateBack = ->
+        train.animateAlongBack path, 90 * 1000, true, ->
+          animate()
+
+      animate()
+      #train.animateAlong path, 5000, false, ->
+      #  train.animateAlongBack path, 5000, false
+      #train.animateAlong @interStationPaths['RMD-KEW'], 5000, false
 
   addStation: (station) ->
     if station.lineEnd
@@ -67,21 +96,25 @@ class LineDiagram
     nameText.node.className.baseVal = 'corporate'
     @translate nameText, station.gridX, station.gridY
 
-  addLineSegment: (fromGridX, fromGridY, toGridX, toGridY) ->
+  addLineSegment: (pathId, fromGridX, fromGridY, toGridX, toGridY) ->
     if (fromGridX  == toGridX)
-      @addVerticalLineSegment fromGridX, fromGridY, toGridX, toGridY
+      @addVerticalLineSegment pathId, fromGridX, fromGridY, toGridX, toGridY
     else
-      @addDiagonalLineSegment fromGridX, fromGridY, toGridX, toGridY
+      @addDiagonalLineSegment pathId, fromGridX, fromGridY, toGridX, toGridY
 
-  addVerticalLineSegment: (fromGridX, fromGridY, toGridX, toGridY) ->
+  addVerticalLineSegment: (pathId, fromGridX, fromGridY, toGridX, toGridY) ->
     length = @stationSeparationY * (toGridY - fromGridY)
 
     line = @diagram.path "M 0,0 v #{length}"
     line.attr 'stroke-width', @lineWidth
     line.node.className.baseVal = @lineName
+    
+    $(line.node).attr('data-id', pathId)
+    @interStationPaths[pathId] = line
+    
     @translate line, fromGridX, fromGridY
 
-  addDiagonalLineSegment: (fromGridX, fromGridY, toGridX, toGridY) ->
+  addDiagonalLineSegment: (pathId, fromGridX, fromGridY, toGridX, toGridY) ->
     verticalSegmentLength = @stationSeparationY * (toGridY - fromGridY)
     verticalSegmentLength -= (2 * @lineRadius)
     verticalSegmentLength /= 2
@@ -104,6 +137,10 @@ class LineDiagram
     line = @diagram.path path
     line.attr 'stroke-width', @lineWidth
     line.node.className.baseVal = @lineName
+
+    $(line.node).attr('data-id', pathId)
+    @interStationPaths[pathId] = line
+
     @translate line, fromGridX, fromGridY
 
   translate: (object, gridX, gridY) ->
