@@ -1,36 +1,5 @@
 Station = require './station'
 
-class LineTopologyOld
-  constructor: (text) ->
-    lines = text.split '\n'
-
-    # Determine line length.
-    @maxLineLen = lines[0].indexOf '|'
-    if (@maxLineLen == -1)
-      throw 'Line length marker, "|", not found in first line "#{@lines[0]}"'
-    lines = lines[1..]
-
-    @grid = []
-
-    for line in lines by 2
-      stations = []
-      stationRe = /([A-Z]{3}) */g
-      result = stationRe.exec line
-      while result
-        stations.push result[0]
-        result = stationRe.exec line
-      
-      @grid.push stations
-
-    #for line in lines[1..] by 2
-    #  console.log line
-
-    console.log @grid
-
-module.exports = LineTopology
-
-#------------------------------------------------------
-
 class LineTopology
   constructor: (@stations, @topologyText) ->
       @linesFromText()
