@@ -29,30 +29,16 @@ class LineDiagram
       for row in topology.grid
         for station in row
           if station
-            @addStation {
-              name: station.name,
-              gridX: station.column,
-              gridY: station.row,
-              lineEnd: station.endOfLine()
-            }
+            @addStation station
 
             if station.below()
-              stationBelow = topology.grid[station.row + 1][station.column]
-              pathId = "#{station.code}-#{stationBelow.code}"
-              @addLineSegment pathId, station.column, station.row, station.column, station.row + 1
+              @addLineSegment station, station.below()
 
             if station.belowLeft()
-              stationBelow = topology.grid[station.row + 1][station.column - 1]
-              pathId = "#{station.code}-#{stationBelow.code}"
-              @addLineSegment pathId, station.column, station.row, station.column - 1, station.row + 1
+              @addLineSegment station, station.belowLeft()
 
             if station.belowRight()
-              stationBelow = topology.grid[station.row + 1][station.column + 1]
-              pathId = "#{station.code}-#{stationBelow.code}"
-              @addLineSegment pathId, station.column, station.row, station.column + 1, station.row + 1
-
-      #height = (@stationSeparationY * (topology.gridHeight - 1)) + (2 * @gridOffsetY)
-      #$('#line-diagram svg').attr 'height', height
+              @addLineSegment station, station.belowRight()
 
       animate = (train, path, seconds) ->
         train.animateAlong path, seconds * 1000, true, ->
@@ -76,12 +62,9 @@ class LineDiagram
 
       animate(train, path, 9)
       animate(train2, path2, 1.25)
-      #train.animateAlong path, 5000, false, ->
-      #  train.animateAlongBack path, 5000, false
-      #train.animateAlong @interStationPaths['RMD-KEW'], 5000, false
 
   addStation: (station) ->
-    if station.lineEnd
+    if station.endOfLine()
       tickX = @lineLeft - @tickSize
       tickLength = @tickSize + @lineWidth + @tickSize
     else
@@ -93,23 +76,25 @@ class LineDiagram
     tick = @diagram.path "M #{tickX},0 h #{tickLength}"
     tick.attr 'stroke-width', @tickSize
     tick.node.className.baseVal = @lineName
-    @translate tick, station.gridX, station.gridY
+    @translate tick, station
 
     nameText = @diagram.text nameTextX, 0, station.name
     nameText.attr 'font-size', 16
     nameText.attr 'font-family', 'London-Tube'
     nameText.attr 'text-anchor', 'start'
     nameText.node.className.baseVal = 'corporate'
-    @translate nameText, station.gridX, station.gridY
+    @translate nameText, station
 
-  addLineSegment: (pathId, fromGridX, fromGridY, toGridX, toGridY) ->
-    if (fromGridX  == toGridX)
-      @addVerticalLineSegment pathId, fromGridX, fromGridY, toGridX, toGridY
+  addLineSegment: (fromStation, toStation) ->
+    pathId = "#{fromStation.code}-#{toStation.code}"
+
+    if (fromStation.column == toStation.column)
+      @addVerticalLineSegment pathId, fromStation, toStation
     else
-      @addDiagonalLineSegment pathId, fromGridX, fromGridY, toGridX, toGridY
+      @addDiagonalLineSegment pathId, fromStation, toStation
 
-  addVerticalLineSegment: (pathId, fromGridX, fromGridY, toGridX, toGridY) ->
-    length = @stationSeparationY * (toGridY - fromGridY)
+  addVerticalLineSegment: (pathId, fromStation, toStation) ->
+    length = @stationSeparationY * (toStation.row - fromStation.row)
 
     line = @diagram.path "M 0,0 v #{length}"
     line.attr 'stroke-width', @lineWidth
@@ -118,19 +103,21 @@ class LineDiagram
     $(line.node).attr('data-id', pathId)
     @interStationPaths[pathId] = line
     
-    @translate line, fromGridX, fromGridY
+    @translate line, fromStation
 
-  addDiagonalLineSegment: (pathId, fromGridX, fromGridY, toGridX, toGridY) ->
-    verticalSegmentLength = @stationSeparationY * (toGridY - fromGridY)
+  addDiagonalLineSegment: (pathId, fromStation, toStation) ->
+    verticalSegmentLength = @stationSeparationY * (toStation.row - fromStation.row)
+    console.log verticalSegmentLength
     verticalSegmentLength -= (2 * @lineRadius)
     verticalSegmentLength /= 2
 
-    middleLineLength = @stationSeparationX * Math.abs(toGridX - fromGridX)
+    middleLineLength = @stationSeparationX * Math.abs(toStation.column - fromStation.column)
+    console.log middleLineLength
     middleLineLength -= (2 * @lineRadius)
 
     path = "M 0,0 "
     path += "v #{verticalSegmentLength} "
-    if fromGridX < toGridX
+    if fromStation.column < toStation.column
       path += "a #{@lineRadius},#{@lineRadius} 0 0 0 #{@lineRadius},#{@lineRadius} "
       path += "h #{middleLineLength} "
       path += "a #{@lineRadius},#{@lineRadius} 0 0 1 #{@lineRadius},#{@lineRadius} "
@@ -147,11 +134,11 @@ class LineDiagram
     $(line.node).attr('data-id', pathId)
     @interStationPaths[pathId] = line
 
-    @translate line, fromGridX, fromGridY
+    @translate line, fromStation
 
-  translate: (object, gridX, gridY) ->
-    translateX = @gridOffsetX + (@stationSeparationX * gridX)
-    translateY = @gridOffsetY + (@stationSeparationY * gridY)
+  translate: (object, station) ->
+    translateX = @gridOffsetX + (@stationSeparationX * station.column)
+    translateY = @gridOffsetY + (@stationSeparationY * station.row)
     object.translate translateX, translateY
 
 module.exports = LineDiagram
