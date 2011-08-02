@@ -48,19 +48,19 @@ class LineDiagram
         train.animateAlongBack path, seconds * 1000, true, ->
           animate train, path, seconds
 
-      train = @diagram.rect 416 - 5, 224 - 5, 10, 10
+      train = @diagram.rect 416 - @lineHalfWidth, 224 - @lineHalfWidth, @lineWidth, @lineWidth
       train.attr 'stroke', 'none'
       train.attr 'fill', '#f00'
       train.node.className.baseVal = 'train'
       path = @interStationPaths['CHP-TGR']
 
-      train2 = @diagram.rect 224 - 5, 288 - 5, 10, 10
+      train2 = @diagram.rect 224 - @lineHalfWidth, 288 - @lineHalfWidth, @lineWidth, @lineWidth
       train2.attr 'stroke', 'none'
       train2.attr 'fill', '#f00'
       train2.node.className.baseVal = 'train'
       path2 = @interStationPaths['TGR-STB']
 
-      animate(train, path, 9)
+      animate(train, path, 60)
       animate(train2, path2, 1.25)
 
   addStation: (station) ->

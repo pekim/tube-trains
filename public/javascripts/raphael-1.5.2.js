@@ -5,6 +5,8 @@
  * Licensed under the MIT (http://raphaeljs.com/license.html) license.
  */
 (function () {
+    var animationPeriod = 300;
+
     function R() {
         if (R.is(arguments[0], array)) {
             var a = arguments[0],
@@ -3225,7 +3227,7 @@
                 }
             }
             R.svg && that && that.paper && that.paper.safari();
-            animationElements[length] && setTimeout(animation);
+            animationElements[length] && setTimeout(animation, animationPeriod);
         },
         keyframesRun = function (attr, element, time, prev, prevcallback) {
             var dif = time - prev;
@@ -3485,7 +3487,7 @@
             R.is(callback, "function") && (element._ac = setTimeout(function () {
                 callback.call(element);
             }, ms));
-            animationElements[length] == 1 && setTimeout(animation);
+            animationElements[length] == 1 && setTimeout(animation, animationPeriod);
         }
         return this;
     };
