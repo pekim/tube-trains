@@ -1,0 +1,1394 @@
+<ROOT>
+  <Time TimeStamp="2011/08/02 08:30:47"/>
+  <S Code="ACT" N="Acton Town.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="5:00" D="372" DE="Rayners Lane" L="Left Stamford Brook" S="266" T="0"/>
+      <T C="7:00" D="338" DE="Northfields Depot" L="Between Hammersmith and Ravenscourt Park" S="331" T="0"/>
+      <T C="9:00" D="116" DE="Ealing Broadway" L="At Hammersmith Platform 1" S="052" T="0"/>
+      <T C="11:00" D="410" DE="Heathrow via T4 Loop" L="Between Barons Court and Hammersmith" S="250" T="0"/>
+      <T C="11:00" D="448" DE="Uxbridge" L="Approaching Barons Court" S="332" T="0"/>
+      <T C="14:00" D="219" DE="Heathrow T123 + 5" L="At Earl's Court Platform 6" S="000" T="0"/>
+      <T C="17:00" D="116" DE="Ealing Broadway" L="Between Gloucester Road and Earl's Court" S="042" T="0"/>
+      <T C="20:00" D="372" DE="Rayners Lane" L="Between Hyde Park Corner and Knightsbridge" S="251" T="0"/>
+      <T C="21:00" D="410" DE="Heathrow via T4 Loop" L="At Knightsbridge Platform 2" S="333" T="0"/>
+      <T C="22:00" D="219" DE="Heathrow T123 + 5" L="Between Green Park and Hyde Park Corner" S="253" T="0"/>
+      <T C="24:00" D="448" DE="Uxbridge" L="Between Piccadilly Circus and Green Park" S="000" T="0"/>
+      <T C="26:00" D="123" DE="Ealing Broadway then Depot" L="At St. James's Park Platform 1" S="121" T="0"/>
+      <T C="27:00" D="116" DE="Ealing Broadway" L="At Westminster Platform 1" S="013" T="0"/>
+      <T C="28:00" D="338" DE="Northfields Depot" L="At Covent Garden Platform 1" S="334" T="0"/>
+      <T C="29:00" D="410" DE="Heathrow via T4 Loop" L="At Holborn Platform 3" S="257" T="0"/>
+      <T C="29:00" D="116" DE="Ealing Broadway" L="Approaching Embankment" S="232" T="2"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 2">
+      <T C="0:30" D="219" DE="Heathrow T123 + 5" L="Approaching Acton Town" S="330" T="0"/>
+      <T C="5:00" D="372" DE="Rayners Lane" L="Left Stamford Brook" S="266" T="0"/>
+      <T C="7:00" D="338" DE="Northfields Depot" L="Between Hammersmith and Ravenscourt Park" S="331" T="0"/>
+      <T C="11:00" D="410" DE="Heathrow via T4 Loop" L="Between Barons Court and Hammersmith" S="250" T="0"/>
+      <T C="11:00" D="448" DE="Uxbridge" L="Approaching Barons Court" S="332" T="0"/>
+      <T C="14:00" D="219" DE="Heathrow T123 + 5" L="At Earl's Court Platform 6" S="000" T="0"/>
+      <T C="20:00" D="372" DE="Rayners Lane" L="Between Hyde Park Corner and Knightsbridge" S="251" T="0"/>
+      <T C="21:00" D="410" DE="Heathrow via T4 Loop" L="At Knightsbridge Platform 2" S="333" T="0"/>
+      <T C="22:00" D="219" DE="Heathrow T123 + 5" L="Between Green Park and Hyde Park Corner" S="253" T="0"/>
+      <T C="24:00" D="448" DE="Uxbridge" L="Between Piccadilly Circus and Green Park" S="000" T="0"/>
+      <T C="28:00" D="338" DE="Northfields Depot" L="At Covent Garden Platform 1" S="334" T="0"/>
+      <T C="29:00" D="410" DE="Heathrow via T4 Loop" L="At Holborn Platform 3" S="257" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 3">
+      <T C="4:00" D="104" DE="Cockfosters" L="Left South Ealing" S="312" T="0"/>
+      <T C="9:00" D="36" DE="Arnos Grove" L="At Boston Manor Platform 2" S="246" T="0"/>
+      <T C="15:00" D="104" DE="Cockfosters" L="Between Hounslow Central and Hounslow East" S="344" T="0"/>
+      <T C="20:00" D="36" DE="Arnos Grove" L="Between Hatton Cross and Hounslow West" S="256" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 4">
+      <T C="1:00" D="104" DE="Cockfosters" L="Between Ealing Common and Acton Town" S="305" T="0"/>
+      <T C="5:00" D="75" DE="Barking sidings" L="Between Ealing Broadway and Ealing Common" S="047" T="0"/>
+      <T C="8:00" D="104" DE="Cockfosters" L="Between Park Royal and North Ealing" S="316" T="0"/>
+      <T C="9:00" D="36" DE="Arnos Grove" L="At Boston Manor Platform 2" S="246" T="0"/>
+      <T C="12:00" D="104" DE="Cockfosters" L="At Alperton Platform 2" S="000" T="0"/>
+      <T C="15:00" D="104" DE="Cockfosters" L="Between Hounslow Central and Hounslow East" S="344" T="0"/>
+      <T C="18:00" D="104" DE="Cockfosters" L="Between South Harrow and Sudbury Hill" S="314" T="0"/>
+      <T C="20:00" D="36" DE="Arnos Grove" L="Between Hatton Cross and Hounslow West" S="256" T="0"/>
+      <T C="21:00" D="359" DE="Piccadilly Train" L="Between Rayners Lane and South Harrow" S="354" T="0"/>
+    </P>
+  </S>
+  <S Code="ALE" N="Aldgate East.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="1:00" D="0" DE="Unknown" L="Between Whitechapel and Aldgate East" S="227" T="2"/>
+      <T C="3:00" D="500" DE="Wimbledon" L="Between Stepney Green and Whitechapel" S="030" T="0"/>
+      <T C="5:00" D="116" DE="Ealing Broadway" L="At Stepney Green Platform 1" S="063" T="0"/>
+      <T C="6:00" D="374" DE="Richmond" L="At Stepney Green" S="015" T="0"/>
+      <T C="8:00" D="500" DE="Wimbledon" L="Between West Ham and Bromley-by-Bow" S="031" T="0"/>
+      <T C="12:00" D="116" DE="Ealing Broadway" L="Between Plaistow and West Ham" S="152" T="0"/>
+      <T C="14:00" D="374" DE="Richmond" L="Left Upton Park" S="016" T="0"/>
+      <T C="16:00" D="123" DE="Ealing Broadway then Depot" L="At East Ham Platform 1" S="122" T="0"/>
+      <T C="18:00" D="116" DE="Ealing Broadway" L="Between Barking and East Ham" S="064" T="0"/>
+      <T C="22:00" D="511" DE="District Line" L="Approaching Upney" S="017" T="0"/>
+      <T C="26:00" D="511" DE="District Line" L="Between Dagenham East and Dagenham Heathway" S="065" T="0"/>
+      <T C="30:00" D="511" DE="District Line" L="Between Hornchurch and Dagenham East" S="020" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="-" D="440" DE="Upminster" L="At Platform" S="001" T="0"/>
+      <T C="3:30" D="75" DE="Barking sidings" L="At Tower Hill Platform 3" S="037" T="0"/>
+      <T C="5:00" D="364" DE="Plaistow (via King's Cross)" L="Between Moorgate and Liverpool Street" S="233" T="2"/>
+      <T C="5:00" D="110" DE="Dagenham East" L="Left Monument" S="025" T="0"/>
+      <T C="8:00" D="440" DE="Upminster" L="Approaching Cannon Street" S="226" T="0"/>
+      <T C="9:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+      <T C="13:00" D="73" DE="Barking (via King's Cross)" L="At King's Cross Platform 2" S="260" T="4"/>
+      <T C="14:00" D="440" DE="Upminster" L="At Embankment Platform 2" S="043" T="0"/>
+      <T C="16:00" D="440" DE="Upminster" L="At Westminster Platform 2" S="061" T="0"/>
+      <T C="17:00" D="702" DE="Edgware Road (Circle)" L="At Great Portland Street Platform 2" S="210" T="6"/>
+      <T C="19:00" D="440" DE="Upminster" L="At Victoria Platform 2" S="003" T="0"/>
+      <T C="20:00" D="75" DE="Barking sidings" L="Between Sloane Square and Victoria" S="057" T="0"/>
+      <T C="20:00" D="702" DE="Edgware Road (Circle)" L="Approaching Baker Street" S="211" T="6"/>
+      <T C="23:00" D="518" DE="Circle and Hammersmith &amp; City" L="At Edgware Road Platform 2" S="264" T="0"/>
+      <T C="23:00" D="440" DE="Upminster" L="Left South Kensington" S="044" T="0"/>
+      <T C="25:00" D="702" DE="Edgware Road (Circle)" L="At Paddington platform 16" S="261" T="0"/>
+      <T C="26:00" D="110" DE="Dagenham East" L="At Gloucester Road Platform 3" S="002" T="0"/>
+      <T C="30:00" D="0" DE="Unknown" L="Between Wood Lane and Ladbroke Grove" S="212" T="0"/>
+    </P>
+  </S>
+  <S Code="BKG" N="Barking.">
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="3:00" D="440" DE="Upminster" L="Between East Ham and Barking" S="024" T="0"/>
+      <T C="8:00" D="75" DE="Barking sidings" L="Between Plaistow and Upton Park" S="035" T="0"/>
+      <T C="9:00" D="440" DE="Upminster" L="Between Bromley-by-Bow and West Ham" S="056" T="0"/>
+      <T C="9:00" D="110" DE="Dagenham East" L="At West Ham" S="023" T="0"/>
+      <T C="14:00" D="440" DE="Upminster" L="Between Stepney Green and Bow Road" S="041" T="0"/>
+      <T C="17:00" D="440" DE="Upminster" L="Left Whitechapel" S="101" T="0"/>
+      <T C="20:00" D="440" DE="Upminster" L="At Aldgate East Platform 2" S="001" T="0"/>
+      <T C="23:00" D="75" DE="Barking sidings" L="At Tower Hill Platform 3" S="037" T="0"/>
+      <T C="25:00" D="110" DE="Dagenham East" L="Left Monument" S="025" T="0"/>
+      <T C="28:00" D="440" DE="Upminster" L="Approaching Cannon Street" S="226" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 3">
+      <T C="5:00" D="73" DE="Barking (via King's Cross)" L="Between Upton Park and East Ham" S="220" T="5"/>
+      <T C="15:00" D="73" DE="Barking (via King's Cross)" L="Between Whitechapel and Mile End" S="206" T="4"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 6">
+      <T C="3:00" D="511" DE="District Line" L="Approaching Upney" S="017" T="0"/>
+      <T C="6:00" D="511" DE="District Line" L="Between Dagenham East and Dagenham Heathway" S="065" T="0"/>
+      <T C="10:00" D="511" DE="District Line" L="Between Hornchurch and Dagenham East" S="020" T="0"/>
+    </P>
+  </S>
+  <S Code="BCT" N="Barons Court.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="2:00" D="374" DE="Richmond" L="At West Kensington Platform 1" S="105" T="0"/>
+      <T C="6:00" D="116" DE="Ealing Broadway" L="Between Gloucester Road and Earl's Court" S="042" T="0"/>
+      <T C="12:00" D="374" DE="Richmond" L="At Sloane Square Platform 1" S="027" T="0"/>
+      <T C="16:00" D="123" DE="Ealing Broadway then Depot" L="At St. James's Park Platform 1" S="121" T="0"/>
+      <T C="17:00" D="116" DE="Ealing Broadway" L="At Westminster Platform 1" S="013" T="0"/>
+      <T C="19:00" D="116" DE="Ealing Broadway" L="Approaching Embankment" S="232" T="2"/>
+      <T C="20:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+      <T C="25:00" D="116" DE="Ealing Broadway" L="Left Monument" S="014" T="0"/>
+      <T C="27:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 4">
+      <T C="-" D="440" DE="Upminster" L="At Platform" S="045" T="0"/>
+      <T C="5:00" D="440" DE="Upminster" L="Between Stamford Brook and Ravenscourt Park" S="000" T="0"/>
+      <T C="6:00" D="75" DE="Barking sidings" L="Between Turnham Green and Stamford Brook" S="124" T="0"/>
+      <T C="9:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="12:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="12:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+      <T C="17:00" D="75" DE="Barking sidings" L="Between Ealing Broadway and Ealing Common" S="047" T="0"/>
+    </P>
+  </S>
+  <S Code="BEC" N="Becontree.">
+    <P Code="0" N="Westbound - Platform 1"/>
+  </S>
+  <S Code="BLF" N="Blackfriars.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="1:30" D="500" DE="Wimbledon" L="Left Mansion House" S="106" T="0"/>
+      <T C="3:30" D="116" DE="Ealing Broadway" L="Left Monument" S="014" T="0"/>
+      <T C="5:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+      <T C="8:00" D="702" DE="Edgware Road (Circle)" L="Between Aldgate East and Tower Hill" S="207" T="5"/>
+      <T C="13:00" D="500" DE="Wimbledon" L="Between Stepney Green and Whitechapel" S="030" T="0"/>
+      <T C="15:00" D="116" DE="Ealing Broadway" L="At Stepney Green Platform 1" S="063" T="0"/>
+      <T C="16:00" D="374" DE="Richmond" L="At Stepney Green" S="015" T="0"/>
+      <T C="17:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+      <T C="18:00" D="500" DE="Wimbledon" L="Between West Ham and Bromley-by-Bow" S="031" T="0"/>
+      <T C="21:00" D="116" DE="Ealing Broadway" L="Between Plaistow and West Ham" S="152" T="0"/>
+      <T C="24:00" D="374" DE="Richmond" L="Left Upton Park" S="016" T="0"/>
+      <T C="25:00" D="702" DE="Edgware Road (Circle)" L="At Great Portland Street Platform 2" S="210" T="6"/>
+      <T C="25:00" D="123" DE="Ealing Broadway then Depot" L="At East Ham Platform 1" S="122" T="0"/>
+      <T C="28:00" D="116" DE="Ealing Broadway" L="Between Barking and East Ham" S="064" T="0"/>
+      <T C="28:00" D="702" DE="Edgware Road (Circle)" L="Approaching Baker Street" S="211" T="6"/>
+      <T C="29:00" D="511" DE="District Line" L="Approaching Upney" S="017" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="2:00" D="432" DE="Tower Hill" L="At Temple Platform 2" S="000" T="0"/>
+      <T C="3:30" D="440" DE="Upminster" L="At Embankment Platform 2" S="043" T="0"/>
+      <T C="5:00" D="440" DE="Upminster" L="At Westminster Platform 2" S="061" T="0"/>
+      <T C="7:00" D="196" DE="Hammersmith" L="At St. James's Park Platform 2" S="241" T="0"/>
+      <T C="9:00" D="440" DE="Upminster" L="At Victoria Platform 2" S="003" T="0"/>
+      <T C="9:00" D="75" DE="Barking sidings" L="Between Sloane Square and Victoria" S="057" T="0"/>
+      <T C="12:00" D="440" DE="Upminster" L="Left South Kensington" S="044" T="0"/>
+      <T C="15:00" D="110" DE="Dagenham East" L="At Gloucester Road Platform 3" S="002" T="0"/>
+      <T C="17:00" D="432" DE="Tower Hill" L="Between Earl's Court and Gloucester Road" S="034" T="0"/>
+      <T C="22:00" D="440" DE="Upminster" L="West Kensington" S="125" T="0"/>
+      <T C="24:00" D="440" DE="Upminster" L="Left Barons Court" S="045" T="0"/>
+      <T C="26:00" D="440" DE="Upminster" L="Between Putney Bridge and Parsons Green" S="046" T="0"/>
+      <T C="28:00" D="440" DE="Upminster" L="Between Stamford Brook and Ravenscourt Park" S="000" T="0"/>
+      <T C="30:00" D="75" DE="Barking sidings" L="Between Turnham Green and Stamford Brook" S="124" T="0"/>
+    </P>
+  </S>
+  <S Code="BWR" N="Bow Road.">
+    <P Code="0" N="Westbound - Platform 1"/>
+    <P Code="1" N="Eastbound - Platform 2"/>
+  </S>
+  <S Code="BBB" N="Bromley-by-Bow.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="1:00" D="500" DE="Wimbledon" L="Between West Ham and Bromley-by-Bow" S="031" T="0"/>
+      <T C="5:00" D="116" DE="Ealing Broadway" L="Between Plaistow and West Ham" S="152" T="0"/>
+      <T C="7:00" D="374" DE="Richmond" L="Left Upton Park" S="016" T="0"/>
+      <T C="9:00" D="123" DE="Ealing Broadway then Depot" L="At East Ham Platform 1" S="122" T="0"/>
+      <T C="12:00" D="116" DE="Ealing Broadway" L="Between Barking and East Ham" S="064" T="0"/>
+      <T C="12:00" D="0" DE="Unknown" L="Left Barking" S="202" T="6"/>
+      <T C="16:00" D="511" DE="District Line" L="Approaching Upney" S="017" T="0"/>
+      <T C="19:00" D="511" DE="District Line" L="Between Dagenham East and Dagenham Heathway" S="065" T="0"/>
+      <T C="23:00" D="511" DE="District Line" L="Between Hornchurch and Dagenham East" S="020" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="4:00" D="440" DE="Upminster" L="Between Stepney Green and Bow Road" S="041" T="0"/>
+      <T C="5:00" D="73" DE="Barking (via King's Cross)" L="Between Whitechapel and Mile End" S="206" T="4"/>
+      <T C="8:00" D="440" DE="Upminster" L="Left Whitechapel" S="101" T="0"/>
+      <T C="10:00" D="440" DE="Upminster" L="At Aldgate East Platform 2" S="001" T="0"/>
+      <T C="14:00" D="364" DE="Plaistow (via King's Cross)" L="Between Moorgate and Liverpool Street" S="233" T="2"/>
+      <T C="14:00" D="75" DE="Barking sidings" L="At Tower Hill Platform 3" S="037" T="0"/>
+      <T C="15:00" D="110" DE="Dagenham East" L="Left Monument" S="025" T="0"/>
+      <T C="18:00" D="440" DE="Upminster" L="Approaching Cannon Street" S="226" T="0"/>
+      <T C="19:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+      <T C="23:00" D="73" DE="Barking (via King's Cross)" L="At King's Cross Platform 2" S="260" T="4"/>
+      <T C="24:00" D="440" DE="Upminster" L="At Embankment Platform 2" S="043" T="0"/>
+      <T C="26:00" D="440" DE="Upminster" L="At Westminster Platform 2" S="061" T="0"/>
+      <T C="27:00" D="702" DE="Edgware Road (Circle)" L="At Great Portland Street Platform 2" S="210" T="6"/>
+      <T C="30:00" D="440" DE="Upminster" L="At Victoria Platform 2" S="003" T="0"/>
+    </P>
+  </S>
+  <S Code="CST" N="Cannon Street.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="0:30" D="116" DE="Ealing Broadway" L="Left Monument" S="014" T="0"/>
+      <T C="2:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+      <T C="4:30" D="702" DE="Edgware Road (Circle)" L="Between Aldgate East and Tower Hill" S="207" T="5"/>
+      <T C="10:00" D="500" DE="Wimbledon" L="Between Stepney Green and Whitechapel" S="030" T="0"/>
+      <T C="12:00" D="116" DE="Ealing Broadway" L="At Stepney Green Platform 1" S="063" T="0"/>
+      <T C="13:00" D="374" DE="Richmond" L="At Stepney Green" S="015" T="0"/>
+      <T C="13:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+      <T C="15:00" D="500" DE="Wimbledon" L="Between West Ham and Bromley-by-Bow" S="031" T="0"/>
+      <T C="18:00" D="116" DE="Ealing Broadway" L="Between Plaistow and West Ham" S="152" T="0"/>
+      <T C="21:00" D="374" DE="Richmond" L="Left Upton Park" S="016" T="0"/>
+      <T C="21:00" D="702" DE="Edgware Road (Circle)" L="At Great Portland Street Platform 2" S="210" T="6"/>
+      <T C="23:00" D="123" DE="Ealing Broadway then Depot" L="At East Ham Platform 1" S="122" T="0"/>
+      <T C="25:00" D="702" DE="Edgware Road (Circle)" L="Approaching Baker Street" S="211" T="6"/>
+      <T C="25:00" D="116" DE="Ealing Broadway" L="Between Barking and East Ham" S="064" T="0"/>
+      <T C="28:00" D="518" DE="Circle and Hammersmith &amp; City" L="At Edgware Road Platform 2" S="264" T="0"/>
+      <T C="29:00" D="511" DE="District Line" L="Approaching Upney" S="017" T="0"/>
+      <T C="30:00" D="511" DE="District Line" L="Between Dagenham East and Dagenham Heathway" S="065" T="0"/>
+      <T C="30:00" D="702" DE="Edgware Road (Circle)" L="At Paddington platform 16" S="261" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="1:00" D="440" DE="Upminster" L="Approaching Cannon Street" S="226" T="0"/>
+      <T C="2:30" D="196" DE="Hammersmith" L="Between Blackfriars and Mansion House" S="032" T="0"/>
+      <T C="5:00" D="432" DE="Tower Hill" L="At Temple Platform 2" S="000" T="0"/>
+      <T C="7:00" D="440" DE="Upminster" L="At Embankment Platform 2" S="043" T="0"/>
+      <T C="9:00" D="440" DE="Upminster" L="At Westminster Platform 2" S="061" T="0"/>
+      <T C="10:00" D="196" DE="Hammersmith" L="At St. James's Park Platform 2" S="241" T="0"/>
+      <T C="12:00" D="440" DE="Upminster" L="At Victoria Platform 2" S="003" T="0"/>
+      <T C="13:00" D="75" DE="Barking sidings" L="Between Sloane Square and Victoria" S="057" T="0"/>
+      <T C="16:00" D="440" DE="Upminster" L="Left South Kensington" S="044" T="0"/>
+      <T C="19:00" D="110" DE="Dagenham East" L="At Gloucester Road Platform 3" S="002" T="0"/>
+      <T C="21:00" D="432" DE="Tower Hill" L="Between Earl's Court and Gloucester Road" S="034" T="0"/>
+      <T C="26:00" D="440" DE="Upminster" L="West Kensington" S="125" T="0"/>
+      <T C="27:00" D="440" DE="Upminster" L="Left Barons Court" S="045" T="0"/>
+      <T C="30:00" D="440" DE="Upminster" L="Between Putney Bridge and Parsons Green" S="046" T="0"/>
+    </P>
+  </S>
+  <S Code="CHP" N="Chiswick Park.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="7:00" D="116" DE="Ealing Broadway" L="At Hammersmith Platform 1" S="052" T="0"/>
+      <T C="14:00" D="116" DE="Ealing Broadway" L="Between Gloucester Road and Earl's Court" S="042" T="0"/>
+      <T C="24:00" D="123" DE="Ealing Broadway then Depot" L="At St. James's Park Platform 1" S="121" T="0"/>
+      <T C="25:00" D="116" DE="Ealing Broadway" L="At Westminster Platform 1" S="013" T="0"/>
+      <T C="27:00" D="116" DE="Ealing Broadway" L="Approaching Embankment" S="232" T="2"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="8:00" D="75" DE="Barking sidings" L="Between Ealing Broadway and Ealing Common" S="047" T="0"/>
+    </P>
+  </S>
+  <S Code="DGE" N="Dagenham East.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="3:00" D="511" DE="District Line" L="Between Hornchurch and Dagenham East" S="020" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="-" D="510" DE="District Line" L="At Platform" S="000" T="0"/>
+      <T C="3:30" D="440" DE="Upminster" L="Between Becontree and Dagenham East" S="036" T="0"/>
+      <T C="5:00" D="440" DE="Upminster" L="Between Upney and Dagenham Heathway" S="123" T="0"/>
+      <T C="9:00" D="440" DE="Upminster" L="Between Barking and Upney" S="055" T="0"/>
+      <T C="13:00" D="440" DE="Upminster" L="Between East Ham and Barking" S="024" T="0"/>
+      <T C="19:00" D="440" DE="Upminster" L="Between Bromley-by-Bow and West Ham" S="056" T="0"/>
+      <T C="19:00" D="110" DE="Dagenham East" L="At West Ham" S="023" T="0"/>
+      <T C="23:00" D="440" DE="Upminster" L="Between Stepney Green and Bow Road" S="041" T="0"/>
+      <T C="27:00" D="440" DE="Upminster" L="Left Whitechapel" S="101" T="0"/>
+      <T C="30:00" D="440" DE="Upminster" L="At Aldgate East Platform 2" S="001" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 3">
+      <T C="19:00" D="110" DE="Dagenham East" L="At West Ham" S="023" T="0"/>
+    </P>
+  </S>
+  <S Code="EBY" N="Ealing Broadway.">
+    <P Code="1" N="Eastbound - Platform 7">
+      <T C="5:00" D="116" DE="Ealing Broadway" L="Between Acton Town and Ealing Common" S="051" T="0"/>
+      <T C="16:00" D="116" DE="Ealing Broadway" L="At Hammersmith Platform 1" S="052" T="0"/>
+      <T C="24:00" D="116" DE="Ealing Broadway" L="Between Gloucester Road and Earl's Court" S="042" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 8">
+      <T C="-" D="116" DE="Ealing Broadway" L="At Platform" S="050" T="0"/>
+      <T C="5:00" D="116" DE="Ealing Broadway" L="Between Acton Town and Ealing Common" S="051" T="0"/>
+      <T C="16:00" D="116" DE="Ealing Broadway" L="At Hammersmith Platform 1" S="052" T="0"/>
+      <T C="24:00" D="116" DE="Ealing Broadway" L="Between Gloucester Road and Earl's Court" S="042" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 9">
+      <T C="5:00" D="116" DE="Ealing Broadway" L="Between Acton Town and Ealing Common" S="051" T="0"/>
+      <T C="17:00" D="116" DE="Ealing Broadway" L="At Hammersmith Platform 1" S="052" T="0"/>
+      <T C="24:00" D="116" DE="Ealing Broadway" L="Between Gloucester Road and Earl's Court" S="042" T="0"/>
+    </P>
+  </S>
+  <S Code="ECM" N="Ealing Common.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="1:00" D="116" DE="Ealing Broadway" L="Between Acton Town and Ealing Common" S="051" T="0"/>
+      <T C="8:00" D="372" DE="Rayners Lane" L="Left Stamford Brook" S="266" T="0"/>
+      <T C="13:00" D="116" DE="Ealing Broadway" L="At Hammersmith Platform 1" S="052" T="0"/>
+      <T C="14:00" D="448" DE="Uxbridge" L="Approaching Barons Court" S="332" T="0"/>
+      <T C="20:00" D="116" DE="Ealing Broadway" L="Between Gloucester Road and Earl's Court" S="042" T="0"/>
+      <T C="23:00" D="372" DE="Rayners Lane" L="Between Hyde Park Corner and Knightsbridge" S="251" T="0"/>
+      <T C="27:00" D="448" DE="Uxbridge" L="Between Piccadilly Circus and Green Park" S="000" T="0"/>
+      <T C="30:00" D="123" DE="Ealing Broadway then Depot" L="At St. James's Park Platform 1" S="121" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="2:00" D="75" DE="Barking sidings" L="Between Ealing Broadway and Ealing Common" S="047" T="0"/>
+      <T C="4:30" D="104" DE="Cockfosters" L="Between Park Royal and North Ealing" S="316" T="0"/>
+      <T C="9:00" D="104" DE="Cockfosters" L="At Alperton Platform 2" S="000" T="0"/>
+      <T C="15:00" D="104" DE="Cockfosters" L="Between South Harrow and Sudbury Hill" S="314" T="0"/>
+      <T C="18:00" D="359" DE="Piccadilly Train" L="Between Rayners Lane and South Harrow" S="354" T="0"/>
+      <T C="27:00" D="359" DE="Piccadilly Train" L="At Ruislip Platform 2" S="317" T="0"/>
+    </P>
+  </S>
+  <S Code="ECT" N="Earls Court.">
+    <P Code="1" N="Eastbound - Platform 1">
+      <T C="3:00" D="440" DE="Upminster" L="West Kensington" S="125" T="0"/>
+      <T C="3:30" D="228" DE="High St Kensington" L="At Kensington (Olympia) Platform 1" S="070" T="0"/>
+      <T C="4:30" D="440" DE="Upminster" L="Left Barons Court" S="045" T="0"/>
+      <T C="9:00" D="440" DE="Upminster" L="Between Stamford Brook and Ravenscourt Park" S="000" T="0"/>
+      <T C="10:00" D="75" DE="Barking sidings" L="Between Turnham Green and Stamford Brook" S="124" T="0"/>
+      <T C="14:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="16:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+      <T C="16:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="21:00" D="75" DE="Barking sidings" L="Between Ealing Broadway and Ealing Common" S="047" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="3:00" D="440" DE="Upminster" L="West Kensington" S="125" T="0"/>
+      <T C="3:00" D="228" DE="High St Kensington" L="At Kensington (Olympia) Platform 1" S="070" T="0"/>
+      <T C="4:00" D="227" DE="High St Kensington" L="Left Fulham Broadway" S="076" T="0"/>
+      <T C="4:30" D="440" DE="Upminster" L="Left Barons Court" S="045" T="0"/>
+      <T C="7:00" D="440" DE="Upminster" L="Between Putney Bridge and Parsons Green" S="046" T="0"/>
+      <T C="9:00" D="440" DE="Upminster" L="Between Stamford Brook and Ravenscourt Park" S="000" T="0"/>
+      <T C="10:00" D="75" DE="Barking sidings" L="Between Turnham Green and Stamford Brook" S="124" T="0"/>
+      <T C="12:00" D="510" DE="District Line" L="Left Wimbledon Park" S="004" T="0"/>
+      <T C="14:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="14:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="15:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+      <T C="16:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="16:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+      <T C="21:00" D="75" DE="Barking sidings" L="Between Ealing Broadway and Ealing Common" S="047" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 3">
+      <T C="2:00" D="116" DE="Ealing Broadway" L="Between Gloucester Road and Earl's Court" S="042" T="0"/>
+      <T C="8:00" D="374" DE="Richmond" L="At Sloane Square Platform 1" S="027" T="0"/>
+      <T C="9:00" D="500" DE="Wimbledon" L="At Victoria Platform 1" S="012" T="0"/>
+      <T C="12:00" D="123" DE="Ealing Broadway then Depot" L="At St. James's Park Platform 1" S="121" T="0"/>
+      <T C="12:00" D="116" DE="Ealing Broadway" L="At Westminster Platform 1" S="013" T="0"/>
+      <T C="14:00" D="116" DE="Ealing Broadway" L="Approaching Embankment" S="232" T="2"/>
+      <T C="16:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+      <T C="19:00" D="500" DE="Wimbledon" L="Left Mansion House" S="106" T="0"/>
+      <T C="21:00" D="116" DE="Ealing Broadway" L="Left Monument" S="014" T="0"/>
+      <T C="23:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 4">
+      <T C="-" D="500" DE="Wimbledon" L="At Platform" S="011" T="0"/>
+      <T C="2:00" D="116" DE="Ealing Broadway" L="Between Gloucester Road and Earl's Court" S="042" T="0"/>
+      <T C="7:00" D="374" DE="Richmond" L="At Sloane Square Platform 1" S="027" T="0"/>
+      <T C="9:00" D="500" DE="Wimbledon" L="At Victoria Platform 1" S="012" T="0"/>
+      <T C="11:00" D="123" DE="Ealing Broadway then Depot" L="At St. James's Park Platform 1" S="121" T="0"/>
+      <T C="12:00" D="116" DE="Ealing Broadway" L="At Westminster Platform 1" S="013" T="0"/>
+      <T C="14:00" D="116" DE="Ealing Broadway" L="Approaching Embankment" S="232" T="2"/>
+      <T C="16:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+      <T C="19:00" D="500" DE="Wimbledon" L="Left Mansion House" S="106" T="0"/>
+      <T C="21:00" D="116" DE="Ealing Broadway" L="Left Monument" S="014" T="0"/>
+      <T C="22:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+    </P>
+  </S>
+  <S Code="EHM" N="East Ham.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="-" D="123" DE="Ealing Broadway then Depot" L="At Platform" S="122" T="0"/>
+      <T C="3:00" D="116" DE="Ealing Broadway" L="Between Barking and East Ham" S="064" T="0"/>
+      <T C="4:30" D="0" DE="Unknown" L="Left Barking" S="202" T="6"/>
+      <T C="7:00" D="511" DE="District Line" L="Approaching Upney" S="017" T="0"/>
+      <T C="10:00" D="511" DE="District Line" L="Between Dagenham East and Dagenham Heathway" S="065" T="0"/>
+      <T C="14:00" D="511" DE="District Line" L="Between Hornchurch and Dagenham East" S="020" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="1:30" D="73" DE="Barking (via King's Cross)" L="Between Upton Park and East Ham" S="220" T="5"/>
+      <T C="4:00" D="75" DE="Barking sidings" L="Between Plaistow and Upton Park" S="035" T="0"/>
+      <T C="5:00" D="440" DE="Upminster" L="Between Bromley-by-Bow and West Ham" S="056" T="0"/>
+      <T C="5:00" D="110" DE="Dagenham East" L="At West Ham" S="023" T="0"/>
+      <T C="10:00" D="440" DE="Upminster" L="Between Stepney Green and Bow Road" S="041" T="0"/>
+      <T C="11:00" D="73" DE="Barking (via King's Cross)" L="Between Whitechapel and Mile End" S="206" T="4"/>
+      <T C="13:00" D="440" DE="Upminster" L="Left Whitechapel" S="101" T="0"/>
+      <T C="16:00" D="440" DE="Upminster" L="At Aldgate East Platform 2" S="001" T="0"/>
+      <T C="19:00" D="75" DE="Barking sidings" L="At Tower Hill Platform 3" S="037" T="0"/>
+      <T C="21:00" D="110" DE="Dagenham East" L="Left Monument" S="025" T="0"/>
+      <T C="24:00" D="440" DE="Upminster" L="Approaching Cannon Street" S="226" T="0"/>
+      <T C="28:00" D="73" DE="Barking (via King's Cross)" L="At King's Cross Platform 2" S="260" T="4"/>
+      <T C="29:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+    </P>
+  </S>
+  <S Code="EPY" N="East Putney.">
+    <P Code="1" N="Eastbound - Platform 1">
+      <T C="2:30" D="510" DE="District Line" L="Left Wimbledon Park" S="004" T="0"/>
+      <T C="4:30" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="5:30" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 2">
+      <T C="4:30" D="500" DE="Wimbledon" L="Between Parsons Green and Putney Bridge" S="040" T="0"/>
+      <T C="8:00" D="500" DE="Wimbledon" L="Between Fulham Broadway and Parsons Green" S="074" T="0"/>
+      <T C="13:00" D="500" DE="Wimbledon" L="At Earl's Court Platform 4" S="011" T="0"/>
+      <T C="22:00" D="500" DE="Wimbledon" L="At Victoria Platform 1" S="012" T="0"/>
+    </P>
+  </S>
+  <S Code="ERD" N="Edgware Road (H &amp; C).">
+    <P Code="1" N="Platform 1 - Eastbound / Outer Rail">
+      <T C="2:30" D="702" DE="Edgware Road (Circle)" L="At Paddington platform 16" S="261" T="0"/>
+      <T C="11:00" D="0" DE="Unknown" L="Between Wood Lane and Ladbroke Grove" S="212" T="0"/>
+      <T C="12:00" D="702" DE="Edgware Road (Circle)" L="Between Sloane Square and South Kensington" S="231" T="2"/>
+      <T C="14:00" D="518" DE="Circle and Hammersmith &amp; City" L="" S="000" T="0"/>
+      <T C="16:00" D="0" DE="Unknown" L="Between Hammersmith and Shepherd's Bush Market" S="213" T="0"/>
+      <T C="18:00" D="518" DE="Circle and Hammersmith &amp; City" L="At Hammersmith Platform 1" S="263" T="0"/>
+      <T C="24:00" D="510" DE="District Line" L="Left Wimbledon Park" S="004" T="0"/>
+      <T C="25:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="26:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="26:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+      <T C="27:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="27:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+    </P>
+    <P Code="1" N="Platform 2">
+      <T C="-" D="518" DE="Circle and Hammersmith &amp; City" L="At Platform" S="264" T="0"/>
+      <T C="2:30" D="702" DE="Edgware Road (Circle)" L="At Paddington platform 16" S="261" T="0"/>
+      <T C="11:00" D="0" DE="Unknown" L="Between Wood Lane and Ladbroke Grove" S="212" T="0"/>
+      <T C="12:00" D="702" DE="Edgware Road (Circle)" L="Between Sloane Square and South Kensington" S="231" T="2"/>
+      <T C="14:00" D="518" DE="Circle and Hammersmith &amp; City" L="" S="000" T="0"/>
+      <T C="16:00" D="0" DE="Unknown" L="Between Hammersmith and Shepherd's Bush Market" S="213" T="0"/>
+      <T C="18:00" D="518" DE="Circle and Hammersmith &amp; City" L="At Hammersmith Platform 1" S="263" T="0"/>
+      <T C="24:00" D="510" DE="District Line" L="Left Wimbledon Park" S="004" T="0"/>
+      <T C="25:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="26:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="26:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+      <T C="28:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+      <T C="28:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+    </P>
+    <P Code="1" N="Platform 3">
+      <T C="3:00" D="702" DE="Edgware Road (Circle)" L="At Paddington platform 16" S="261" T="0"/>
+      <T C="12:00" D="0" DE="Unknown" L="Between Wood Lane and Ladbroke Grove" S="212" T="0"/>
+      <T C="13:00" D="702" DE="Edgware Road (Circle)" L="Between Sloane Square and South Kensington" S="231" T="2"/>
+      <T C="14:00" D="518" DE="Circle and Hammersmith &amp; City" L="" S="000" T="0"/>
+      <T C="16:00" D="0" DE="Unknown" L="Between Hammersmith and Shepherd's Bush Market" S="213" T="0"/>
+      <T C="19:00" D="518" DE="Circle and Hammersmith &amp; City" L="At Hammersmith Platform 1" S="263" T="0"/>
+      <T C="24:00" D="510" DE="District Line" L="Left Wimbledon Park" S="004" T="0"/>
+      <T C="25:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="26:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="26:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+      <T C="28:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="28:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+    </P>
+    <P Code="0" N="Platform 4 - Westbound / Inner Rail">
+      <T C="5:00" D="196" DE="Hammersmith" L="North of Great Portland Street" S="224" T="3"/>
+      <T C="10:00" D="196" DE="Hammersmith" L="Between Farringdon and King's Cross" S="205" T="7"/>
+      <T C="14:00" D="196" DE="Hammersmith" L="Left Barbican" S="240" T="8"/>
+      <T C="21:00" D="196" DE="Hammersmith" L="At Aldgate Platform 4" S="225" T="5"/>
+      <T C="28:00" D="196" DE="Hammersmith" L="Between Blackfriars and Mansion House" S="032" T="0"/>
+    </P>
+  </S>
+  <S Code="EPK" N="Elm Park.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="-" D="511" DE="District Line" L="At Platform" S="020" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="3:00" D="510" DE="District Line" L="At Dagenham East Platform 2" S="000" T="0"/>
+      <T C="6:00" D="440" DE="Upminster" L="Between Becontree and Dagenham East" S="036" T="0"/>
+      <T C="7:00" D="440" DE="Upminster" L="Between Upney and Dagenham Heathway" S="123" T="0"/>
+      <T C="11:00" D="440" DE="Upminster" L="Between Barking and Upney" S="055" T="0"/>
+      <T C="15:00" D="440" DE="Upminster" L="Between East Ham and Barking" S="024" T="0"/>
+      <T C="21:00" D="440" DE="Upminster" L="Between Bromley-by-Bow and West Ham" S="056" T="0"/>
+      <T C="26:00" D="440" DE="Upminster" L="Between Stepney Green and Bow Road" S="041" T="0"/>
+      <T C="30:00" D="440" DE="Upminster" L="Left Whitechapel" S="101" T="0"/>
+    </P>
+  </S>
+  <S Code="EMB" N="Embankment.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="0:30" D="116" DE="Ealing Broadway" L="Approaching Embankment" S="232" T="2"/>
+      <T C="2:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+      <T C="5:00" D="500" DE="Wimbledon" L="Left Mansion House" S="106" T="0"/>
+      <T C="7:00" D="116" DE="Ealing Broadway" L="Left Monument" S="014" T="0"/>
+      <T C="8:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+      <T C="11:00" D="702" DE="Edgware Road (Circle)" L="Between Aldgate East and Tower Hill" S="207" T="5"/>
+      <T C="16:00" D="500" DE="Wimbledon" L="Between Stepney Green and Whitechapel" S="030" T="0"/>
+      <T C="18:00" D="116" DE="Ealing Broadway" L="At Stepney Green Platform 1" S="063" T="0"/>
+      <T C="19:00" D="374" DE="Richmond" L="At Stepney Green" S="015" T="0"/>
+      <T C="20:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+      <T C="21:00" D="500" DE="Wimbledon" L="Between West Ham and Bromley-by-Bow" S="031" T="0"/>
+      <T C="25:00" D="116" DE="Ealing Broadway" L="Between Plaistow and West Ham" S="152" T="0"/>
+      <T C="28:00" D="374" DE="Richmond" L="Left Upton Park" S="016" T="0"/>
+      <T C="28:00" D="702" DE="Edgware Road (Circle)" L="At Great Portland Street Platform 2" S="210" T="6"/>
+      <T C="29:00" D="116" DE="Ealing Broadway" L="Between Barking and East Ham" S="064" T="0"/>
+      <T C="29:00" D="123" DE="Ealing Broadway then Depot" L="At East Ham Platform 1" S="122" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="-" D="440" DE="Upminster" L="At Platform" S="043" T="0"/>
+      <T C="2:00" D="440" DE="Upminster" L="At Westminster Platform 2" S="061" T="0"/>
+      <T C="3:30" D="196" DE="Hammersmith" L="At St. James's Park Platform 2" S="241" T="0"/>
+      <T C="5:00" D="440" DE="Upminster" L="At Victoria Platform 2" S="003" T="0"/>
+      <T C="6:00" D="75" DE="Barking sidings" L="Between Sloane Square and Victoria" S="057" T="0"/>
+      <T C="9:00" D="440" DE="Upminster" L="Left South Kensington" S="044" T="0"/>
+      <T C="12:00" D="110" DE="Dagenham East" L="At Gloucester Road Platform 3" S="002" T="0"/>
+      <T C="14:00" D="432" DE="Tower Hill" L="Between Earl's Court and Gloucester Road" S="034" T="0"/>
+      <T C="19:00" D="440" DE="Upminster" L="West Kensington" S="125" T="0"/>
+      <T C="20:00" D="440" DE="Upminster" L="Left Barons Court" S="045" T="0"/>
+      <T C="23:00" D="440" DE="Upminster" L="Between Putney Bridge and Parsons Green" S="046" T="0"/>
+      <T C="25:00" D="440" DE="Upminster" L="Between Stamford Brook and Ravenscourt Park" S="000" T="0"/>
+      <T C="26:00" D="75" DE="Barking sidings" L="Between Turnham Green and Stamford Brook" S="124" T="0"/>
+      <T C="28:00" D="510" DE="District Line" L="Left Wimbledon Park" S="004" T="0"/>
+      <T C="29:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="30:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="30:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+    </P>
+  </S>
+  <S Code="FBY" N="Fulham Broadway.">
+    <P Code="1" N="Eastbound - Platform 1">
+      <T C="2:30" D="440" DE="Upminster" L="Between Putney Bridge and Parsons Green" S="046" T="0"/>
+      <T C="8:00" D="510" DE="District Line" L="Left Wimbledon Park" S="004" T="0"/>
+      <T C="10:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="10:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 2">
+      <T C="4:00" D="500" DE="Wimbledon" L="At Earl's Court Platform 4" S="011" T="0"/>
+      <T C="13:00" D="500" DE="Wimbledon" L="At Victoria Platform 1" S="012" T="0"/>
+      <T C="23:00" D="500" DE="Wimbledon" L="Left Mansion House" S="106" T="0"/>
+    </P>
+  </S>
+  <S Code="GRD" N="Gloucester Road.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="5:00" D="374" DE="Richmond" L="At Sloane Square Platform 1" S="027" T="0"/>
+      <T C="7:00" D="500" DE="Wimbledon" L="At Victoria Platform 1" S="012" T="0"/>
+      <T C="8:00" D="123" DE="Ealing Broadway then Depot" L="At St. James's Park Platform 1" S="121" T="0"/>
+      <T C="9:00" D="116" DE="Ealing Broadway" L="At Westminster Platform 1" S="013" T="0"/>
+      <T C="12:00" D="116" DE="Ealing Broadway" L="Approaching Embankment" S="232" T="2"/>
+      <T C="13:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+      <T C="16:00" D="500" DE="Wimbledon" L="Left Mansion House" S="106" T="0"/>
+      <T C="18:00" D="116" DE="Ealing Broadway" L="Left Monument" S="014" T="0"/>
+      <T C="20:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+      <T C="27:00" D="500" DE="Wimbledon" L="Between Stepney Green and Whitechapel" S="030" T="0"/>
+      <T C="29:00" D="116" DE="Ealing Broadway" L="At Stepney Green Platform 1" S="063" T="0"/>
+      <T C="30:00" D="374" DE="Richmond" L="At Stepney Green" S="015" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 2">
+      <T C="3:00" D="702" DE="Edgware Road (Circle)" L="Between Sloane Square and South Kensington" S="231" T="2"/>
+      <T C="9:00" D="123" DE="Ealing Broadway then Depot" L="At St. James's Park Platform 1" S="121" T="0"/>
+      <T C="23:00" D="702" DE="Edgware Road (Circle)" L="Between Aldgate East and Tower Hill" S="207" T="5"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 3">
+      <T C="-" D="110" DE="Dagenham East" L="At Platform" S="002" T="0"/>
+      <T C="2:00" D="432" DE="Tower Hill" L="Between Earl's Court and Gloucester Road" S="034" T="0"/>
+      <T C="7:00" D="440" DE="Upminster" L="West Kensington" S="125" T="0"/>
+      <T C="9:00" D="440" DE="Upminster" L="Left Barons Court" S="045" T="0"/>
+      <T C="11:00" D="440" DE="Upminster" L="Between Putney Bridge and Parsons Green" S="046" T="0"/>
+      <T C="13:00" D="440" DE="Upminster" L="Between Stamford Brook and Ravenscourt Park" S="000" T="0"/>
+      <T C="14:00" D="75" DE="Barking sidings" L="Between Turnham Green and Stamford Brook" S="124" T="0"/>
+      <T C="20:00" D="510" DE="District Line" L="Left Wimbledon Park" S="004" T="0"/>
+      <T C="21:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="22:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="22:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+      <T C="24:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="24:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+      <T C="25:00" D="75" DE="Barking sidings" L="Between Ealing Broadway and Ealing Common" S="047" T="0"/>
+    </P>
+  </S>
+  <S Code="GUN" N="Gunnersbury.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="-" D="511" DE="District Line" L="At Platform" S="000" T="0"/>
+      <T C="12:00" D="374" DE="Richmond" L="At West Kensington Platform 1" S="105" T="0"/>
+      <T C="22:00" D="374" DE="Richmond" L="At Sloane Square Platform 1" S="027" T="0"/>
+      <T C="29:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="-" D="510" DE="District Line" L="At Platform" S="000" T="0"/>
+      <T C="2:30" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="2:30" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+    </P>
+  </S>
+  <S Code="HMD" N="Hammersmith (District and Picc).">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="-" D="116" DE="Ealing Broadway" L="At Platform" S="052" T="0"/>
+      <T C="5:00" D="374" DE="Richmond" L="At West Kensington Platform 1" S="105" T="0"/>
+      <T C="8:00" D="116" DE="Ealing Broadway" L="Between Gloucester Road and Earl's Court" S="042" T="0"/>
+      <T C="15:00" D="374" DE="Richmond" L="At Sloane Square Platform 1" S="027" T="0"/>
+      <T C="17:00" D="123" DE="Ealing Broadway then Depot" L="At St. James's Park Platform 1" S="121" T="0"/>
+      <T C="18:00" D="116" DE="Ealing Broadway" L="At Westminster Platform 1" S="013" T="0"/>
+      <T C="20:00" D="116" DE="Ealing Broadway" L="Approaching Embankment" S="232" T="2"/>
+      <T C="24:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+      <T C="27:00" D="116" DE="Ealing Broadway" L="Left Monument" S="014" T="0"/>
+      <T C="28:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 4">
+      <T C="3:00" D="440" DE="Upminster" L="Between Stamford Brook and Ravenscourt Park" S="000" T="0"/>
+      <T C="4:00" D="75" DE="Barking sidings" L="Between Turnham Green and Stamford Brook" S="124" T="0"/>
+      <T C="8:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="10:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="10:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+      <T C="15:00" D="75" DE="Barking sidings" L="Between Ealing Broadway and Ealing Common" S="047" T="0"/>
+    </P>
+  </S>
+  <S Code="HST" N="High Street Kensington.">
+    <P Code="0" N="Westbound - Platform 1"/>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="6:00" D="702" DE="Edgware Road (Circle)" L="Between Sloane Square and South Kensington" S="231" T="2"/>
+      <T C="17:00" D="510" DE="District Line" L="Left Wimbledon Park" S="004" T="0"/>
+      <T C="18:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="19:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="19:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+      <T C="21:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+      <T C="21:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="26:00" D="702" DE="Edgware Road (Circle)" L="Between Aldgate East and Tower Hill" S="207" T="5"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 3">
+      <T C="-" D="228" DE="High St Kensington" L="At Platform" S="075" T="0"/>
+      <T C="16:00" D="510" DE="District Line" L="Left Wimbledon Park" S="004" T="0"/>
+      <T C="18:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="18:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="19:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+      <T C="20:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="20:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 4">
+      <T C="-" D="511" DE="District Line" L="At Platform" S="151" T="0"/>
+      <T C="16:00" D="510" DE="District Line" L="Left Wimbledon Park" S="004" T="0"/>
+      <T C="18:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="18:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="19:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+      <T C="20:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="20:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+    </P>
+  </S>
+  <S Code="HCH" N="Hornchurch.">
+    <P Code="0" N="Westbound - Platform 1"/>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="4:00" D="510" DE="District Line" L="At Dagenham East Platform 2" S="000" T="0"/>
+      <T C="7:00" D="440" DE="Upminster" L="Between Becontree and Dagenham East" S="036" T="0"/>
+      <T C="9:00" D="440" DE="Upminster" L="Between Upney and Dagenham Heathway" S="123" T="0"/>
+      <T C="13:00" D="440" DE="Upminster" L="Between Barking and Upney" S="055" T="0"/>
+      <T C="17:00" D="440" DE="Upminster" L="Between East Ham and Barking" S="024" T="0"/>
+      <T C="23:00" D="440" DE="Upminster" L="Between Bromley-by-Bow and West Ham" S="056" T="0"/>
+      <T C="27:00" D="440" DE="Upminster" L="Between Stepney Green and Bow Road" S="041" T="0"/>
+    </P>
+  </S>
+  <S Code="KEW" N="Kew Gardens.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="1:30" D="511" DE="District Line" L="At Gunnersbury" S="000" T="0"/>
+      <T C="13:00" D="374" DE="Richmond" L="At West Kensington Platform 1" S="105" T="0"/>
+      <T C="23:00" D="374" DE="Richmond" L="At Sloane Square Platform 1" S="027" T="0"/>
+      <T C="30:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="1:30" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="1:30" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+    </P>
+  </S>
+  <S Code="MAN" N="Mansion House.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="2:00" D="116" DE="Ealing Broadway" L="Left Monument" S="014" T="0"/>
+      <T C="3:30" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+      <T C="6:00" D="702" DE="Edgware Road (Circle)" L="Between Aldgate East and Tower Hill" S="207" T="5"/>
+      <T C="11:00" D="500" DE="Wimbledon" L="Between Stepney Green and Whitechapel" S="030" T="0"/>
+      <T C="13:00" D="116" DE="Ealing Broadway" L="At Stepney Green Platform 1" S="063" T="0"/>
+      <T C="14:00" D="374" DE="Richmond" L="At Stepney Green" S="015" T="0"/>
+      <T C="15:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+      <T C="16:00" D="500" DE="Wimbledon" L="Between West Ham and Bromley-by-Bow" S="031" T="0"/>
+      <T C="20:00" D="116" DE="Ealing Broadway" L="Between Plaistow and West Ham" S="152" T="0"/>
+      <T C="23:00" D="374" DE="Richmond" L="Left Upton Park" S="016" T="0"/>
+      <T C="23:00" D="702" DE="Edgware Road (Circle)" L="At Great Portland Street Platform 2" S="210" T="6"/>
+      <T C="24:00" D="123" DE="Ealing Broadway then Depot" L="At East Ham Platform 1" S="122" T="0"/>
+      <T C="27:00" D="116" DE="Ealing Broadway" L="Between Barking and East Ham" S="064" T="0"/>
+      <T C="27:00" D="702" DE="Edgware Road (Circle)" L="Approaching Baker Street" S="211" T="6"/>
+      <T C="28:00" D="511" DE="District Line" L="Approaching Upney" S="017" T="0"/>
+      <T C="29:00" D="518" DE="Circle and Hammersmith &amp; City" L="At Edgware Road Platform 2" S="264" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 2"/>
+    <P Code="1" N="Eastbound - Platform 3">
+      <T C="1:30" D="196" DE="Hammersmith" L="Between Blackfriars and Mansion House" S="032" T="0"/>
+      <T C="4:30" D="432" DE="Tower Hill" L="At Temple Platform 2" S="000" T="0"/>
+      <T C="6:00" D="440" DE="Upminster" L="At Embankment Platform 2" S="043" T="0"/>
+      <T C="8:00" D="440" DE="Upminster" L="At Westminster Platform 2" S="061" T="0"/>
+      <T C="9:00" D="196" DE="Hammersmith" L="At St. James's Park Platform 2" S="241" T="0"/>
+      <T C="11:00" D="440" DE="Upminster" L="At Victoria Platform 2" S="003" T="0"/>
+      <T C="12:00" D="75" DE="Barking sidings" L="Between Sloane Square and Victoria" S="057" T="0"/>
+      <T C="15:00" D="440" DE="Upminster" L="Left South Kensington" S="044" T="0"/>
+      <T C="18:00" D="110" DE="Dagenham East" L="At Gloucester Road Platform 3" S="002" T="0"/>
+      <T C="20:00" D="432" DE="Tower Hill" L="Between Earl's Court and Gloucester Road" S="034" T="0"/>
+      <T C="25:00" D="440" DE="Upminster" L="West Kensington" S="125" T="0"/>
+      <T C="26:00" D="440" DE="Upminster" L="Left Barons Court" S="045" T="0"/>
+      <T C="29:00" D="440" DE="Upminster" L="Between Putney Bridge and Parsons Green" S="046" T="0"/>
+    </P>
+  </S>
+  <S Code="MLE" N="Mile End.">
+    <P Code="0" N="Westbound - Platform 2"/>
+    <P Code="1" N="Eastbound - Platform 3"/>
+  </S>
+  <S Code="MON" N="Monument.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="1:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+      <T C="3:00" D="702" DE="Edgware Road (Circle)" L="Between Aldgate East and Tower Hill" S="207" T="5"/>
+      <T C="9:00" D="500" DE="Wimbledon" L="Between Stepney Green and Whitechapel" S="030" T="0"/>
+      <T C="11:00" D="116" DE="Ealing Broadway" L="At Stepney Green Platform 1" S="063" T="0"/>
+      <T C="12:00" D="374" DE="Richmond" L="At Stepney Green" S="015" T="0"/>
+      <T C="12:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+      <T C="14:00" D="500" DE="Wimbledon" L="Between West Ham and Bromley-by-Bow" S="031" T="0"/>
+      <T C="17:00" D="116" DE="Ealing Broadway" L="Between Plaistow and West Ham" S="152" T="0"/>
+      <T C="20:00" D="702" DE="Edgware Road (Circle)" L="At Great Portland Street Platform 2" S="210" T="6"/>
+      <T C="20:00" D="374" DE="Richmond" L="Left Upton Park" S="016" T="0"/>
+      <T C="22:00" D="123" DE="Ealing Broadway then Depot" L="At East Ham Platform 1" S="122" T="0"/>
+      <T C="24:00" D="702" DE="Edgware Road (Circle)" L="Approaching Baker Street" S="211" T="6"/>
+      <T C="24:00" D="116" DE="Ealing Broadway" L="Between Barking and East Ham" S="064" T="0"/>
+      <T C="26:00" D="518" DE="Circle and Hammersmith &amp; City" L="At Edgware Road Platform 2" S="264" T="0"/>
+      <T C="28:00" D="511" DE="District Line" L="Approaching Upney" S="017" T="0"/>
+      <T C="28:00" D="702" DE="Edgware Road (Circle)" L="At Paddington platform 16" S="261" T="0"/>
+      <T C="29:00" D="511" DE="District Line" L="Between Dagenham East and Dagenham Heathway" S="065" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="2:00" D="440" DE="Upminster" L="Approaching Cannon Street" S="226" T="0"/>
+      <T C="4:00" D="196" DE="Hammersmith" L="Between Blackfriars and Mansion House" S="032" T="0"/>
+      <T C="7:00" D="432" DE="Tower Hill" L="At Temple Platform 2" S="000" T="0"/>
+      <T C="8:00" D="440" DE="Upminster" L="At Embankment Platform 2" S="043" T="0"/>
+      <T C="10:00" D="440" DE="Upminster" L="At Westminster Platform 2" S="061" T="0"/>
+      <T C="12:00" D="196" DE="Hammersmith" L="At St. James's Park Platform 2" S="241" T="0"/>
+      <T C="14:00" D="440" DE="Upminster" L="At Victoria Platform 2" S="003" T="0"/>
+      <T C="14:00" D="75" DE="Barking sidings" L="Between Sloane Square and Victoria" S="057" T="0"/>
+      <T C="17:00" D="440" DE="Upminster" L="Left South Kensington" S="044" T="0"/>
+      <T C="20:00" D="110" DE="Dagenham East" L="At Gloucester Road Platform 3" S="002" T="0"/>
+      <T C="22:00" D="432" DE="Tower Hill" L="Between Earl's Court and Gloucester Road" S="034" T="0"/>
+      <T C="27:00" D="440" DE="Upminster" L="West Kensington" S="125" T="0"/>
+      <T C="29:00" D="440" DE="Upminster" L="Left Barons Court" S="045" T="0"/>
+    </P>
+  </S>
+  <S Code="OLY" N="Olympia.">
+    <P Code="1" N="Eastbound - Platform 1">
+      <T C="-" D="228" DE="High St Kensington" L="At Platform" S="070" T="0"/>
+    </P>
+  </S>
+  <S Code="PADc" N="Paddington Circle.">
+    <P Code="0" N="Inner Rail - Platform 1"/>
+    <P Code="1" N="Outer Rail - Platform 2"/>
+  </S>
+  <S Code="PGR" N="Parsons Green.">
+    <P Code="1" N="Eastbound - Platform 1">
+      <T C="1:00" D="440" DE="Upminster" L="Between Putney Bridge and Parsons Green" S="046" T="0"/>
+      <T C="6:00" D="510" DE="District Line" L="Left Wimbledon Park" S="004" T="0"/>
+      <T C="8:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="8:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 2">
+      <T C="2:30" D="500" DE="Wimbledon" L="Between Fulham Broadway and Parsons Green" S="074" T="0"/>
+      <T C="8:00" D="500" DE="Wimbledon" L="At Earl's Court Platform 4" S="011" T="0"/>
+      <T C="17:00" D="500" DE="Wimbledon" L="At Victoria Platform 1" S="012" T="0"/>
+      <T C="26:00" D="500" DE="Wimbledon" L="Left Mansion House" S="106" T="0"/>
+    </P>
+  </S>
+  <S Code="PLW" N="Plaistow.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="1:30" D="374" DE="Richmond" L="Left Upton Park" S="016" T="0"/>
+      <T C="3:30" D="123" DE="Ealing Broadway then Depot" L="At East Ham Platform 1" S="122" T="0"/>
+      <T C="6:00" D="116" DE="Ealing Broadway" L="Between Barking and East Ham" S="064" T="0"/>
+      <T C="9:00" D="0" DE="Unknown" L="Left Barking" S="202" T="6"/>
+      <T C="10:00" D="511" DE="District Line" L="Approaching Upney" S="017" T="0"/>
+      <T C="13:00" D="511" DE="District Line" L="Between Dagenham East and Dagenham Heathway" S="065" T="0"/>
+      <T C="17:00" D="511" DE="District Line" L="Between Hornchurch and Dagenham East" S="020" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="1:00" D="440" DE="Upminster" L="Between Bromley-by-Bow and West Ham" S="056" T="0"/>
+      <T C="1:00" D="110" DE="Dagenham East" L="At West Ham" S="023" T="0"/>
+      <T C="5:00" D="440" DE="Upminster" L="Between Stepney Green and Bow Road" S="041" T="0"/>
+      <T C="6:00" D="73" DE="Barking (via King's Cross)" L="Between Whitechapel and Mile End" S="206" T="4"/>
+      <T C="9:00" D="440" DE="Upminster" L="Left Whitechapel" S="101" T="0"/>
+      <T C="12:00" D="440" DE="Upminster" L="At Aldgate East Platform 2" S="001" T="0"/>
+      <T C="15:00" D="75" DE="Barking sidings" L="At Tower Hill Platform 3" S="037" T="0"/>
+      <T C="16:00" D="110" DE="Dagenham East" L="Left Monument" S="025" T="0"/>
+      <T C="19:00" D="364" DE="Plaistow (via King's Cross)" L="Between Moorgate and Liverpool Street" S="233" T="2"/>
+      <T C="19:00" D="440" DE="Upminster" L="Approaching Cannon Street" S="226" T="0"/>
+      <T C="24:00" D="73" DE="Barking (via King's Cross)" L="At King's Cross Platform 2" S="260" T="4"/>
+      <T C="24:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+      <T C="26:00" D="440" DE="Upminster" L="At Embankment Platform 2" S="043" T="0"/>
+      <T C="28:00" D="440" DE="Upminster" L="At Westminster Platform 2" S="061" T="0"/>
+      <T C="29:00" D="0" DE="Unknown" L="Left Barking" S="202" T="6"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 3">
+      <T C="20:00" D="364" DE="Plaistow (via King's Cross)" L="Between Moorgate and Liverpool Street" S="233" T="2"/>
+      <T C="30:00" D="364" DE="Plaistow (via King's Cross)" L="Between Moorgate and Liverpool Street" S="233" T="2"/>
+      <T C="30:00" D="0" DE="Unknown" L="Left Barking" S="202" T="6"/>
+    </P>
+  </S>
+  <S Code="PUT" N="Putney Bridge.">
+    <P Code="1" N="Eastbound - Platform 1">
+      <T C="1:30" D="510" DE="District Line" L="At  East Putney Platform 1" S="077" T="0"/>
+      <T C="3:30" D="510" DE="District Line" L="Approaching Southfields" S="004" T="0"/>
+      <T C="6:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="6:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2"/>
+    <P Code="0" N="Westbound - Platform 3">
+      <T C="1:00" D="500" DE="Wimbledon" L="Between Parsons Green and Putney Bridge" S="040" T="0"/>
+      <T C="4:30" D="500" DE="Wimbledon" L="Between Fulham Broadway and Parsons Green" S="074" T="0"/>
+      <T C="10:00" D="500" DE="Wimbledon" L="At Earl's Court Platform 4" S="011" T="0"/>
+      <T C="19:00" D="500" DE="Wimbledon" L="At Victoria Platform 1" S="012" T="0"/>
+      <T C="28:00" D="500" DE="Wimbledon" L="Left Mansion House" S="106" T="0"/>
+    </P>
+  </S>
+  <S Code="RCP" N="Ravenscourt Park.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="1:30" D="116" DE="Ealing Broadway" L="Left Hammersmith" S="052" T="0"/>
+      <T C="7:00" D="374" DE="Richmond" L="At West Kensington Platform 1" S="105" T="0"/>
+      <T C="9:00" D="116" DE="Ealing Broadway" L="Between Gloucester Road and Earl's Court" S="042" T="0"/>
+      <T C="17:00" D="374" DE="Richmond" L="At Sloane Square Platform 1" S="027" T="0"/>
+      <T C="19:00" D="123" DE="Ealing Broadway then Depot" L="At St. James's Park Platform 1" S="121" T="0"/>
+      <T C="20:00" D="116" DE="Ealing Broadway" L="At Westminster Platform 1" S="013" T="0"/>
+      <T C="22:00" D="116" DE="Ealing Broadway" L="Approaching Embankment" S="232" T="2"/>
+      <T C="25:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+      <T C="29:00" D="116" DE="Ealing Broadway" L="Left Monument" S="014" T="0"/>
+      <T C="30:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 4">
+      <T C="0:30" D="440" DE="Upminster" L="Approaching Ravenscourt Park" S="000" T="0"/>
+      <T C="2:00" D="75" DE="Barking sidings" L="Between Turnham Green and Stamford Brook" S="124" T="0"/>
+      <T C="6:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="8:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="8:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+      <T C="13:00" D="75" DE="Barking sidings" L="Between Ealing Broadway and Ealing Common" S="047" T="0"/>
+    </P>
+  </S>
+  <S Code="RMD" N="Richmond.">
+    <P Code="1" N="Eastbound - Platform 3">
+      <T C="2:30" D="511" DE="District Line" L="At Gunnersbury" S="000" T="0"/>
+      <T C="15:00" D="374" DE="Richmond" L="At West Kensington Platform 1" S="105" T="0"/>
+      <T C="25:00" D="374" DE="Richmond" L="At Sloane Square Platform 1" S="027" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 4">
+      <T C="3:30" D="511" DE="District Line" L="At Gunnersbury" S="000" T="0"/>
+      <T C="15:00" D="374" DE="Richmond" L="At West Kensington Platform 1" S="105" T="0"/>
+      <T C="25:00" D="374" DE="Richmond" L="At Sloane Square Platform 1" S="027" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 5">
+      <T C="-" D="510" DE="District Line" L="At Platform" S="000" T="0"/>
+      <T C="3:30" D="511" DE="District Line" L="At Gunnersbury" S="000" T="0"/>
+      <T C="15:00" D="374" DE="Richmond" L="At West Kensington Platform 1" S="105" T="0"/>
+      <T C="25:00" D="374" DE="Richmond" L="At Sloane Square Platform 1" S="027" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 6">
+      <T C="-" D="510" DE="District Line" L="At Platform" S="000" T="0"/>
+      <T C="2:30" D="511" DE="District Line" L="At Gunnersbury" S="000" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 7">
+      <T C="-" D="573" DE="Network Rail" L="At Platform" S="000" T="0"/>
+      <T C="2:30" D="511" DE="District Line" L="At Gunnersbury" S="000" T="0"/>
+    </P>
+  </S>
+  <S Code="SSQ" N="Sloane Square.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="-" D="374" DE="Richmond" L="At Platform" S="027" T="0"/>
+      <T C="2:00" D="500" DE="Wimbledon" L="At Victoria Platform 1" S="012" T="0"/>
+      <T C="3:30" D="123" DE="Ealing Broadway then Depot" L="At St. James's Park Platform 1" S="121" T="0"/>
+      <T C="5:00" D="116" DE="Ealing Broadway" L="At Westminster Platform 1" S="013" T="0"/>
+      <T C="7:00" D="116" DE="Ealing Broadway" L="Approaching Embankment" S="232" T="2"/>
+      <T C="8:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+      <T C="11:00" D="500" DE="Wimbledon" L="Left Mansion House" S="106" T="0"/>
+      <T C="13:00" D="116" DE="Ealing Broadway" L="Left Monument" S="014" T="0"/>
+      <T C="15:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+      <T C="18:00" D="702" DE="Edgware Road (Circle)" L="Between Aldgate East and Tower Hill" S="207" T="5"/>
+      <T C="23:00" D="500" DE="Wimbledon" L="Between Stepney Green and Whitechapel" S="030" T="0"/>
+      <T C="25:00" D="116" DE="Ealing Broadway" L="At Stepney Green Platform 1" S="063" T="0"/>
+      <T C="26:00" D="374" DE="Richmond" L="At Stepney Green" S="015" T="0"/>
+      <T C="28:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+      <T C="28:00" D="500" DE="Wimbledon" L="Between West Ham and Bromley-by-Bow" S="031" T="0"/>
+      <T C="28:00" D="116" DE="Ealing Broadway" L="Between Plaistow and West Ham" S="152" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="1:30" D="440" DE="Upminster" L="Between South Kensington and Sloane Square" S="044" T="0"/>
+      <T C="4:00" D="110" DE="Dagenham East" L="Left Gloucester Road" S="002" T="0"/>
+      <T C="6:00" D="432" DE="Tower Hill" L="Between Earl's Court and Gloucester Road" S="034" T="0"/>
+      <T C="11:00" D="440" DE="Upminster" L="West Kensington" S="125" T="0"/>
+      <T C="13:00" D="440" DE="Upminster" L="Left Barons Court" S="045" T="0"/>
+      <T C="15:00" D="440" DE="Upminster" L="Between Putney Bridge and Parsons Green" S="046" T="0"/>
+      <T C="17:00" D="440" DE="Upminster" L="Approaching Ravenscourt Park" S="000" T="0"/>
+      <T C="19:00" D="75" DE="Barking sidings" L="Between Turnham Green and Stamford Brook" S="124" T="0"/>
+      <T C="21:00" D="510" DE="District Line" L="At  East Putney Platform 1" S="077" T="0"/>
+      <T C="23:00" D="510" DE="District Line" L="Approaching Southfields" S="004" T="0"/>
+      <T C="25:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="26:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="26:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+      <T C="28:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="28:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+      <T C="30:00" D="75" DE="Barking sidings" L="Between Ealing Broadway and Ealing Common" S="047" T="0"/>
+    </P>
+  </S>
+  <S Code="SFS" N="South Fields.">
+    <P Code="1" N="Eastbound - Platform 1">
+      <T C="0:30" D="510" DE="District Line" L="Approaching Southfields" S="004" T="0"/>
+      <T C="3:30" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="3:30" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 2">
+      <T C="1:30" D="500" DE="Wimbledon" L="Left East Putney" S="000" T="0"/>
+      <T C="6:00" D="500" DE="Wimbledon" L="Between Parsons Green and Putney Bridge" S="040" T="0"/>
+      <T C="9:00" D="500" DE="Wimbledon" L="Between Fulham Broadway and Parsons Green" S="074" T="0"/>
+      <T C="15:00" D="500" DE="Wimbledon" L="At Earl's Court Platform 4" S="011" T="0"/>
+      <T C="24:00" D="500" DE="Wimbledon" L="At Victoria Platform 1" S="012" T="0"/>
+    </P>
+  </S>
+  <S Code="SKN" N="South Kensington.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="1:00" D="702" DE="Edgware Road (Circle)" L="Between Sloane Square and South Kensington" S="231" T="2"/>
+      <T C="3:30" D="374" DE="Richmond" L="At Sloane Square Platform 1" S="027" T="0"/>
+      <T C="5:00" D="500" DE="Wimbledon" L="At Victoria Platform 1" S="012" T="0"/>
+      <T C="7:00" D="123" DE="Ealing Broadway then Depot" L="At St. James's Park Platform 1" S="121" T="0"/>
+      <T C="8:00" D="116" DE="Ealing Broadway" L="At Westminster Platform 1" S="013" T="0"/>
+      <T C="10:00" D="116" DE="Ealing Broadway" L="Approaching Embankment" S="232" T="2"/>
+      <T C="12:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+      <T C="15:00" D="500" DE="Wimbledon" L="Left Mansion House" S="106" T="0"/>
+      <T C="17:00" D="116" DE="Ealing Broadway" L="Left Monument" S="014" T="0"/>
+      <T C="18:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+      <T C="21:00" D="702" DE="Edgware Road (Circle)" L="Between Aldgate East and Tower Hill" S="207" T="5"/>
+      <T C="26:00" D="500" DE="Wimbledon" L="Between Stepney Green and Whitechapel" S="030" T="0"/>
+      <T C="28:00" D="116" DE="Ealing Broadway" L="At Stepney Green Platform 1" S="063" T="0"/>
+      <T C="29:00" D="374" DE="Richmond" L="At Stepney Green" S="015" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="1:30" D="110" DE="Dagenham East" L="Left Gloucester Road" S="002" T="0"/>
+      <T C="4:00" D="432" DE="Tower Hill" L="Between Earl's Court and Gloucester Road" S="034" T="0"/>
+      <T C="9:00" D="440" DE="Upminster" L="West Kensington" S="125" T="0"/>
+      <T C="10:00" D="440" DE="Upminster" L="Left Barons Court" S="045" T="0"/>
+      <T C="13:00" D="440" DE="Upminster" L="Between Putney Bridge and Parsons Green" S="046" T="0"/>
+      <T C="14:00" D="440" DE="Upminster" L="Approaching Ravenscourt Park" S="000" T="0"/>
+      <T C="16:00" D="75" DE="Barking sidings" L="Between Turnham Green and Stamford Brook" S="124" T="0"/>
+      <T C="19:00" D="510" DE="District Line" L="At  East Putney Platform 1" S="077" T="0"/>
+      <T C="21:00" D="510" DE="District Line" L="Approaching Southfields" S="004" T="0"/>
+      <T C="23:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="23:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="24:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+      <T C="25:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="25:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+      <T C="27:00" D="75" DE="Barking sidings" L="Between Ealing Broadway and Ealing Common" S="047" T="0"/>
+    </P>
+  </S>
+  <S Code="SJP" N="St. James's Park.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="-" D="123" DE="Ealing Broadway then Depot" L="At Platform" S="121" T="0"/>
+      <T C="1:30" D="116" DE="Ealing Broadway" L="At Westminster Platform 1" S="013" T="0"/>
+      <T C="3:30" D="116" DE="Ealing Broadway" L="Approaching Embankment" S="232" T="2"/>
+      <T C="5:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+      <T C="8:00" D="500" DE="Wimbledon" L="Left Mansion House" S="106" T="0"/>
+      <T C="10:00" D="116" DE="Ealing Broadway" L="Left Monument" S="014" T="0"/>
+      <T C="11:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+      <T C="15:00" D="702" DE="Edgware Road (Circle)" L="Between Aldgate East and Tower Hill" S="207" T="5"/>
+      <T C="19:00" D="500" DE="Wimbledon" L="Between Stepney Green and Whitechapel" S="030" T="0"/>
+      <T C="21:00" D="116" DE="Ealing Broadway" L="At Stepney Green Platform 1" S="063" T="0"/>
+      <T C="22:00" D="374" DE="Richmond" L="At Stepney Green" S="015" T="0"/>
+      <T C="24:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+      <T C="25:00" D="500" DE="Wimbledon" L="Between West Ham and Bromley-by-Bow" S="031" T="0"/>
+      <T C="28:00" D="374" DE="Richmond" L="Left Upton Park" S="016" T="0"/>
+      <T C="28:00" D="116" DE="Ealing Broadway" L="Between Plaistow and West Ham" S="152" T="0"/>
+      <T C="29:00" D="123" DE="Ealing Broadway then Depot" L="At East Ham Platform 1" S="122" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="-" D="196" DE="Hammersmith" L="At Platform" S="241" T="0"/>
+      <T C="2:00" D="440" DE="Upminster" L="At Victoria Platform 2" S="003" T="0"/>
+      <T C="2:30" D="75" DE="Barking sidings" L="Between Sloane Square and Victoria" S="057" T="0"/>
+      <T C="5:00" D="440" DE="Upminster" L="Between South Kensington and Sloane Square" S="044" T="0"/>
+      <T C="8:00" D="110" DE="Dagenham East" L="Left Gloucester Road" S="002" T="0"/>
+      <T C="10:00" D="432" DE="Tower Hill" L="Between Earl's Court and Gloucester Road" S="034" T="0"/>
+      <T C="15:00" D="440" DE="Upminster" L="West Kensington" S="125" T="0"/>
+      <T C="17:00" D="440" DE="Upminster" L="Left Barons Court" S="045" T="0"/>
+      <T C="19:00" D="440" DE="Upminster" L="Between Putney Bridge and Parsons Green" S="046" T="0"/>
+      <T C="21:00" D="440" DE="Upminster" L="Approaching Ravenscourt Park" S="000" T="0"/>
+      <T C="23:00" D="75" DE="Barking sidings" L="Between Turnham Green and Stamford Brook" S="124" T="0"/>
+      <T C="25:00" D="510" DE="District Line" L="At  East Putney Platform 1" S="077" T="0"/>
+      <T C="27:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+      <T C="27:00" D="510" DE="District Line" L="Approaching Southfields" S="004" T="0"/>
+      <T C="28:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="28:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+      <T C="29:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="30:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+    </P>
+  </S>
+  <S Code="STB" N="Stamford Brook.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="2:30" D="116" DE="Ealing Broadway" L="Left Hammersmith" S="052" T="0"/>
+      <T C="8:00" D="374" DE="Richmond" L="At West Kensington Platform 1" S="105" T="0"/>
+      <T C="11:00" D="116" DE="Ealing Broadway" L="Between Gloucester Road and Earl's Court" S="042" T="0"/>
+      <T C="18:00" D="374" DE="Richmond" L="At Sloane Square Platform 1" S="027" T="0"/>
+      <T C="20:00" D="123" DE="Ealing Broadway then Depot" L="At St. James's Park Platform 1" S="121" T="0"/>
+      <T C="21:00" D="116" DE="Ealing Broadway" L="At Westminster Platform 1" S="013" T="0"/>
+      <T C="23:00" D="116" DE="Ealing Broadway" L="Approaching Embankment" S="232" T="2"/>
+      <T C="27:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+      <T C="30:00" D="116" DE="Ealing Broadway" L="Left Monument" S="014" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 3">
+      <T C="0:30" D="75" DE="Barking sidings" L="Between Turnham Green and Stamford Brook" S="124" T="0"/>
+      <T C="4:30" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="7:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="7:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+      <T C="11:00" D="75" DE="Barking sidings" L="Between Ealing Broadway and Ealing Common" S="047" T="0"/>
+    </P>
+  </S>
+  <S Code="STG" N="Stepney Green.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="-" D="116" DE="Ealing Broadway" L="At Platform" S="063" T="0"/>
+      <T C="0:30" D="374" DE="Richmond" L="At Stepney Green" S="015" T="0"/>
+      <T C="3:00" D="500" DE="Wimbledon" L="Between West Ham and Bromley-by-Bow" S="031" T="0"/>
+      <T C="7:00" D="116" DE="Ealing Broadway" L="Between Plaistow and West Ham" S="152" T="0"/>
+      <T C="9:00" D="374" DE="Richmond" L="Left Upton Park" S="016" T="0"/>
+      <T C="11:00" D="123" DE="Ealing Broadway then Depot" L="At East Ham Platform 1" S="122" T="0"/>
+      <T C="13:00" D="116" DE="Ealing Broadway" L="Between Barking and East Ham" S="064" T="0"/>
+      <T C="18:00" D="511" DE="District Line" L="Approaching Upney" S="017" T="0"/>
+      <T C="18:00" D="0" DE="Unknown" L="Left Barking" S="202" T="6"/>
+      <T C="21:00" D="511" DE="District Line" L="Between Dagenham East and Dagenham Heathway" S="065" T="0"/>
+      <T C="25:00" D="511" DE="District Line" L="Between Hornchurch and Dagenham East" S="020" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2"/>
+  </S>
+  <S Code="TEM" N="Temple.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="-" D="374" DE="Richmond" L="At Platform" S="107" T="0"/>
+      <T C="3:30" D="500" DE="Wimbledon" L="Left Mansion House" S="106" T="0"/>
+      <T C="5:30" D="116" DE="Ealing Broadway" L="Left Monument" S="014" T="0"/>
+      <T C="6:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+      <T C="9:00" D="702" DE="Edgware Road (Circle)" L="Between Aldgate East and Tower Hill" S="207" T="5"/>
+      <T C="14:00" D="500" DE="Wimbledon" L="Between Stepney Green and Whitechapel" S="030" T="0"/>
+      <T C="16:00" D="116" DE="Ealing Broadway" L="At Stepney Green Platform 1" S="063" T="0"/>
+      <T C="17:00" D="374" DE="Richmond" L="At Stepney Green" S="015" T="0"/>
+      <T C="19:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+      <T C="20:00" D="500" DE="Wimbledon" L="Between West Ham and Bromley-by-Bow" S="031" T="0"/>
+      <T C="23:00" D="116" DE="Ealing Broadway" L="Between Plaistow and West Ham" S="152" T="0"/>
+      <T C="26:00" D="702" DE="Edgware Road (Circle)" L="Left Great Portland Street" S="210" T="6"/>
+      <T C="26:00" D="374" DE="Richmond" L="Left Upton Park" S="016" T="0"/>
+      <T C="27:00" D="123" DE="Ealing Broadway then Depot" L="At East Ham Platform 1" S="122" T="0"/>
+      <T C="30:00" D="116" DE="Ealing Broadway" L="Between Barking and East Ham" S="064" T="0"/>
+      <T C="30:00" D="702" DE="Edgware Road (Circle)" L="Approaching Baker Street" S="211" T="6"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="-" D="432" DE="Tower Hill" L="At Platform" S="000" T="0"/>
+      <T C="2:00" D="440" DE="Upminster" L="At Embankment Platform 2" S="043" T="0"/>
+      <T C="4:00" D="440" DE="Upminster" L="At Westminster Platform 2" S="061" T="0"/>
+      <T C="5:00" D="196" DE="Hammersmith" L="At St. James's Park Platform 2" S="241" T="0"/>
+      <T C="7:00" D="440" DE="Upminster" L="At Victoria Platform 2" S="003" T="0"/>
+      <T C="8:00" D="75" DE="Barking sidings" L="Between Sloane Square and Victoria" S="057" T="0"/>
+      <T C="11:00" D="440" DE="Upminster" L="Between South Kensington and Sloane Square" S="044" T="0"/>
+      <T C="13:00" D="110" DE="Dagenham East" L="Left Gloucester Road" S="002" T="0"/>
+      <T C="15:00" D="432" DE="Tower Hill" L="Between Earl's Court and Gloucester Road" S="034" T="0"/>
+      <T C="21:00" D="440" DE="Upminster" L="West Kensington" S="125" T="0"/>
+      <T C="22:00" D="440" DE="Upminster" L="Left Barons Court" S="045" T="0"/>
+      <T C="24:00" D="440" DE="Upminster" L="Between Putney Bridge and Parsons Green" S="046" T="0"/>
+      <T C="26:00" D="440" DE="Upminster" L="Approaching Ravenscourt Park" S="000" T="0"/>
+      <T C="27:00" D="510" DE="District Line" L="At  East Putney Platform 1" S="077" T="0"/>
+      <T C="28:00" D="75" DE="Barking sidings" L="Between Turnham Green and Stamford Brook" S="124" T="0"/>
+      <T C="29:00" D="510" DE="District Line" L="Approaching Southfields" S="004" T="0"/>
+    </P>
+  </S>
+  <S Code="THL" N="Tower Hill.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="1:00" D="702" DE="Edgware Road (Circle)" L="Between Aldgate East and Tower Hill" S="207" T="5"/>
+      <T C="7:00" D="500" DE="Wimbledon" L="Between Stepney Green and Whitechapel" S="030" T="0"/>
+      <T C="9:00" D="116" DE="Ealing Broadway" L="At Stepney Green Platform 1" S="063" T="0"/>
+      <T C="10:00" D="374" DE="Richmond" L="At Stepney Green" S="015" T="0"/>
+      <T C="10:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+      <T C="12:00" D="500" DE="Wimbledon" L="Between West Ham and Bromley-by-Bow" S="031" T="0"/>
+      <T C="15:00" D="116" DE="Ealing Broadway" L="Between Plaistow and West Ham" S="152" T="0"/>
+      <T C="17:00" D="702" DE="Edgware Road (Circle)" L="Left Great Portland Street" S="210" T="6"/>
+      <T C="18:00" D="374" DE="Richmond" L="Left Upton Park" S="016" T="0"/>
+      <T C="20:00" D="123" DE="Ealing Broadway then Depot" L="At East Ham Platform 1" S="122" T="0"/>
+      <T C="21:00" D="702" DE="Edgware Road (Circle)" L="Approaching Baker Street" S="211" T="6"/>
+      <T C="22:00" D="116" DE="Ealing Broadway" L="Between Barking and East Ham" S="064" T="0"/>
+      <T C="24:00" D="518" DE="Circle and Hammersmith &amp; City" L="At Edgware Road Platform 2" S="264" T="0"/>
+      <T C="26:00" D="511" DE="District Line" L="Approaching Upney" S="017" T="0"/>
+      <T C="26:00" D="702" DE="Edgware Road (Circle)" L="At Paddington platform 16" S="261" T="0"/>
+      <T C="30:00" D="511" DE="District Line" L="Between Dagenham East and Dagenham Heathway" S="065" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 2">
+      <T C="-" D="511" DE="District Line" L="At Platform" S="062" T="0"/>
+      <T C="9:00" D="432" DE="Tower Hill" L="At Temple Platform 2" S="000" T="0"/>
+      <T C="24:00" D="432" DE="Tower Hill" L="Between Earl's Court and Gloucester Road" S="034" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 3">
+      <T C="-" D="75" DE="Barking sidings" L="At Platform" S="037" T="0"/>
+      <T C="1:30" D="110" DE="Dagenham East" L="Left Monument" S="025" T="0"/>
+      <T C="4:00" D="440" DE="Upminster" L="At Cannon Street Platform 2" S="226" T="0"/>
+      <T C="6:00" D="196" DE="Hammersmith" L="Between Blackfriars and Mansion House" S="032" T="0"/>
+      <T C="11:00" D="440" DE="Upminster" L="At Embankment Platform 2" S="043" T="0"/>
+      <T C="12:00" D="440" DE="Upminster" L="At Westminster Platform 2" S="061" T="0"/>
+      <T C="14:00" D="196" DE="Hammersmith" L="At St. James's Park Platform 2" S="241" T="0"/>
+      <T C="16:00" D="440" DE="Upminster" L="At Victoria Platform 2" S="003" T="0"/>
+      <T C="17:00" D="75" DE="Barking sidings" L="Between Sloane Square and Victoria" S="057" T="0"/>
+      <T C="19:00" D="440" DE="Upminster" L="Between South Kensington and Sloane Square" S="044" T="0"/>
+      <T C="22:00" D="110" DE="Dagenham East" L="Left Gloucester Road" S="002" T="0"/>
+      <T C="29:00" D="440" DE="Upminster" L="West Kensington" S="125" T="0"/>
+    </P>
+  </S>
+  <S Code="TGR" N="Turnham Green.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="4:30" D="116" DE="Ealing Broadway" L="Left Hammersmith" S="052" T="0"/>
+      <T C="10:00" D="374" DE="Richmond" L="At West Kensington Platform 1" S="105" T="0"/>
+      <T C="12:00" D="116" DE="Ealing Broadway" L="Between Gloucester Road and Earl's Court" S="042" T="0"/>
+      <T C="20:00" D="374" DE="Richmond" L="At Sloane Square Platform 1" S="027" T="0"/>
+      <T C="22:00" D="123" DE="Ealing Broadway then Depot" L="At St. James's Park Platform 1" S="121" T="0"/>
+      <T C="23:00" D="116" DE="Ealing Broadway" L="At Westminster Platform 1" S="013" T="0"/>
+      <T C="25:00" D="116" DE="Ealing Broadway" L="Approaching Embankment" S="232" T="2"/>
+      <T C="28:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 4">
+      <T C="3:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="5:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+      <T C="5:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="10:00" D="75" DE="Barking sidings" L="Between Ealing Broadway and Ealing Common" S="047" T="0"/>
+    </P>
+  </S>
+  <S Code="UPM" N="Upminster.">
+    <P Code="0" N="Westbound - Platform 3">
+      <T C="-" D="116" DE="Ealing Broadway" L="At Platform" S="066" T="0"/>
+      <T C="1:30" D="510" DE="District Line" L="Between Upminster Bridge and Upminster" S="067" T="0"/>
+      <T C="9:00" D="510" DE="District Line" L="At Dagenham East Platform 2" S="000" T="0"/>
+      <T C="12:00" D="440" DE="Upminster" L="Between Becontree and Dagenham East" S="036" T="0"/>
+      <T C="14:00" D="440" DE="Upminster" L="Between Upney and Dagenham Heathway" S="123" T="0"/>
+      <T C="17:00" D="440" DE="Upminster" L="Between Barking and Upney" S="055" T="0"/>
+      <T C="22:00" D="440" DE="Upminster" L="Between East Ham and Barking" S="024" T="0"/>
+      <T C="28:00" D="440" DE="Upminster" L="Between Bromley-by-Bow and West Ham" S="056" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 4">
+      <T C="-" D="374" DE="Richmond" L="At Platform" S="021" T="0"/>
+      <T C="1:00" D="510" DE="District Line" L="Between Upminster Bridge and Upminster" S="067" T="0"/>
+      <T C="9:00" D="510" DE="District Line" L="At Dagenham East Platform 2" S="000" T="0"/>
+      <T C="12:00" D="440" DE="Upminster" L="Between Becontree and Dagenham East" S="036" T="0"/>
+      <T C="14:00" D="440" DE="Upminster" L="Between Upney and Dagenham Heathway" S="123" T="0"/>
+      <T C="17:00" D="440" DE="Upminster" L="Between Barking and Upney" S="055" T="0"/>
+      <T C="21:00" D="440" DE="Upminster" L="Between East Ham and Barking" S="024" T="0"/>
+      <T C="27:00" D="440" DE="Upminster" L="Between Bromley-by-Bow and West Ham" S="056" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 5">
+      <T C="1:00" D="510" DE="District Line" L="Between Upminster Bridge and Upminster" S="067" T="0"/>
+      <T C="9:00" D="510" DE="District Line" L="At Dagenham East Platform 2" S="000" T="0"/>
+      <T C="12:00" D="440" DE="Upminster" L="Between Becontree and Dagenham East" S="036" T="0"/>
+      <T C="14:00" D="440" DE="Upminster" L="Between Upney and Dagenham Heathway" S="123" T="0"/>
+      <T C="17:00" D="440" DE="Upminster" L="Between Barking and Upney" S="055" T="0"/>
+      <T C="21:00" D="440" DE="Upminster" L="Between East Ham and Barking" S="024" T="0"/>
+      <T C="27:00" D="440" DE="Upminster" L="Between Bromley-by-Bow and West Ham" S="056" T="0"/>
+    </P>
+  </S>
+  <S Code="UPB" N="Upminster Bridge.">
+    <P Code="0" N="Westbound - Platform 1"/>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="6:00" D="510" DE="District Line" L="At Dagenham East Platform 2" S="000" T="0"/>
+      <T C="9:00" D="440" DE="Upminster" L="Between Becontree and Dagenham East" S="036" T="0"/>
+      <T C="11:00" D="440" DE="Upminster" L="Between Upney and Dagenham Heathway" S="123" T="0"/>
+      <T C="14:00" D="440" DE="Upminster" L="Between Barking and Upney" S="055" T="0"/>
+      <T C="18:00" D="440" DE="Upminster" L="Between East Ham and Barking" S="024" T="0"/>
+      <T C="24:00" D="440" DE="Upminster" L="Between Bromley-by-Bow and West Ham" S="056" T="0"/>
+      <T C="29:00" D="440" DE="Upminster" L="Between Stepney Green and Bow Road" S="041" T="0"/>
+    </P>
+  </S>
+  <S Code="UPY" N="Upney.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="1:00" D="511" DE="District Line" L="Approaching Upney" S="017" T="0"/>
+      <T C="4:30" D="511" DE="District Line" L="Between Dagenham East and Dagenham Heathway" S="065" T="0"/>
+      <T C="8:00" D="511" DE="District Line" L="Between Hornchurch and Dagenham East" S="020" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="1:30" D="440" DE="Upminster" L="Between Barking and Upney" S="055" T="0"/>
+      <T C="5:00" D="440" DE="Upminster" L="Between East Ham and Barking" S="024" T="0"/>
+      <T C="11:00" D="440" DE="Upminster" L="Between Bromley-by-Bow and West Ham" S="056" T="0"/>
+      <T C="11:00" D="110" DE="Dagenham East" L="At West Ham" S="023" T="0"/>
+      <T C="16:00" D="440" DE="Upminster" L="Between Stepney Green and Bow Road" S="041" T="0"/>
+      <T C="20:00" D="440" DE="Upminster" L="Left Whitechapel" S="101" T="0"/>
+      <T C="22:00" D="440" DE="Upminster" L="At Aldgate East Platform 2" S="001" T="0"/>
+      <T C="27:00" D="110" DE="Dagenham East" L="Left Monument" S="025" T="0"/>
+      <T C="29:00" D="440" DE="Upminster" L="At Cannon Street Platform 2" S="226" T="0"/>
+    </P>
+  </S>
+  <S Code="UPK" N="Upton Park.">
+    <P Code="0" N="Westbound - Platform 1"/>
+    <P Code="1" N="Eastbound - Platform 2"/>
+  </S>
+  <S Code="VIC" N="Victoria.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="-" D="500" DE="Wimbledon" L="At Platform" S="012" T="0"/>
+      <T C="2:00" D="123" DE="Ealing Broadway then Depot" L="At St. James's Park Platform 1" S="121" T="0"/>
+      <T C="3:00" D="116" DE="Ealing Broadway" L="At Westminster Platform 1" S="013" T="0"/>
+      <T C="5:30" D="116" DE="Ealing Broadway" L="Approaching Embankment" S="232" T="2"/>
+      <T C="7:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+      <T C="10:00" D="500" DE="Wimbledon" L="Left Mansion House" S="106" T="0"/>
+      <T C="12:00" D="116" DE="Ealing Broadway" L="Left Monument" S="014" T="0"/>
+      <T C="13:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+      <T C="16:00" D="702" DE="Edgware Road (Circle)" L="Between Aldgate East and Tower Hill" S="207" T="5"/>
+      <T C="21:00" D="500" DE="Wimbledon" L="Between Stepney Green and Whitechapel" S="030" T="0"/>
+      <T C="23:00" D="116" DE="Ealing Broadway" L="At Stepney Green Platform 1" S="063" T="0"/>
+      <T C="24:00" D="374" DE="Richmond" L="At Stepney Green" S="015" T="0"/>
+      <T C="25:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+      <T C="26:00" D="500" DE="Wimbledon" L="Between West Ham and Bromley-by-Bow" S="031" T="0"/>
+      <T C="29:00" D="374" DE="Richmond" L="Left Upton Park" S="016" T="0"/>
+      <T C="30:00" D="116" DE="Ealing Broadway" L="Between Plaistow and West Ham" S="152" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2 ">
+      <T C="-" D="440" DE="Upminster" L="At Platform" S="003" T="0"/>
+      <T C="1:00" D="75" DE="Barking sidings" L="Between Sloane Square and Victoria" S="057" T="0"/>
+      <T C="3:30" D="440" DE="Upminster" L="Between South Kensington and Sloane Square" S="044" T="0"/>
+      <T C="6:00" D="110" DE="Dagenham East" L="Left Gloucester Road" S="002" T="0"/>
+      <T C="8:00" D="432" DE="Tower Hill" L="Between Earl's Court and Gloucester Road" S="034" T="0"/>
+      <T C="13:00" D="440" DE="Upminster" L="West Kensington" S="125" T="0"/>
+      <T C="15:00" D="440" DE="Upminster" L="Left Barons Court" S="045" T="0"/>
+      <T C="17:00" D="440" DE="Upminster" L="Between Putney Bridge and Parsons Green" S="046" T="0"/>
+      <T C="19:00" D="440" DE="Upminster" L="Approaching Ravenscourt Park" S="000" T="0"/>
+      <T C="21:00" D="75" DE="Barking sidings" L="Between Turnham Green and Stamford Brook" S="124" T="0"/>
+      <T C="23:00" D="510" DE="District Line" L="At  East Putney Platform 1" S="077" T="0"/>
+      <T C="25:00" D="510" DE="District Line" L="Approaching Southfields" S="004" T="0"/>
+      <T C="27:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="28:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="28:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+      <T C="30:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="30:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+    </P>
+  </S>
+  <S Code="WBT" N="West Brompton.">
+    <P Code="1" N="Eastbound - Platform 1">
+      <T C="1:30" D="227" DE="High St Kensington" L="Left Fulham Broadway" S="076" T="0"/>
+      <T C="4:30" D="440" DE="Upminster" L="Between Putney Bridge and Parsons Green" S="046" T="0"/>
+      <T C="7:00" D="510" DE="District Line" L="At  East Putney Platform 1" S="077" T="0"/>
+      <T C="9:00" D="510" DE="District Line" L="Approaching Southfields" S="004" T="0"/>
+      <T C="12:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="12:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 2">
+      <T C="2:30" D="500" DE="Wimbledon" L="At Earl's Court Platform 4" S="011" T="0"/>
+      <T C="12:00" D="500" DE="Wimbledon" L="At Victoria Platform 1" S="012" T="0"/>
+      <T C="21:00" D="500" DE="Wimbledon" L="Left Mansion House" S="106" T="0"/>
+    </P>
+  </S>
+  <S Code="WHM" N="West Ham.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="3:30" D="116" DE="Ealing Broadway" L="Between Plaistow and West Ham" S="152" T="0"/>
+      <T C="6:00" D="374" DE="Richmond" L="Left Upton Park" S="016" T="0"/>
+      <T C="7:00" D="123" DE="Ealing Broadway then Depot" L="At East Ham Platform 1" S="122" T="0"/>
+      <T C="10:00" D="116" DE="Ealing Broadway" L="Between Barking and East Ham" S="064" T="0"/>
+      <T C="14:00" D="511" DE="District Line" L="Approaching Upney" S="017" T="0"/>
+      <T C="18:00" D="364" DE="Plaistow (via King's Cross)" L="Between Moorgate and Liverpool Street" S="233" T="2"/>
+      <T C="18:00" D="511" DE="District Line" L="Between Dagenham East and Dagenham Heathway" S="065" T="0"/>
+      <T C="21:00" D="511" DE="District Line" L="Between Hornchurch and Dagenham East" S="020" T="0"/>
+      <T C="29:00" D="364" DE="Plaistow (via King's Cross)" L="Approaching Liverpool Street" S="233" T="2"/>
+      <T C="29:00" D="0" DE="Unknown" L="Between Barking and East Ham" S="202" T="6"/>
+      <T C="30:00" D="0" DE="Unknown" L="Left Barking" S="202" T="6"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="0:30" D="440" DE="Upminster" L="Between Bromley-by-Bow and West Ham" S="056" T="0"/>
+      <T C="5:00" D="440" DE="Upminster" L="Between Stepney Green and Bow Road" S="041" T="0"/>
+      <T C="6:00" D="73" DE="Barking (via King's Cross)" L="Between Whitechapel and Mile End" S="206" T="4"/>
+      <T C="8:00" D="440" DE="Upminster" L="Between Whitechapel and Stepney Green" S="101" T="0"/>
+      <T C="11:00" D="440" DE="Upminster" L="At Aldgate East Platform 2" S="001" T="0"/>
+      <T C="15:00" D="75" DE="Barking sidings" L="At Tower Hill Platform 3" S="037" T="0"/>
+      <T C="15:00" D="110" DE="Dagenham East" L="Between Monument and Tower Hill" S="025" T="0"/>
+      <T C="16:00" D="364" DE="Plaistow (via King's Cross)" L="Approaching Liverpool Street" S="233" T="2"/>
+      <T C="18:00" D="440" DE="Upminster" L="At Cannon Street Platform 2" S="226" T="0"/>
+      <T C="22:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+      <T C="23:00" D="73" DE="Barking (via King's Cross)" L="At King's Cross Platform 2" S="260" T="4"/>
+      <T C="25:00" D="440" DE="Upminster" L="At Embankment Platform 2" S="043" T="0"/>
+      <T C="27:00" D="440" DE="Upminster" L="At Westminster Platform 2" S="061" T="0"/>
+      <T C="29:00" D="702" DE="Edgware Road (Circle)" L="Left Great Portland Street" S="210" T="6"/>
+    </P>
+  </S>
+  <S Code="WKN" N="West Kensington.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="-" D="374" DE="Richmond" L="At Platform" S="105" T="0"/>
+      <T C="4:30" D="116" DE="Ealing Broadway" L="Between Gloucester Road and Earl's Court" S="042" T="0"/>
+      <T C="10:00" D="374" DE="Richmond" L="At Sloane Square Platform 1" S="027" T="0"/>
+      <T C="14:00" D="123" DE="Ealing Broadway then Depot" L="At St. James's Park Platform 1" S="121" T="0"/>
+      <T C="15:00" D="116" DE="Ealing Broadway" L="At Westminster Platform 1" S="013" T="0"/>
+      <T C="17:00" D="116" DE="Ealing Broadway" L="At Embankment Platform 1" S="232" T="2"/>
+      <T C="18:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+      <T C="24:00" D="116" DE="Ealing Broadway" L="Approaching Cannon Street" S="014" T="0"/>
+      <T C="25:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="2:00" D="440" DE="Upminster" L="Left Barons Court" S="045" T="0"/>
+      <T C="5:00" D="440" DE="Upminster" L="At Ravenscourt Park Platform 4" S="000" T="0"/>
+      <T C="7:00" D="75" DE="Barking sidings" L="Between Turnham Green and Stamford Brook" S="124" T="0"/>
+      <T C="11:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="13:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+      <T C="13:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+      <T C="18:00" D="75" DE="Barking sidings" L="Between Ealing Broadway and Ealing Common" S="047" T="0"/>
+    </P>
+  </S>
+  <S Code="WMS" N="Westminster.">
+    <P Code="0" N="Westbound - Platform 1">
+      <T C="-" D="116" DE="Ealing Broadway" L="At Platform" S="013" T="0"/>
+      <T C="2:30" D="116" DE="Ealing Broadway" L="At Embankment Platform 1" S="232" T="2"/>
+      <T C="4:00" D="374" DE="Richmond" L="At Temple Platform 1" S="107" T="0"/>
+      <T C="7:00" D="500" DE="Wimbledon" L="Left Mansion House" S="106" T="0"/>
+      <T C="9:00" D="116" DE="Ealing Broadway" L="Approaching Cannon Street" S="014" T="0"/>
+      <T C="10:00" D="374" DE="Richmond" L="Between Tower Hill and Monument" S="110" T="0"/>
+      <T C="13:00" D="702" DE="Edgware Road (Circle)" L="Between Aldgate East and Tower Hill" S="207" T="5"/>
+      <T C="18:00" D="500" DE="Wimbledon" L="Approaching Whitechapel" S="030" T="0"/>
+      <T C="20:00" D="116" DE="Ealing Broadway" L="At Stepney Green Platform 1" S="063" T="0"/>
+      <T C="21:00" D="374" DE="Richmond" L="At Stepney Green" S="015" T="0"/>
+      <T C="22:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+      <T C="23:00" D="500" DE="Wimbledon" L="Between West Ham and Bromley-by-Bow" S="031" T="0"/>
+      <T C="27:00" D="116" DE="Ealing Broadway" L="Between Plaistow and West Ham" S="152" T="0"/>
+      <T C="28:00" D="123" DE="Ealing Broadway then Depot" L="At East Ham Platform 1" S="122" T="0"/>
+      <T C="29:00" D="702" DE="Edgware Road (Circle)" L="Left Great Portland Street" S="210" T="6"/>
+      <T C="30:00" D="374" DE="Richmond" L="Left Upton Park" S="016" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2">
+      <T C="-" D="440" DE="Upminster" L="At Platform" S="061" T="0"/>
+      <T C="2:00" D="196" DE="Hammersmith" L="At St. James's Park Platform 2" S="241" T="0"/>
+      <T C="4:00" D="440" DE="Upminster" L="At Victoria Platform 2" S="003" T="0"/>
+      <T C="4:30" D="75" DE="Barking sidings" L="Between Sloane Square and Victoria" S="057" T="0"/>
+      <T C="7:00" D="440" DE="Upminster" L="Between South Kensington and Sloane Square" S="044" T="0"/>
+      <T C="9:00" D="110" DE="Dagenham East" L="Between Gloucester Road and South Kensington" S="002" T="0"/>
+      <T C="12:00" D="432" DE="Tower Hill" L="Between Earl's Court and Gloucester Road" S="034" T="0"/>
+      <T C="16:00" D="440" DE="Upminster" L="Between West Kensington and Earl's Court" S="125" T="0"/>
+      <T C="19:00" D="440" DE="Upminster" L="Left Barons Court" S="045" T="0"/>
+      <T C="20:00" D="440" DE="Upminster" L="Between Putney Bridge and Parsons Green" S="046" T="0"/>
+      <T C="22:00" D="440" DE="Upminster" L="At Ravenscourt Park Platform 4" S="000" T="0"/>
+      <T C="24:00" D="75" DE="Barking sidings" L="Between Turnham Green and Stamford Brook" S="124" T="0"/>
+      <T C="27:00" D="510" DE="District Line" L="At  East Putney Platform 1" S="077" T="0"/>
+      <T C="27:00" D="510" DE="District Line" L="At Gunnersbury Platform 2" S="000" T="0"/>
+      <T C="28:00" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="28:00" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+      <T C="29:00" D="510" DE="District Line" L="Approaching Southfields" S="004" T="0"/>
+      <T C="30:00" D="510" DE="District Line" L="At Richmond Platform 6" S="000" T="0"/>
+      <T C="30:00" D="510" DE="District Line" L="At Richmond Platform 5" S="000" T="0"/>
+    </P>
+  </S>
+  <S Code="WCL" N="Whitechapel.">
+    <P Code="1" N="Eastbound - Platform 1">
+      <T C="2:30" D="440" DE="Upminster" L="At Aldgate East Platform 2" S="001" T="0"/>
+      <T C="6:00" D="75" DE="Barking sidings" L="At Tower Hill Platform 3" S="037" T="0"/>
+      <T C="6:00" D="364" DE="Plaistow (via King's Cross)" L="Approaching Liverpool Street" S="233" T="2"/>
+      <T C="6:00" D="110" DE="Dagenham East" L="Between Monument and Tower Hill" S="025" T="0"/>
+      <T C="9:00" D="440" DE="Upminster" L="At Cannon Street Platform 2" S="226" T="0"/>
+      <T C="11:00" D="702" DE="Edgware Road (Circle)" L="At Farringdon Platform 1" S="223" T="5"/>
+      <T C="15:00" D="73" DE="Barking (via King's Cross)" L="At King's Cross Platform 2" S="260" T="4"/>
+      <T C="16:00" D="440" DE="Upminster" L="At Embankment Platform 2" S="043" T="0"/>
+      <T C="18:00" D="702" DE="Edgware Road (Circle)" L="Left Great Portland Street" S="210" T="6"/>
+      <T C="18:00" D="440" DE="Upminster" L="At Westminster Platform 2" S="061" T="0"/>
+      <T C="22:00" D="440" DE="Upminster" L="At Victoria Platform 2" S="003" T="0"/>
+      <T C="22:00" D="702" DE="Edgware Road (Circle)" L="Approaching Baker Street" S="211" T="6"/>
+      <T C="22:00" D="75" DE="Barking sidings" L="Between Sloane Square and Victoria" S="057" T="0"/>
+      <T C="25:00" D="518" DE="Circle and Hammersmith &amp; City" L="At Edgware Road Platform 2" S="264" T="0"/>
+      <T C="25:00" D="440" DE="Upminster" L="Between South Kensington and Sloane Square" S="044" T="0"/>
+      <T C="27:00" D="110" DE="Dagenham East" L="Between Gloucester Road and South Kensington" S="002" T="0"/>
+      <T C="27:00" D="702" DE="Edgware Road (Circle)" L="At Paddington platform 16" S="261" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 3">
+      <T C="-" D="500" DE="Wimbledon" L="At Platform" S="030" T="0"/>
+      <T C="3:00" D="116" DE="Ealing Broadway" L="At Stepney Green Platform 1" S="063" T="0"/>
+      <T C="3:30" D="374" DE="Richmond" L="At Stepney Green" S="015" T="0"/>
+      <T C="5:00" D="500" DE="Wimbledon" L="Between West Ham and Bromley-by-Bow" S="031" T="0"/>
+      <T C="10:00" D="116" DE="Ealing Broadway" L="Between Plaistow and West Ham" S="152" T="0"/>
+      <T C="12:00" D="374" DE="Richmond" L="Left Upton Park" S="016" T="0"/>
+      <T C="14:00" D="123" DE="Ealing Broadway then Depot" L="At East Ham Platform 1" S="122" T="0"/>
+      <T C="16:00" D="0" DE="Unknown" L="Between Barking and East Ham" S="202" T="6"/>
+      <T C="16:00" D="116" DE="Ealing Broadway" L="Between Barking and East Ham" S="064" T="0"/>
+      <T C="20:00" D="374" DE="Richmond" L="At Upney Platform 1" S="017" T="0"/>
+      <T C="24:00" D="511" DE="District Line" L="Between Dagenham East and Dagenham Heathway" S="065" T="0"/>
+      <T C="28:00" D="511" DE="District Line" L="Between Hornchurch and Dagenham East" S="020" T="0"/>
+    </P>
+  </S>
+  <S Code="WDN" N="Wimbledon.">
+    <P Code="1" N="Eastbound - Platform 1">
+      <T C="-" D="510" DE="District Line" L="At Platform" S="072" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 2"/>
+    <P Code="1" N="Eastbound - Platform 3">
+      <T C="1:30" D="500" DE="Wimbledon" L="Left Wimbledon Park" S="007" T="0"/>
+      <T C="3:30" D="500" DE="Wimbledon" L="Left Southfields" S="073" T="0"/>
+      <T C="4:30" D="500" DE="Wimbledon" L="Between East Putney and Southfields" S="000" T="0"/>
+      <T C="9:00" D="500" DE="Wimbledon" L="Between Parsons Green and Putney Bridge" S="040" T="0"/>
+      <T C="13:00" D="500" DE="Wimbledon" L="Between Fulham Broadway and Parsons Green" S="074" T="0"/>
+      <T C="18:00" D="500" DE="Wimbledon" L="At Earl's Court Platform 4" S="011" T="0"/>
+      <T C="27:00" D="500" DE="Wimbledon" L="At Victoria Platform 1" S="012" T="0"/>
+    </P>
+    <P Code="1" N="Eastbound - Platform 4">
+      <T C="-" D="510" DE="District Line" L="At Platform" S="054" T="0"/>
+      <T C="1:30" D="500" DE="Wimbledon" L="Left Wimbledon Park" S="007" T="0"/>
+      <T C="3:30" D="500" DE="Wimbledon" L="Left Southfields" S="073" T="0"/>
+      <T C="4:30" D="500" DE="Wimbledon" L="Between East Putney and Southfields" S="000" T="0"/>
+      <T C="9:00" D="500" DE="Wimbledon" L="Between Parsons Green and Putney Bridge" S="040" T="0"/>
+      <T C="13:00" D="500" DE="Wimbledon" L="Between Fulham Broadway and Parsons Green" S="074" T="0"/>
+      <T C="18:00" D="500" DE="Wimbledon" L="At Earl's Court Platform 4" S="011" T="0"/>
+      <T C="27:00" D="500" DE="Wimbledon" L="At Victoria Platform 1" S="012" T="0"/>
+    </P>
+  </S>
+  <S Code="WMP" N="Wimbledon Park.">
+    <P Code="1" N="Eastbound - Platform 1">
+      <T C="1:30" D="510" DE="District Line" L="At Wimbledon Platform 4" S="054" T="0"/>
+      <T C="2:30" D="510" DE="District Line" L="At Wimbledon Platform 1" S="072" T="0"/>
+    </P>
+    <P Code="0" N="Westbound - Platform 2">
+      <T C="1:30" D="500" DE="Wimbledon" L="Left Southfields" S="073" T="0"/>
+      <T C="2:30" D="500" DE="Wimbledon" L="Between East Putney and Southfields" S="000" T="0"/>
+      <T C="7:00" D="500" DE="Wimbledon" L="Between Parsons Green and Putney Bridge" S="040" T="0"/>
+      <T C="11:00" D="500" DE="Wimbledon" L="Between Fulham Broadway and Parsons Green" S="074" T="0"/>
+      <T C="16:00" D="500" DE="Wimbledon" L="At Earl's Court Platform 4" S="011" T="0"/>
+      <T C="25:00" D="500" DE="Wimbledon" L="At Victoria Platform 1" S="012" T="0"/>
+    </P>
+  </S>
+</ROOT>
