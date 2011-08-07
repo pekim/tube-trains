@@ -22,27 +22,27 @@ class LineTopology
         for line in lines
           if lineLength
             if line.length != lineLength
-              throw "Line (#{line}) length is #{line.length} not #{lineLength}"
+              throw Error("Line (#{line}) length is #{line.length} not #{lineLength}")
           else
             lineLength = line.length
       
       numberOfLines = ->
         if lines.length % 2 == 0
-          throw "Expected odd number of lines, not #{lines.length}"
+          throw Error("Expected odd number of lines, not #{lines.length}")
       
       oddLines = ->
         regexp = /^[ |A-Z]{3}( [ |A-Z]{3})*$/
   
         for line in lines by 2
           if !regexp.test(line)
-            throw "Format of station names line (#{line}) incorrect"
+            throw Error("Format of station names line (#{line}) incorrect")
       
       evenLines = ->
         regexp = /^ [ |\|] ([ |\\|\/|u|n] [ |\|] )*$/
   
         for line in lines[1..] by 2
           if !regexp.test(line)
-            throw "Format of track joining line (#{line}) incorrect"
+            throw Error("Format of track joining line (#{line}) incorrect")
 
       checkLineLength()
       numberOfLines()
@@ -80,7 +80,7 @@ class LineTopology
             stationAbove = @grid[(l - 1) / 2][c]
             stationBelow = @grid[(l + 1) / 2][c]
             if (!stationAbove || !stationBelow)
-              throw 'Cannot link ' + stationAbove.code + ' to ' + stationBelow.code
+              throw Error('Cannot link ' + stationAbove.code + ' to ' + stationBelow.code)
             stationAbove.below stationBelow
 
       # Diagonal track joins.
@@ -92,13 +92,13 @@ class LineTopology
               stationAbove = @grid[(l - 1) / 2][c]
               stationBelow = @grid[(l + 1) / 2][c + 1]
               if (!stationAbove || !stationBelow)
-                throw 'Cannot link ' + stationAbove.code + ' to ' + stationBelow.code
+                throw Error('Cannot link ' + stationAbove.code + ' to ' + stationBelow.code)
               stationAbove.belowRight stationBelow
             when '/'
               stationAbove = @grid[(l - 1) / 2][c + 1]
               stationBelow = @grid[(l + 1) / 2][c]
               if (!stationAbove || !stationBelow)
-                throw 'Cannot link ' + stationAbove.code + ' to ' + stationBelow.code
+                throw Error('Cannot link ' + stationAbove.code + ' to ' + stationBelow.code)
               stationAbove.belowLeft stationBelow
 
     grid: ->
