@@ -12,9 +12,27 @@ class PredictionSummary
     @parser.parseString xml
 
   init: (parsedObject) ->
+    findTrains = ->
+      trainsByNumber = {}
+
+      for station in parsedObject.S
+        for platform in station.P
+          if platform.T
+            for train in platform.T
+              trainNumber = train['@'].S
+              trainsByNumber[trainNumber] = train;
+
+      trains = []
+      for number, train of trainsByNumber
+        trains.push train
+
+      trains
+
     @timestamp = new Date parsedObject.Time['@'].TimeStamp
+    @trains = findTrains()
 
   when: ->
     @timestamp
+
 
 module.exports = PredictionSummary
