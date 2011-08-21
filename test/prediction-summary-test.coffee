@@ -9,6 +9,8 @@ exports.when = (test) ->
 exports.trains = (test) ->
   parse (summary) ->
     test.strictEqual 109, summary.trains.length
+    console.log summary.trains
+
     test.done()
 
 parse = (test) ->
