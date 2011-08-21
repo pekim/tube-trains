@@ -28,11 +28,7 @@ class PredictionSummary
 
       trains
 
-    @timestamp = new Date parsedObject.Time['@'].TimeStamp
+    @when = new Date parsedObject.Time['@'].TimeStamp
     @trains = findTrains()
-
-  when: ->
-    @timestamp
-
 
 module.exports = PredictionSummary

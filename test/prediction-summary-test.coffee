@@ -3,7 +3,7 @@ fs = require 'fs'
 
 exports.when = (test) ->
   parse (summary) ->
-    test.strictEqual new Date('2011/08/02 08:30:47').getTime(), summary.when().getTime()
+    test.strictEqual new Date('2011/08/02 08:30:47').getTime(), summary.when.getTime()
     test.done()
 
 exports.trains = (test) ->
