@@ -1,3 +1,3 @@
 #!/bin/sh
 
-supervisor -e "node|js|coffee" boot.js
+supervisor -e "node|js|coffee" server.js
