@@ -15,7 +15,7 @@
   "dependencies": {
     "express": "2.x",
     "jade": "*",
-    "stylus": "*",
+    "stylus": "0.14.0",
     "coffee-script": "*",
     "browserify": ">= 1.3.0",
     "jquery-browserify": ">= 1.6.1",
